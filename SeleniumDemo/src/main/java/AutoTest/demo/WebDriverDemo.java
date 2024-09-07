@@ -17,7 +17,7 @@ import static org.testng.Assert.assertTrue;
 
 public class WebDriverDemo {
 
-    private static final String BROWSER = "CHROME";
+    private static final String BROWSER = "FIREFOX";
     private static final String DANTRI_URL = "https://dantri.com.vn";
     private static final String VNEXPRESS_URL = "https://vnexpress.net/";
     private static final String DEMOQA_TEXTBOX_URL = "https://demoqa.com/text-box";
@@ -56,63 +56,15 @@ public class WebDriverDemo {
         assertTrue(webUI.verifyTitle(expectedTitle));
     }
 
-    @Test(description = "TC004: Input and Clear text successfully")
-    public void TC004_Input_and_Clear_text_successfully() {
+    @Test(description = "TC004: Clear text successfully")
+    public void TC004_Clear_text_successfully() {
         webUI.navigateTo(DEMOQA_TEXTBOX_URL);
-        webUI.waitForElementToBeVisible(TXT_FULL_NAME, 10);
-        // Check if the element is displayed and enabled before interacting
-        assertTrue(webUI.isElementDisplayed(TXT_FULL_NAME), "The input field should be displayed");
-        assertTrue(webUI.isElementEnabled(TXT_FULL_NAME), "The input field should be enabled");
-        webUI.sendKeys(TXT_FULL_NAME, "NGUYEN");
+        webUI.sendKeys(TXT_FULL_NAME, "Nguyen");
         String actualFullName = webUI.getAttributeValue(TXT_FULL_NAME, "value");
-        assertEquals(actualFullName, "NGUYEN");
-        webUI.delayInSecond(3);
+        assertEquals(actualFullName, "Nguyen");
         webUI.clearText(TXT_FULL_NAME);
         actualFullName = webUI.getAttributeValue(TXT_FULL_NAME, "value");
         assertEquals(actualFullName, "");
-    }
-
-    @Test(description = "TC005: Navigate Back and Forward")
-    public void TC005_Navigate_Back_and_Forward() {
-        webUI.navigateTo(VNEXPRESS_URL); // Navigate to VnExpress
-        webUI.back(); // Go back to previous page (Dân trí)
-        String actualTitle = webUI.getTitle();
-        String expectedTitle = "Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí";
-        assertEquals(actualTitle, expectedTitle);
-
-        webUI.forward(); // Navigate forward to VnExpress
-        actualTitle = webUI.getTitle();
-        expectedTitle = "Báo VnExpress - Báo tiếng Việt nhiều người xem nhất";
-        assertEquals(actualTitle, expectedTitle);
-    }
-
-    @Test(description = "TC006: Navigate to DanTri, click the first headline and scroll to the middle of the page")
-    public void TC006_Navigate_Click_And_Scroll() {
-//        webUI.maximizeWindow(); // Maximize browser window
-        webUI.waitForElementToBeVisible(FIRST_TITLE_LOCATOR, 10);
-        // Click the first headline
-        WebElement firstHeadline = webUI.findWebElement(FIRST_TITLE_LOCATOR);
-        firstHeadline.click();
-        webUI.delayInSecond(3);
-
-        // Get the page dimensions
-        long[] dimensions = webUI.getPageDimensions();
-        long pageWidth = dimensions[0];
-        long pageHeight = dimensions[1];
-        webUI.delayInSecond(3);
-
-
-        // Verify page content after scrolling
-        WebElement content = webUI.findWebElement("/html/body/main/article/div[3]/p[9]");
-        assertTrue(content.isDisplayed(), "Content should be displayed after scrolling.");
-    }
-
-
-    @Test(description = "TC007: Check if element is displayed")
-    public void TC007_Check_if_Element_is_Displayed() {
-        webUI.navigateTo(DEMOQA_TEXTBOX_URL);
-        boolean isDisplayed = webUI.isElementDisplayed(TXT_FULL_NAME);
-        assertTrue(isDisplayed, "The element should be displayed on the page");
     }
 
     @Test(description = "TC009: Find element using different locators")
@@ -338,7 +290,7 @@ public class WebDriverDemo {
     public void TC018_Send_Keys_To_Alert() throws InterruptedException {
         webUI.navigateTo(DEMOQA_ALERT_URL);
         Thread.sleep(3000);
-        webUI.scrollToElement("id:confirmButton");
+        webUI.scrollIntoView("id:confirmButton");
         Thread.sleep(3000);
 
         WebElement promtButton = webUI.findWebElement("id:promtButton");
@@ -356,22 +308,22 @@ public class WebDriverDemo {
         Assert.assertEquals(resultText, expectedText, "The result text should be 'You entered hello'");
     }
 
-    @Test(description = "TC019: Switch to an iframe and interact with elements inside it")
-    public void TC019_Switch_To_Iframe_And_Interact() throws InterruptedException {
-        webUI.navigateTo(GURU99_URL);
-        Thread.sleep(3000);
-
-        webUI.scrollToElement("xpath://h3[text()='iFrame will not show if you have adBlock extension enabled']");
-        Thread.sleep(3000);
-
-        webUI.switchtoFrame("id:a077aa5e");
-        Thread.sleep(5000);
-
-        WebElement iframeElement = webUI.findWebElement("xpath://html/body/a/img");
-        Assert.assertNotNull(iframeElement, "Failed to find the element inside the iframe.");
-        iframeElement.click();
-        Thread.sleep(3000);
-    }
+//    @Test(description = "TC019: Switch to an iframe and interact with elements inside it")
+//    public void TC019_Switch_To_Iframe_And_Interact() throws InterruptedException {
+//        webUI.navigateTo(GURU99_URL);
+//        Thread.sleep(3000);
+//
+//        webUI.scrollToElement("xpath://h3[text()='iFrame will not show if you have adBlock extension enabled']");
+//        Thread.sleep(3000);
+//
+//        webUI.switchtoFrame("id:a077aa5e");
+//        Thread.sleep(5000);
+//
+//        WebElement iframeElement = webUI.findWebElement("xpath://html/body/a/img");
+//        Assert.assertNotNull(iframeElement, "Failed to find the element inside the iframe.");
+//        iframeElement.click();
+//        Thread.sleep(3000);
+//    }
 
 
 

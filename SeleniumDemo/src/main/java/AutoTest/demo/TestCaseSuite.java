@@ -1,380 +1,421 @@
 package Autotest.demo;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import io.qameta.allure.Step;
+import org.openqa.selenium.Keys;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import Autotest.keywords.WebUI;
 
-import java.util.Arrays;
-import java.util.List;
-
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
 public class TestCaseSuite {
 
     private static final String BROWSER = "CHROME";
-    private static final String DANTRI_URL = "https://dantri.com.vn";
-    private static final String VNEXPRESS_URL = "https://vnexpress.net/";
-    private static final String DEMOQA_TEXTBOX_URL = "https://demoqa.com/text-box";
-    private static final String DEMOQA_SELECTMENU_URL = "https://demoqa.com/select-menu";
-    private static final String GURU99_URL = "https://demo.guru99.com/test/guru99home/";
-    private static final String DEMOQA_ALERT_URL = "https://demoqa.com/alerts";
-    private static final String TXT_FULL_NAME = "//input[@id='userName']";
-    private static final String FIRST_TITLE_LOCATOR = "//div[@class='article-content']//h3[@class='article-title']/a";
+    private static final String URL = "https://demo.guru99.com/V4";
+//    private static final String URL = "https://demo.guru99.com/v4/manager/addcustomerpage.php";
 
+    private static final String USER_ID = "mngr588638";
+    private static final String USER_PASSWORD = "sYgEpeg";
+
+    private static final String TXT_USERID = "//input[@name='uid']";
+    private static final String TXT_PASSWORD = "//input[@name='password']";
+    private static final String BTN_LOGIN = "//input[@name='btnLogin']";
+    private static final String LNK_NEW_CUSTOMER = "//a[normalize-space()='New Customer']";
+    private static final String TXT_CUSTOMER_NAME = "//input[@name='name']";
+    private static final String TXT_ADDRESS ="//textarea[@name='addr']";
+    private static final String TXT_CITY ="//input[@name='city']";
+    private static final String TXT_STATE ="//input[@name='state']";
+    private static final String TXT_PIN ="//input[@name='pinno']";
+    private static final String TXT_TELEPHONE ="//input[@name='telephoneno']";
+    private static final String TXT_EMAIL ="//input[@name='emailid']";
+    private static final String LBL_CUSTOMER_NAME_ERROR_MESSAGE = "//label[@id='message']";
+    private static final String LBL_ADDRESS_ERROR_MESSAGE = "//label[@id='message3']";
+    private static final String LBL_CITY_ERROR_MESSAGE = "//label[@id='message4']";
+    private static final String LBL_STATE_ERROR_MESSAGE = "//label[@id='message5']";
+    private static final String LBL_PIN_ERROR_MESSAGE = "//label[@id='message6']";
+    private static final String LBL_TELEPHONE_ERROR_MESSAGE = "//label[@id='message7']";
+    private static final String LBL_EMAIL_ERROR_MESSAGE = "//label[@id='message9']";
 
     private WebUI webUI;
 
-    @BeforeMethod
+    @BeforeTest
     public void setUp() {
         webUI = new WebUI();
-        webUI.openBrowser(BROWSER, DANTRI_URL);
+        webUI.openBrowser(BROWSER, URL);
     }
 
-    @Test(description = "TC001: Verify title of the page")
-    public void TC001_Verify_title_of_the_page() {
-        String actualTitle = webUI.getTitle();
-        String expectedTitle = "Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí";
-        assertEquals(actualTitle, expectedTitle);
-    }
-
-    @Test(description = "TC002: Verify title of the page")
-    public void TC002_Verify_title_of_the_page() {
-        String expectedTitle = "Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí";
-        assertTrue(webUI.verifyTitle(expectedTitle));
-    }
-
-    @Test(description = "TC003: Verify title of the page after navigating to VnExpress")
-    public void TC003_Verify_title_of_the_page_after_navigation() {
-        webUI.navigateTo(VNEXPRESS_URL);
-        String expectedTitle = "Báo VnExpress - Báo tiếng Việt nhiều người xem nhất";
-        assertTrue(webUI.verifyTitle(expectedTitle));
-    }
-
-    @Test(description = "TC004: Input and Clear text successfully")
-    public void TC004_Input_and_Clear_text_successfully() {
-        webUI.navigateTo(DEMOQA_TEXTBOX_URL);
-        webUI.waitForElementToBeVisible(TXT_FULL_NAME, 10);
-        // Check if the element is displayed and enabled before interacting
-        assertTrue(webUI.isElementDisplayed(TXT_FULL_NAME), "The input field should be displayed");
-        assertTrue(webUI.isElementEnabled(TXT_FULL_NAME), "The input field should be enabled");
-        webUI.sendKeys(TXT_FULL_NAME, "NGUYEN");
-        String actualFullName = webUI.getAttributeValue(TXT_FULL_NAME, "value");
-        assertEquals(actualFullName, "NGUYEN");
+    @Step("Input user id: {0}")
+    public void inputUserId(String userId) {
+        webUI.sendKeys(TXT_USERID, userId);
         webUI.delayInSecond(3);
-        webUI.clearText(TXT_FULL_NAME);
-        actualFullName = webUI.getAttributeValue(TXT_FULL_NAME, "value");
-        assertEquals(actualFullName, "");
     }
 
-    @Test(description = "TC005: Navigate Back and Forward")
-    public void TC005_Navigate_Back_and_Forward() {
-        webUI.navigateTo(VNEXPRESS_URL); // Navigate to VnExpress
-        webUI.back(); // Go back to previous page (Dân trí)
-        String actualTitle = webUI.getTitle();
-        String expectedTitle = "Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí";
-        assertEquals(actualTitle, expectedTitle);
-
-        webUI.forward(); // Navigate forward to VnExpress
-        actualTitle = webUI.getTitle();
-        expectedTitle = "Báo VnExpress - Báo tiếng Việt nhiều người xem nhất";
-        assertEquals(actualTitle, expectedTitle);
-    }
-
-    @Test(description = "TC006: Navigate to DanTri, click the first headline and scroll to the middle of the page")
-    public void TC006_Navigate_Click_And_Scroll() {
-//        webUI.maximizeWindow(); // Maximize browser window
-        webUI.waitForElementToBeVisible(FIRST_TITLE_LOCATOR, 10);
-        // Click the first headline
-        WebElement firstHeadline = webUI.findWebElement(FIRST_TITLE_LOCATOR);
-        firstHeadline.click();
+    @Step("Input password: {0}")
+    public void inputPassword(String password) {
+        webUI.sendKeys(TXT_PASSWORD, password);
         webUI.delayInSecond(3);
+    }
 
-        // Get the page dimensions
-        long[] dimensions = webUI.getPageDimensions();
-        long pageWidth = dimensions[0];
-        long pageHeight = dimensions[1];
+    @Step("Click Login button")
+    public void clickLogin() {
+        webUI.click(BTN_LOGIN);
         webUI.delayInSecond(3);
+    }
 
+    @Step("Login Guru99 with user id '{0}' and password '{1}'")
+    public void login_Guru99_with(String userId, String password) {
+        inputUserId(userId);
+        inputPassword(password);
+        clickLogin();
+    }
 
-        // Verify page content after scrolling
-        WebElement content = webUI.findWebElement("/html/body/main/article/div[3]/p[9]");
-        assertTrue(content.isDisplayed(), "Content should be displayed after scrolling.");
+    @Step("Move to New Customer")
+    public void move_to_New_Customer() {
+        webUI.click(LNK_NEW_CUSTOMER);
+        webUI.delayInSecond(3);
     }
 
 
-    @Test(description = "TC007: Check if element is displayed")
-    public void TC007_Check_if_Element_is_Displayed() {
-        webUI.navigateTo(DEMOQA_TEXTBOX_URL);
-        boolean isDisplayed = webUI.isElementDisplayed(TXT_FULL_NAME);
-        assertTrue(isDisplayed, "The element should be displayed on the page");
-    }
+//    @Step("Input Customer name: {0}")
+//    public void input_Customer_Name(String customerName) {
+//        if(customerName.isEmpty()) {
+//            webUI.sendKeys(TXT_CUSTOMER_NAME, Keys.chord(Keys.TAB));
+//        } else {
+//            webUI.sendKeys(TXT_CUSTOMER_NAME, customerName);
+//        }
+//        webUI.delayInSecond(3);
+//    }
 
-    @Test(description = "TC009: Find element using different locators")
-    public void TC009_Find_Element_Using_Different_Locators() {
-        webUI.navigateTo(DEMOQA_TEXTBOX_URL);
-        WebElement elementById = webUI.findWebElement("id:userName");
-        Assert.assertTrue(elementById.isDisplayed(), "Element should be found using ID locator.");
-
-        WebElement elementByName = webUI.findWebElement("id:userEmail");
-        Assert.assertTrue(elementByName.isDisplayed(), "Element should be found using Name locator.");
-
-        WebElement elementByCss = webUI.findWebElement("css:input#userName");
-        Assert.assertTrue(elementByCss.isDisplayed(), "Element should be found using CSS Selector.");
-
-        WebElement elementByXpath = webUI.findWebElement("xpath://input[@id='userEmail']");
-        Assert.assertTrue(elementByXpath.isDisplayed(), "Element should be found using XPath.");
-    }
-
-    @Test(description = "TC008: Select & Deselect Option By Index")
-    public void TC008_Select_and_Deselect_Option_By_Index() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_SELECTMENU_URL);
-        webUI.scrollToElement("id:selectMenuContainer");
-        Thread.sleep(3000);
-        WebElement dropdownElement = webUI.findWebElement("id:oldSelectMenu");
-        webUI.selectOptionByIndex("id:oldSelectMenu", 2);
-        Thread.sleep(3000);
-        webUI.deselectByIndex("id:oldSelectMenu", 2);
-        Thread.sleep(3000);
-
-        String selectedValue = dropdownElement.getAttribute("value");
-        assertEquals(selectedValue, "2", "The option should not be selected");
-    }
-
-    @Test(description = "TC009: Select & Deselect Option By Value")
-    public void TC009_Select_and_Deselect_Option_By_Value() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_SELECTMENU_URL);
-        webUI.scrollToElement("id:selectMenuContainer");
-        Thread.sleep(3000);
-
-        webUI.selectOptionByValue("id:oldSelectMenu", "3");
-        Thread.sleep(3000);
-        webUI.deselectByValue("id:oldSelectMenu", "3");
-        Thread.sleep(3000);
-
-        WebElement dropdownElement = webUI.findWebElement("id:oldSelectMenu");
-        String selectedValue = dropdownElement.getAttribute("value");
-        assertEquals(selectedValue, "3", "The option should not be selected");
-    }
-
-    @Test(description = "TC010: Select & Deselect Option By Visible Text")
-    public void TC010_Select_and_Deselect_Option_By_Visible_Text() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_SELECTMENU_URL);
-        webUI.scrollToElement("id:selectMenuContainer");
-        Thread.sleep(3000);
-
-        webUI.selectByVisibleText("id:oldSelectMenu", "Purple");
-        Thread.sleep(3000);
-        webUI.deselectByVisibleText("id:oldSelectMenu", "Purple");
-        Thread.sleep(3000);
-
-        WebElement dropdownElement = webUI.findWebElement("id:oldSelectMenu");
-        String selectedValue = dropdownElement.getAttribute("value");
-        assertEquals(selectedValue, "4", "The option should not be selected");
-    }
-
-    @Test(description = "TC011: Multi-select Options by Index, Value, and Visible Text")
-    public void TC011_Multi_Select_Options() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_SELECTMENU_URL);
-        webUI.scrollToElement("xpath://b[text()='Standard Multi Select']");
-        Thread.sleep(3000);
-
-        // 1. Select multiple options by index
-        webUI.selectMultipleByIndex("id:cars", Arrays.asList(0, 1)); // Select multiple options by index (0: Volvo, 1: Saab)
-        Thread.sleep(3000); // Wait to ensure the selection is effective
-
-        // Verify selected options by index
-        List<WebElement> selectedOptions = webUI.getSelectedOptions("id:cars");
-        assertTrue(selectedOptions.stream().anyMatch(option -> "volvo".equals(option.getAttribute("value"))), "Option with value 'volvo' should be selected");
-        assertTrue(selectedOptions.stream().anyMatch(option -> "saab".equals(option.getAttribute("value"))), "Option with value 'saab' should be selected");
-
-        // 2. Deselect previously selected options (if necessary) and select multiple options by value
-        webUI.deselectAll("id:cars"); // Deselect all currently selected options
-        webUI.selectMultipleByValue("id:cars", Arrays.asList("saab", "opel")); // Select options by value
-        Thread.sleep(3000); // Wait to ensure the selection is effective
-
-        // Verify selected options by value
-        selectedOptions = webUI.getSelectedOptions("id:cars");
-        assertTrue(selectedOptions.stream().anyMatch(option -> "saab".equals(option.getAttribute("value"))), "Option with value 'saab' should be selected");
-        assertTrue(selectedOptions.stream().anyMatch(option -> "opel".equals(option.getAttribute("value"))), "Option with value 'opel' should be selected");
-
-        // 3. Deselect previously selected options (if necessary) and select multiple options by visible text
-        webUI.deselectAll("id:cars"); // Deselect all currently selected options
-        webUI.selectMultipleByVisibleText("id:cars", Arrays.asList("Opel", "Audi")); // Select options by visible text
-        Thread.sleep(3000); // Wait to ensure the selection is effective
-
-        // Verify selected options by visible text
-        selectedOptions = webUI.getSelectedOptions("id:cars");
-        assertTrue(selectedOptions.stream().anyMatch(option -> "Opel".equals(option.getText())), "Option with visible text 'Opel' should be selected");
-        assertTrue(selectedOptions.stream().anyMatch(option -> "Audi".equals(option.getText())), "Option with visible text 'Audi' should be selected");
+    @Step("Input Customer name: {0}")
+    public void input_Customer_Name(String customerName) {
+        webUI.clearText(TXT_CUSTOMER_NAME); // Xoá nội dung trước khi nhập dữ liệu mới
+        if(customerName.isEmpty()) {
+            webUI.sendKeys(TXT_CUSTOMER_NAME, Keys.chord(Keys.TAB));
+        } else {
+            webUI.sendKeys(TXT_CUSTOMER_NAME, customerName);
+        }
+        webUI.delayInSecond(3);
     }
 
 
-    @Test(description = "TC012: Switch to Window by Index")
-    public void TC012_Switch_To_Window_By_Index() throws InterruptedException {
-        webUI.executeJavaScript("window.open('" + VNEXPRESS_URL + "', '_blank');");
-        Thread.sleep(3000);
+    @Step("Input Address: {0}")
+    public void input_Address(String Address) {
+        if(Address.isEmpty()) {
+            webUI.sendKeys(TXT_ADDRESS, Keys.chord(Keys.TAB));
+        } else {
+            webUI.sendKeys(TXT_ADDRESS, Address);
+        }
+        webUI.delayInSecond(3);
+    }
 
-        // Open a new tab and navigate to DEMOQA_TEXTBOX_URL
-        webUI.executeJavaScript("window.open('" + DEMOQA_TEXTBOX_URL + "', '_blank');");
-        Thread.sleep(3000);
+    @Step("Input City: {0}")
+    public void input_City(String City) {
+        webUI.clearText(TXT_CITY);
+        if(City.isEmpty()) {
+            webUI.sendKeys(TXT_CITY, Keys.chord(Keys.TAB));
+        } else {
+            webUI.sendKeys(TXT_CITY, City);
+        }
+        webUI.delayInSecond(3);
+    }
 
-        webUI.switchToWindowByIndex(1);
-        Thread.sleep(3000);
-        String actualTitle = webUI.getTitle();
-        String expectedTitle = "Báo VnExpress - Báo tiếng Việt nhiều người xem nhất";
-        assertEquals(actualTitle, expectedTitle);
+    @Step("Input State: {0}")
+    public void input_State(String State) {
+        webUI.clearText(TXT_STATE);
+        if(State.isEmpty()) {
+            webUI.sendKeys(TXT_STATE, Keys.chord(Keys.TAB));
+        } else {
+            webUI.sendKeys(TXT_STATE, State);
+        }
+        webUI.delayInSecond(3);
+    }
 
+    @Step("Input PIN: {0}")
+    public void input_PIN(String Pin) {
+        webUI.clearText(TXT_PIN);
+        if(Pin.isEmpty()) {
+            webUI.sendKeys(TXT_PIN, Keys.chord(Keys.TAB));
+        } else {
+            webUI.sendKeys(TXT_PIN, Pin);
+        }
+        webUI.delayInSecond(3);
+    }
 
-        webUI.closeWindowByIndex(2);
-        Thread.sleep(3000);
-        Assert.assertFalse(webUI.isWindowOpen(DEMOQA_TEXTBOX_URL), "The window with URL '" + DEMOQA_TEXTBOX_URL + "' should be closed.");
+    @Step("Input State: {0}")
+    public void input_TELEPHONE(String Telephone) {
+        webUI.clearText(TXT_TELEPHONE);
+        if(Telephone.isEmpty()) {
+            webUI.sendKeys(TXT_TELEPHONE, Keys.chord(Keys.TAB));
+        } else {
+            webUI.sendKeys(TXT_TELEPHONE, Telephone);
+        }
+        webUI.delayInSecond(3);
     }
 
 
-    @Test(description = "TC013: Switch & Close Window by Title")
-    public void TC013_Switch_and_Close_Window_By_Title() throws InterruptedException {
-        webUI.executeJavaScript("window.open('" + VNEXPRESS_URL + "', '_blank');");
-        Thread.sleep(3000);
-
-        webUI.executeJavaScript("window.open('" + DEMOQA_TEXTBOX_URL + "', '_blank');");
-        Thread.sleep(3000);
-
-        webUI.switchToWindowByTitle("Báo VnExpress - Báo tiếng Việt nhiều người xem nhất");
-        Thread.sleep(3000);
-        String actualTitle = webUI.getTitle();
-        String expectedTitle = "Báo VnExpress - Báo tiếng Việt nhiều người xem nhất";
-        assertEquals(actualTitle, expectedTitle);
-
-        webUI.closeWindowByTitle("DEMOQA");
-        Thread.sleep(3000);
-        Assert.assertFalse(webUI.isWindowOpen(DEMOQA_TEXTBOX_URL), "The window with title '" + DEMOQA_TEXTBOX_URL + "' should be closed.");
+    @Step("Input EMAIL: {0}")
+    public void input_EMAIL(String Email) {
+        webUI.clearText(TXT_EMAIL);
+        if(Email.isEmpty()) {
+            webUI.sendKeys(TXT_EMAIL, Keys.chord(Keys.TAB));
+        } else {
+            webUI.sendKeys(TXT_EMAIL, Email);
+        }
+        webUI.delayInSecond(3);
     }
 
-    @Test(description = "TC014: Switch & Close to Window by URL")
-    public void TC014_Switch_and_Close_Window_By_Url() throws InterruptedException {
-        webUI.executeJavaScript("window.open('" + VNEXPRESS_URL + "', '_blank');");
-        Thread.sleep(3000);
-
-        webUI.executeJavaScript("window.open('" + DEMOQA_TEXTBOX_URL + "', '_blank');");
-        Thread.sleep(3000);
-
-        // Switch to the new tab by URL
-        webUI.switchToWindowByUrl(VNEXPRESS_URL);
-        String actualTitle = webUI.getTitle();
-        String expectedTitle = "Báo VnExpress - Báo tiếng Việt nhiều người xem nhất";
-        assertEquals(actualTitle, expectedTitle);
-
-        webUI.closeWindowByUrl(DEMOQA_TEXTBOX_URL);
-        Thread.sleep(3000);
-        Assert.assertFalse(webUI.isWindowOpen(DEMOQA_TEXTBOX_URL), "The window with title '" + DEMOQA_TEXTBOX_URL + "' should be closed.");
+    @Step("Should show customer name error message: {0}")
+    public boolean should_show_customer_name_error_message(String errorMessage) {
+        return webUI.verifyElementText(LBL_CUSTOMER_NAME_ERROR_MESSAGE, errorMessage);
     }
 
-    @Test(description = "TC015: Accept Alert")
-    public void TC015_Accept_Alert() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_ALERT_URL);
-        Thread.sleep(3000);
-        webUI.scrollToElement("id:confirmButton");
-        Thread.sleep(3000);
-
-        WebElement alertButton = webUI.findWebElement("id:confirmButton");
-        alertButton.click();
-        Thread.sleep(3000);
-
-        webUI.acceptAlert();
-        Thread.sleep(2000);
-
-        // Verify the result text that appears after alert acceptance (if any)
-        WebElement resultMessage = webUI.findWebElement("id:confirmResult");
-        String actualMessage = resultMessage.getText();
-        String expectedMessage = "You selected Ok";
-        assertEquals(actualMessage, expectedMessage, "Alert acceptance should trigger a specific message.");
+    @Step("An error message address is shown: {0}")
+    public boolean An_error_message_address_is_shown (String errorMessage) {
+        return  webUI.verifyElementText(LBL_ADDRESS_ERROR_MESSAGE, errorMessage);
     }
 
-    @Test(description = "TC016: Dismiss Alert")
-    public void TC016_Dismiss_Alert() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_ALERT_URL);
-        Thread.sleep(3000);
-        webUI.scrollToElement("id:confirmButton");
-        Thread.sleep(3000);
-
-        WebElement alertButton = webUI.findWebElement("id:confirmButton");
-        alertButton.click();
-        Thread.sleep(3000);
-
-        webUI.dismissAlert();
-        Thread.sleep(2000);
-
-        // Verify the result text that appears after alert acceptance (if any)
-        WebElement resultMessage = webUI.findWebElement("id:confirmResult");
-        String actualMessage = resultMessage.getText();
-        String expectedMessage = "You selected Cancel";
-        assertEquals(actualMessage, expectedMessage, "Alert acceptance should trigger a specific message.");
+    @Step("An error message city is shown: {0}")
+    public boolean An_error_message_city_is_shown (String errorMessage) {
+        return  webUI.verifyElementText(LBL_CITY_ERROR_MESSAGE, errorMessage);
     }
 
-    @Test(description = "TC017: Get Alert Text")
-    public void TC017_Get_Alert_Text() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_ALERT_URL);
-        Thread.sleep(3000);
-        webUI.scrollToElement("id:promtButton");
-        Thread.sleep(3000);
-
-        WebElement promtButton = webUI.findWebElement("id:promtButton");
-        promtButton.click();
-        Thread.sleep(3000);
-
-        // Get text from the alert
-        String alertText = webUI.getAlertText();
-        Assert.assertNotNull(alertText, "Alert text should not be null");
-        Assert.assertEquals(alertText, "Please enter your name", "Alert text is not as expected");
+    @Step("An error message city is shown: {0}")
+    public boolean An_error_message_state_is_shown (String errorMessage) {
+        return  webUI.verifyElementText(LBL_STATE_ERROR_MESSAGE, errorMessage);
     }
 
-    @Test(description = "TC018: Send Keys to Alert")
-    public void TC018_Send_Keys_To_Alert() throws InterruptedException {
-        webUI.navigateTo(DEMOQA_ALERT_URL);
-        Thread.sleep(3000);
-        webUI.scrollToElement("id:confirmButton");
-        Thread.sleep(3000);
-
-        WebElement promtButton = webUI.findWebElement("id:promtButton");
-        promtButton.click();
-        Thread.sleep(3000);
-
-        webUI.sendKeysToAlert("hello");
-        Thread.sleep(5000);
-        webUI.acceptAlert();
-        Thread.sleep(5000);
-
-        WebElement resultElement = webUI.findWebElement("id:promptResult");
-        String resultText = resultElement.getText();
-        String expectedText = "You entered hello";
-        Assert.assertEquals(resultText, expectedText, "The result text should be 'You entered hello'");
+    @Step("An error message city is shown: {0}")
+    public boolean An_error_message_pin_is_shown (String errorMessage) {
+        return  webUI.verifyElementText(LBL_PIN_ERROR_MESSAGE, errorMessage);
     }
 
-    @Test(description = "TC019: Switch to an iframe and interact with elements inside it")
-    public void TC019_Switch_To_Iframe_And_Interact() throws InterruptedException {
-        webUI.navigateTo(GURU99_URL);
-        Thread.sleep(3000);
+    @Step("An error message city is shown: {0}")
+    public boolean An_error_message_telephone_is_shown (String errorMessage) {
+        return  webUI.verifyElementText(LBL_TELEPHONE_ERROR_MESSAGE, errorMessage);
+    }
 
-        webUI.scrollToElement("xpath://h3[text()='iFrame will not show if you have adBlock extension enabled']");
-        Thread.sleep(3000);
+    @Step("An error message city is shown: {0}")
+    public boolean An_error_message_email_is_shown (String errorMessage) {
+        return  webUI.verifyElementText(LBL_EMAIL_ERROR_MESSAGE, errorMessage);
+    }
 
-        webUI.switchtoFrame("id:a077aa5e");
-        Thread.sleep(5000);
+    @Test(description = "NC001: Name cannot be empty")
+    public void NC001_Name_cannot_be_empty() {
+        login_Guru99_with(USER_ID, USER_PASSWORD);
+        move_to_New_Customer();
+        input_Customer_Name("");
+        assertTrue(should_show_customer_name_error_message("Customer name must not be blank"));
+    }
 
-        WebElement iframeElement = webUI.findWebElement("xpath://html/body/a/img");
-        Assert.assertNotNull(iframeElement, "Failed to find the element inside the iframe.");
-        iframeElement.click();
-        Thread.sleep(3000);
+    @Test(description = "NC002: Name cannot be numeric")
+    public void NC002_Name_cannot_be_numeric() {
+        input_Customer_Name("1234");
+        assertTrue(should_show_customer_name_error_message("Numbers are not allowed"));
+    }
+
+    @Test(description = "NC003: Name cannot have special characters")
+    public void NC003_Name_cannot_have_special_characters() {
+        input_Customer_Name("@s123");
+        assertTrue(should_show_customer_name_error_message("Special characters are not allowed"));
+    }
+
+    @Test(description = "NC004: Name cannot have first character as blank space")
+    public void NC004_Name_cannot_have_first_characters_as_blank_space() {
+        input_Customer_Name(" Nguyen");
+        assertTrue(should_show_customer_name_error_message("First character can not have space"));
+    }
+
+    @Test(description = "NC005: Address cannot be empty")
+    public void NC005_Address_cannot_be_empty() {
+        webUI.scrollIntoView("//td[normalize-space()='Address']");
+        input_Address("");
+        assertTrue(An_error_message_address_is_shown("Address Field must not be blank"));
+    }
+
+    @Test(description = "NC006: Address cannot have first blank space")
+    public void NC006_Address_cannot_have_first_blank_space() {
+        webUI.scrollIntoView("//td[normalize-space()='Address']");
+        input_Address(" Address");
+        assertTrue(An_error_message_address_is_shown("First character can not have space"));
+    }
+
+    @Test(description = "NC008: City cannot be empty")
+    public void NC008_City_cannot_be_empty() {
+        webUI.scrollIntoView("//td[normalize-space()='City']");
+        input_City("");
+        assertTrue(An_error_message_city_is_shown("City Field must not be blank"));
+    }
+
+    @Test(description = "NC009: City cannot be numeric")
+    public void NC009_City_cannot_be_numeric() {
+        webUI.scrollIntoView("//td[normalize-space()='City']");
+        input_City("city123");
+        assertTrue(An_error_message_city_is_shown("Numbers are not allowed"));
+    }
+
+    @Test(description = "NC010: City cannot have special characters")
+    public void NC010_City_cannot_have_special_characters() {
+        webUI.scrollIntoView("//td[normalize-space()='City']");
+        input_City("City!@#");
+        assertTrue(An_error_message_city_is_shown("Special characters are not allowed"));
+    }
+
+    @Test(description = "NC011: City cannot have first blank space")
+    public void NC011_City_cannot_have_first_blank_space() {
+        webUI.scrollIntoView("//td[normalize-space()='City']");
+        input_City(" City");
+        assertTrue(An_error_message_city_is_shown("First character can not have space"));
+    }
+
+    @Test(description = "NC012: State cannot be empty")
+    public void NC012_State_cannot_be_empty() {
+        webUI.scrollIntoView("//td[normalize-space()='State']");
+        input_State("");
+        assertTrue(An_error_message_state_is_shown("State must not be blank"));
+    }
+
+    @Test(description = "NC013: State cannot be numeric")
+    public void NC013_State_cannot_be_numeric() {
+        webUI.scrollIntoView("//td[normalize-space()='State']");
+        input_State("state123");
+        assertTrue(An_error_message_state_is_shown("Numbers are not allowed"));
+    }
+
+    @Test(description = "NC014: State cannot have special characters")
+    public void NC014_State_cannot_have_special_characters() {
+        webUI.scrollIntoView("//td[normalize-space()='State']");
+        input_State("State!@#");
+        assertTrue(An_error_message_state_is_shown("Special characters are not allowed"));
+    }
+
+    @Test(description = "NC015: City cannot have first blank space")
+    public void NC015_City_cannot_have_first_blank_space() {
+        webUI.scrollIntoView("//td[normalize-space()='State']");
+        input_State(" State");
+        assertTrue(An_error_message_state_is_shown("First character can not have space"));
+    }
+
+    @Test(description = "NC016: PIN cannot be numeric")
+    public void NC016_Name_cannot_be_numeric() {
+        input_PIN("1234PIN");
+        assertTrue(An_error_message_pin_is_shown("Characters are not allowed"));
+    }
+
+    @Test(description = "NC017: PIN cannot be empty")
+    public void NC017_Name_cannot_be_empty() {
+        webUI.scrollIntoView("//td[normalize-space()='PIN']");
+        input_PIN("");
+        assertTrue(An_error_message_pin_is_shown("PIN Code must not be blank"));
+    }
+
+    @Test(description = "NC018: PIN must have 6 digits")
+    public void NC018_PIN_must_have_6_digits() {
+        webUI.scrollIntoView("//td[normalize-space()='PIN']");
+        input_PIN("");
+        assertTrue(An_error_message_pin_is_shown("PIN Code must not be blank"));
+    }
+
+    @Test(description = "NC019: PIN cannot have special character")
+    public void NC019_PIN_cannot_have_special_character() {
+        webUI.scrollIntoView("//td[normalize-space()='PIN']");
+        input_PIN("123!@#");
+        assertTrue(An_error_message_pin_is_shown("Special characters are not allowed"));
+    }
+
+    @Test(description = "NC020: PIN cannot have first blank space")
+    public void NC020_PIN_cannot_have_first_blank_space() {
+        webUI.scrollIntoView("//td[normalize-space()='PIN']");
+        input_PIN(" 123");
+        assertTrue(An_error_message_pin_is_shown("First character can not have space"));
+    }
+
+    @Test(description = "NC021: PIN cannot have blank space")
+    public void NC021_PIN_cannot_have_blank_space() {
+        webUI.scrollIntoView("//td[normalize-space()='PIN']");
+        input_PIN("12 3");
+        assertTrue(An_error_message_pin_is_shown("Characters are not allowed"));
+    }
+
+    @Test(description = "NC022: Telephone cannot be empty")
+    public void NC022_Telephone_cannot_be_empty() {
+        webUI.scrollIntoView("//td[normalize-space()='Mobile Number']");
+        input_TELEPHONE("");
+        assertTrue(An_error_message_telephone_is_shown("Mobile no must not be blank"));
+    }
+
+    @Test(description = "NC023: Telephone cannot have first characters blank space")
+    public void NC023_Telephone_cannot_have_first_characters_blank_space() {
+        webUI.scrollIntoView("//td[normalize-space()='Mobile Number']");
+        input_TELEPHONE(" 099");
+        assertTrue(An_error_message_telephone_is_shown("First character can not have space"));
+    }
+
+    @Test(description = "NC024: Telephone cannot have blank space")
+    public void NC024_Telephone_cannot_have_blank_space() {
+        webUI.scrollIntoView("//td[normalize-space()='Mobile Number']");
+        input_TELEPHONE("09 9");
+        assertTrue(An_error_message_telephone_is_shown("Characters are not allowed"));
+    }
+
+    @Test(description = "NC025: Telephone cannot have special character")
+    public void NC025_Telephone_cannot_have_special_character() {
+        webUI.scrollIntoView("//td[normalize-space()='Mobile Number']");
+        input_TELEPHONE("099!@#");
+        assertTrue(An_error_message_telephone_is_shown("Special characters are not allowed"));
+    }
+
+    @Test(description = "NC026: Email cannot be empty")
+    public void NC026_Email_cannot_be_empty() {
+        webUI.scrollIntoView("//td[normalize-space()='E-mail']");
+        input_EMAIL("");
+        assertTrue(An_error_message_email_is_shown("Email-ID must not be blank"));
+    }
+
+    @Test(description = "NC027: Email must be in correct format ")
+    public void NC027_Email_must_be_in_correct_format () {
+        webUI.scrollIntoView("//td[normalize-space()='E-mail']");
+        input_EMAIL("guru99gmail.com");
+        assertTrue(An_error_message_email_is_shown("Email-ID is not valid"));
+    }
+
+    @Test(description = "NC029: Email cannot have space ")
+    public void NC029_Email_cannot_have_space () {
+        webUI.scrollIntoView("//td[normalize-space()='E-mail']");
+        input_EMAIL("Guru 99@");
+        assertTrue(An_error_message_email_is_shown("Email-ID is not valid"));
+    }
+
+    @Test(description = "NC030: Verify Field Labels")
+    public void NC030_Verify_Field_Labels() {
+        // Xác minh trường "Customer Name"
+//        webUI.scrollToElementAtCenterOfPage("//td[normalize-space()='Password']");
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='Customer Name']", "Customer Name"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='Date of Birth']", "Date of Birth"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='Address']", "Address"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='City']", "City"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='State']", "State"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='PIN']", "PIN"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='Mobile Number']", "Mobile Number"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='E-mail']", "E-mail"));
+
+        assertTrue(webUI.verifyElementText("//td[normalize-space()='Password']", "Password"));
+
+        System.out.println("All field labels match the SRS documentation.");
     }
 
 
-    @AfterMethod
+
+
+    @AfterTest
     public void tearDown() {
         webUI.closeBrowser();
     }

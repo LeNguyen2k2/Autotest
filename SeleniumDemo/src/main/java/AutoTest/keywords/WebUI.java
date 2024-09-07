@@ -1,10 +1,16 @@
 package Autotest.keywords;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,7 +25,38 @@ import java.util.Set;
 public class WebUI {
 
     private static final Logger logger = LoggerFactory.getLogger(WebUI.class);
+    private final int DEFAUT_TIMEOUT = 60;
     private WebDriver driver;
+
+//    public void openBrowser(String browser, String... url) {
+//        try {
+//            logger.info("Opening browser: {}", browser);
+//            switch (browser.toUpperCase()) {
+//                case "CHROME":
+//                    ChromeOptions chromeOptions = new ChromeOptions();
+//                    chromeOptions.addArguments("--remote-allow-origins=*");
+//                    driver = new ChromeDriver(chromeOptions);
+//                    break;
+//                case "EDGE": // Cập nhật cho Edge
+//                    EdgeOptions edgeOptions = new EdgeOptions();
+//                    edgeOptions.addArguments("--remote-allow-origins=*");
+//                    driver = new EdgeDriver(edgeOptions);
+//                    break;
+//                default:
+//                    throw new IllegalArgumentException("Browser not supported: " + browser);
+//            }
+//            logger.info("Opened browser '{}' successfully", browser);
+//
+//            if (url.length > 0) {
+//                String rawUrl = url[0];
+//                logger.info("Navigating to {}", rawUrl);
+//                driver.get(rawUrl);
+//            }
+//        } catch (Exception e) {
+//            logger.error("Failed to open browser '{}'. Root cause: {}", browser, e.getMessage());
+//        }
+//        driver.manage().window().maximize();
+//    }
 
     public void openBrowser(String browser, String... url) {
         try {
@@ -30,11 +67,9 @@ public class WebUI {
                     chromeOptions.addArguments("--remote-allow-origins=*");
                     driver = new ChromeDriver(chromeOptions);
                     break;
-                case "EDGE": // Cập nhật cho Edge
-                    EdgeOptions edgeOptions = new EdgeOptions();
-                    edgeOptions.addArguments("--remote-allow-origins=*");
-                    driver = new EdgeDriver(edgeOptions);
-                    break;
+                case "FIREFOX": // Updated for Firefox
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    driver = new FirefoxDriver(firefoxOptions);
                 default:
                     throw new IllegalArgumentException("Browser not supported: " + browser);
             }
@@ -50,7 +85,6 @@ public class WebUI {
         }
         driver.manage().window().maximize();
     }
-
 
     public String getTitle() {
         String actualTitle = null;
@@ -101,52 +135,139 @@ public class WebUI {
         }
     }
 
-    public WebElement findWebElement(String locator) {
-        WebElement element = null;
-        try {
-            logger.info("Finding element with locator '{}'", locator);
+//    public WebElement findWebElement(String locator) {
+//        WebElement element = null;
+//        try {
+//            logger.info("Finding element with locator '{}'", locator);
+//
+//            String[] locatorParts = locator.split(":", 2);
+//            String type = locatorParts[0];
+//            String value = locatorParts[1];
+//
+//            switch (type.toLowerCase()) {
+//                case "id":
+//                    element = driver.findElement(By.id(value));
+//                    break;
+//                case "name":
+//                    element = driver.findElement(By.name(value));
+//                    break;
+//                case "css":
+//                case "cssselector":
+//                    element = driver.findElement(By.cssSelector(value));
+//                    break;
+//                case "xpath":
+//                    element = driver.findElement(By.xpath(value));
+//                    break;
+//                case "classname":
+//                    element = driver.findElement(By.className(value));
+//                    break;
+//                case "tagname":
+//                    element = driver.findElement(By.tagName(value));
+//                    break;
+//                case "linktext":
+//                    element = driver.findElement(By.linkText(value));
+//                    break;
+//                case "partiallinktext":
+//                    element = driver.findElement(By.partialLinkText(value));
+//                    break;
+//                default:
+//                    throw new IllegalArgumentException("Invalid locator type: " + type);
+//            }
+//
+//            logger.info("Found element with locator '{}'", locator);
+//        } catch (Exception e) {
+//            logger.error("Failed to find element with locator '{}'. Root cause: {}", locator, e.getMessage());
+//        }
+//        return element;
+//    }
 
-            String[] locatorParts = locator.split(":", 2);
-            String type = locatorParts[0];
-            String value = locatorParts[1];
 
-            switch (type.toLowerCase()) {
-                case "id":
-                    element = driver.findElement(By.id(value));
-                    break;
-                case "name":
-                    element = driver.findElement(By.name(value));
-                    break;
-                case "css":
-                case "cssselector":
-                    element = driver.findElement(By.cssSelector(value));
-                    break;
-                case "xpath":
-                    element = driver.findElement(By.xpath(value));
-                    break;
-                case "classname":
-                    element = driver.findElement(By.className(value));
-                    break;
-                case "tagname":
-                    element = driver.findElement(By.tagName(value));
-                    break;
-                case "linktext":
-                    element = driver.findElement(By.linkText(value));
-                    break;
-                case "partiallinktext":
-                    element = driver.findElement(By.partialLinkText(value));
-                    break;
-                default:
-                    throw new IllegalArgumentException("Invalid locator type: " + type);
-            }
 
-            logger.info("Found element with locator '{}'", locator);
-        } catch (Exception e) {
-            logger.error("Failed to find element with locator '{}'. Root cause: {}", locator, e.getMessage());
-        }
-        return element;
+
+    private By findBy(String locator) {
+        String prefix = StringUtils.substringBefore(locator, ":");
+        String locatorValue = StringUtils.substringAfter(locator, ":");
+        return switch (prefix.toLowerCase()) {
+            case "xpath" -> By.xpath(locatorValue);
+            case "css" -> By.cssSelector(locatorValue);
+            case "id" -> By.id(locatorValue);
+            case "link" -> By.linkText(locatorValue);
+            case "name" -> By.name(locatorValue);
+            case "partialLinkText" -> By.partialLinkText(locatorValue);
+            case "tag" -> By.tagName(locatorValue);
+            default -> By.xpath(locator);
+        };
     }
 
+    public WebElement findWebElement(String locator) {
+        WebElement we = null;
+        long startTime = 0;
+        long endTime = 0;
+        double totalTime = 0;
+//    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        try {
+            logger.info("Finding web element located by '{}'", locator);
+            startTime = System.currentTimeMillis();
+//      Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(30))
+//          .pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
+////      we = driver.findElement(By.xpath(locator)); // driver find element by xpath '//div'
+//      we = wait.until(new Function<WebDriver, WebElement>() {
+//        @Override
+//        public WebElement apply(WebDriver webDriver) {
+//          return webDriver.findElement(By.xpath(locator));
+//        }
+//      });
+
+            // Explicitly wait
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAUT_TIMEOUT));
+            we = wait.until(ExpectedConditions.presenceOfElementLocated(findBy(locator)));
+            endTime = System.currentTimeMillis();
+            logger.info("Found 1 web element located by '{}'", locator);
+        } catch (Exception e) {
+            endTime = System.currentTimeMillis();
+            logger.error("Failed to find web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+        totalTime = (double) (endTime - startTime) / 1000;
+        logger.info("Total time: {}", totalTime);
+        return we;
+    }
+
+    public WebElement findWebElement(By by) {
+        WebElement we = null;
+        long startTime = 0;
+        long endTime = 0;
+        double totalTime = 0;
+        try {
+            logger.info("Finding web element located by '{}'", by);
+            startTime = System.currentTimeMillis();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAUT_TIMEOUT));
+            we = wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            endTime = System.currentTimeMillis();
+            logger.info("Found 1 web element located by '{}'", by);
+        } catch (Exception e) {
+            endTime = System.currentTimeMillis();
+            logger.error("Failed to find web element located by '{}'. Root cause: {}", by,
+                    e.getMessage());
+        }
+        totalTime = (double) (endTime - startTime) / 1000;
+        logger.info("Total time: {}", totalTime);
+        return we;
+    }
+
+    public List<WebElement> findWebElements(String locator) {
+        List<WebElement> wes = null;
+        try {
+            logger.info("Finding element with locator '{}'", locator);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAUT_TIMEOUT));
+            wes = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(locator)));
+            logger.info("Found '{}' element(s) with locator '{}'", wes.size(), locator);
+        } catch (Exception e) {
+            logger.error("Failed to find element with locator '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+        return wes;
+    }
 
     public void sendKeys(String locator, String text) {
         WebElement we = findWebElement(locator);
@@ -170,15 +291,6 @@ public class WebUI {
         }
     }
 
-    public long[] getPageDimensions() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        Long pageWidth = (Long) js.executeScript("return document.body.scrollWidth");
-        Long pageHeight = (Long) js.executeScript("return document.body.scrollHeight");
-
-        js.executeScript("window.scrollTo(0, arguments[0] / 2);", pageHeight);
-
-        return new long[]{pageWidth, pageHeight};
-    }
 
     public void delayInSecond(int seconds) {
         try {
@@ -202,42 +314,7 @@ public class WebUI {
         return actualAttributeValue;
     }
 
-    public void back() {
-        try {
-            logger.info("Navigating back");
-            driver.navigate().back();
-            logger.info("Navigated back successfully");
-        } catch (Exception e) {
-            logger.error("Failed to navigate back. Root cause: {}", e.getMessage());
-        }
-    }
 
-    public void forward() {
-        try {
-            logger.info("Navigating forward");
-            driver.navigate().forward();
-            logger.info("Navigated forward successfully");
-        } catch (Exception e) {
-            logger.error("Failed to navigate forward. Root cause: {}", e.getMessage());
-        }
-    }
-
-    public boolean isElementDisplayed(String locator) {
-        WebElement element = findWebElement(locator);
-        boolean isDisplayed = false;
-        try {
-            logger.info("Checking if element with locator '{}' is displayed", locator);
-            isDisplayed = element.isDisplayed();
-            logger.info("Element with locator '{}' is displayed: {}", locator, isDisplayed);
-        } catch (Exception e) {
-            logger.error("Failed to check if element with locator '{}' is displayed. Root cause: {}", locator, e.getMessage());
-        }
-        return isDisplayed;
-    }
-
-    public boolean isElementEnabled(String locator) {
-        return driver.findElement(By.xpath(locator)).isEnabled();
-    }
 
     public void waitForElementToBeVisible(String locator, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
@@ -613,6 +690,185 @@ public class WebUI {
         } catch (Exception e) {
             logger.error("Failed to scroll to element located by '{}'. Root cause: {}", locator, e.getMessage());
         }
+    }
+
+    public void click(String locator) {
+        WebElement we = findWebElement(locator);
+        try {
+            scrollToElementAtCenterOfPage(locator);
+            logger.info("Clicking web element located by '{}'", locator);
+            we.click();
+            logger.info("Web element located by '{}' is clicked", locator);
+        } catch (Exception e) {
+            logger.error("Failed to click web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void leftClick(String locator) {
+        try {
+            logger.info("Left clicking on web element located by '{}'", locator);
+            Actions actions = new Actions(driver);
+            actions.moveToElement(findWebElement(locator)).click().build().perform();
+            logger.info("Left clicked on web element located by '{}' successfully", locator);
+        } catch (Exception e) {
+            logger.error("Failed to Left click on web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void rightClick(String locator) {
+        try {
+            logger.info("Right clicking on web element located by '{}'", locator);
+            Actions actions = new Actions(driver);
+            actions.moveToElement(findWebElement(locator)).contextClick().build().perform();
+            logger.info("Right clicked on web element located by '{}' successfully", locator);
+        } catch (Exception e) {
+            logger.error("Failed to right click on web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void mouseOver(String locator) {
+        try {
+            logger.info("Mouse overing on web element located by '{}'", locator);
+            Actions actions = new Actions(driver);
+            actions.moveToElement(findWebElement(locator)).build().perform();
+            logger.info("Mouse overed on web element located by '{}' successfully", locator);
+        } catch (Exception e) {
+            logger.error("Failed to mouse over on web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void dragAndDrop(String sourceLocator, String targetLocator) {
+        try {
+            logger.info(
+                    "Dragging source web element located by '{}' to target web element located by '{}'",
+                    sourceLocator, targetLocator);
+            Actions actions = new Actions(driver);
+            actions.dragAndDrop(findWebElement(sourceLocator), findWebElement(targetLocator)).build()
+                    .perform();
+            logger.info(
+                    "Dropped source web element located by '{}' to target web element located by '{}' successfully",
+                    sourceLocator, targetLocator);
+        } catch (Exception e) {
+            logger.error(
+                    "Failed to drag and drop source web element located by '{}' to target web element located by '{}'. Root cause: {}",
+                    sourceLocator, targetLocator, e.getMessage());
+        }
+    }
+
+    public void copy(String locator) {
+        try {
+            logger.info("Copying text of web element located by '{}'", locator);
+            Actions actions = new Actions(driver);
+            actions.moveToElement(findWebElement(locator)).click()
+                    .sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.CONTROL, "c")).build().perform();
+            logger.info("Copied text of web element located by '{}' successfully", locator);
+        } catch (Exception e) {
+            logger.error("Failed to copy text of web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void enhancedClick(String locator) {
+        WebElement we = findWebElement(locator);
+        try {
+            logger.info("Clicking web element located by '{}'", locator);
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", we);
+            logger.info("Web element located by '{}' is clicked", locator);
+        } catch (Exception e) {
+            logger.error("Failed to click web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void scrollIntoView(String locator) {
+        WebElement we = findWebElement(locator);
+        try {
+            logger.info("Scrolling to web element located by '{}'", locator);
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView();", we);
+            logger.info("Scrolled to web element located by '{}' successfully", locator);
+        } catch (Exception e) {
+            logger.error("Failed to scroll to web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void scrollToElementAtCenterOfPage(String locator) {
+        WebElement element = findWebElement(locator);
+        try {
+            logger.info("Scrolling to web element located by '{}' at the center of page", locator);
+            int x = element.getLocation().getX();
+            int y = element.getLocation().getY();
+            int heightOfBrowser = driver.manage().window().getSize().getHeight();
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(" + x + "," + (y - heightOfBrowser / 2) + ");");
+            logger.info("Scrolled to web element located by '{}' at the center of page successfully", locator);
+        } catch (Exception e) {
+            logger.error("Failed to scroll to web element located by '{}' at the center of page. Root cause: {}", locator,
+                    e.getMessage());
+        }
+    }
+
+    public void scrollToElementAtCenterOfPage(WebElement we) {
+        String scrollElementIntoMiddle =
+                "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);"
+                        + "var elementTop = arguments[0].getBoundingClientRect().top;"
+                        + "window.scrollBy(0, elementTop - (viewPortHeight/2));";
+        try {
+            logger.info("Scrolling to web element located by '{}' at the center of page", we);
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript(scrollElementIntoMiddle, we);
+            logger.info("Scrolled to web element located by '{}' at the center of page successfully", we);
+        } catch (Exception e) {
+            logger.error("Failed to scroll to web element located by '{}' at the center of page. Root cause: {}", we,
+                    e.getMessage());
+        }
+    }
+
+    public boolean verifyOptionSelectedByIndex(String locator, int index) {
+        WebElement element = findWebElement(locator);
+        try {
+            logger.info("Verifying option of web element located by '{}' selected by index '{}'", locator, index);
+            Select select = new Select(element);
+            List<WebElement> options = select.getOptions();
+            int count = 0;
+            for (WebElement option : options) {
+                if(option.isSelected()) {
+                    count++;
+                }
+            }
+            if(count == index) {
+                logger.info("Option of web element located by '{}' is selected by index '{}'", locator, index);
+                return true;
+            } else {
+                logger.error("Option of web element located by '{}' is not selected by index '{}'", locator, index);
+            }
+        } catch (Exception e) {
+            logger.error("Failed to verify option selected by index '{}'. Root cause: {}", locator, e.getMessage());
+        }
+        return false;
+    }
+
+    public boolean verifyElementText(String locator, String expectedText) {
+        WebElement we = findWebElement(locator);
+        try {
+            logger.info("Verifying text of web element located by '{}'", locator);
+            String actualText = we.getText();
+            if(actualText.equals(expectedText)) {
+                logger.info("Text of web element located by '{}' is '{}'", locator, expectedText);
+                return true;
+            }
+            logger.error("Text of web element located by '{}' is '{}', not '{}'", locator, actualText, expectedText);
+        } catch (Exception e) {
+            logger.error("Failed to verify text of web element located by '{}'. Root cause: {}",
+                    locator, e.getMessage());
+        }
+        return false;
     }
 
 
