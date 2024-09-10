@@ -90,7 +90,7 @@ public class TestCaseSuite {
 
     @Step("Input Customer name: {0}")
     public void input_Customer_Name(String customerName) {
-        webUI.clearText(TXT_CUSTOMER_NAME); // Xoá nội dung trước khi nhập dữ liệu mới
+        webUI.clearText(TXT_CUSTOMER_NAME);
         if(customerName.isEmpty()) {
             webUI.sendKeys(TXT_CUSTOMER_NAME, Keys.chord(Keys.TAB));
         } else {
@@ -389,8 +389,6 @@ public class TestCaseSuite {
 
     @Test(description = "NC030: Verify Field Labels")
     public void NC030_Verify_Field_Labels() {
-        // Xác minh trường "Customer Name"
-//        webUI.scrollToElementAtCenterOfPage("//td[normalize-space()='Password']");
         assertTrue(webUI.verifyElementText("//td[normalize-space()='Customer Name']", "Customer Name"));
 
         assertTrue(webUI.verifyElementText("//td[normalize-space()='Date of Birth']", "Date of Birth"));

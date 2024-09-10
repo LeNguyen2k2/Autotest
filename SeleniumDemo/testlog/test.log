@@ -1,620 +1,620 @@
-DEBUG | 2024-09-07 19:07:57 | [main] testng.log4testng.Logger (Logger.java:debug:82) - suiteXmlPath: "C:\Users\nguyn\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml"
-INFO  | 2024-09-07 19:07:58 | [main] testng.log4testng.Logger (Logger.java:info:112) - [TestNG] Running:
+DEBUG | 2024-09-10 18:16:54 | [main] testng.log4testng.Logger (Logger.java:debug:82) - suiteXmlPath: "C:\Users\nguyn\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml"
+INFO  | 2024-09-10 18:16:57 | [main] testng.log4testng.Logger (Logger.java:info:112) - [TestNG] Running:
   C:\Users\nguyn\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml
 
-INFO  | 2024-09-07 19:07:58 | [main] Autotest.keywords.WebUI (WebUI.java:openBrowser:63) - Opening browser: CHROME
-INFO  | 2024-09-07 19:08:00 | [main] Autotest.keywords.WebUI (WebUI.java:openBrowser:76) - Opened browser 'CHROME' successfully
-INFO  | 2024-09-07 19:08:00 | [main] Autotest.keywords.WebUI (WebUI.java:openBrowser:80) - Navigating to https://demo.guru99.com/V4
-INFO  | 2024-09-07 19:08:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='uid']'
-INFO  | 2024-09-07 19:08:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='uid']'
-INFO  | 2024-09-07 19:08:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.041
-INFO  | 2024-09-07 19:08:05 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'mngr588638'
-INFO  | 2024-09-07 19:08:05 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'mngr588638' successfully
-INFO  | 2024-09-07 19:08:08 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='password']'
-INFO  | 2024-09-07 19:08:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='password']'
-INFO  | 2024-09-07 19:08:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:08 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'sYgEpeg'
-INFO  | 2024-09-07 19:08:08 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'sYgEpeg' successfully
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='btnLogin']'
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='btnLogin']'
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='btnLogin']'
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='btnLogin']'
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:804) - Scrolling to web element located by '//input[@name='btnLogin']' at the center of page
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:810) - Scrolled to web element located by '//input[@name='btnLogin']' at the center of page successfully
-INFO  | 2024-09-07 19:08:11 | [main] Autotest.keywords.WebUI (WebUI.java:click:699) - Clicking web element located by '//input[@name='btnLogin']'
-INFO  | 2024-09-07 19:08:13 | [main] Autotest.keywords.WebUI (WebUI.java:click:701) - Web element located by '//input[@name='btnLogin']' is clicked
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.017
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.017
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:804) - Scrolling to web element located by '//a[normalize-space()='New Customer']' at the center of page
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:810) - Scrolled to web element located by '//a[normalize-space()='New Customer']' at the center of page successfully
-INFO  | 2024-09-07 19:08:16 | [main] Autotest.keywords.WebUI (WebUI.java:click:699) - Clicking web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-09-07 19:08:17 | [main] Autotest.keywords.WebUI (WebUI.java:click:701) - Web element located by '//a[normalize-space()='New Customer']' is clicked
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='name']' successfully
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:08:20 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:08:23 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:23 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:23 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message']' is 'Customer name must not be blank'
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='name']' successfully
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys '1234'
-INFO  | 2024-09-07 19:08:24 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '1234' successfully
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message']' is 'Numbers are not allowed'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='name']' successfully
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.01
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys '@s123'
-INFO  | 2024-09-07 19:08:27 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '@s123' successfully
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message']' is 'Special characters are not allowed'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='name']' successfully
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.011
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ' Nguyen'
-INFO  | 2024-09-07 19:08:30 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys ' Nguyen' successfully
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message']' is 'First character can not have space'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='Address']' successfully
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//textarea[@name='addr']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//textarea[@name='addr']'
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.013
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:08:33 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message3']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message3']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message3']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message3']' is 'Address Field must not be blank'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='Address']' successfully
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//textarea[@name='addr']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//textarea[@name='addr']'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.006
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ' Address'
-INFO  | 2024-09-07 19:08:36 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys ' Address' successfully
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message3']'
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message3']'
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message3']'
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message3']' is 'First character can not have space'
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.019
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
-INFO  | 2024-09-07 19:08:39 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='city']' successfully
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:08:40 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message4']' is 'City Field must not be blank'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.007
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='city']' successfully
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.004
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'city123'
-INFO  | 2024-09-07 19:08:43 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'city123' successfully
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message4']' is 'Numbers are not allowed'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='city']' successfully
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'City!@#'
-INFO  | 2024-09-07 19:08:46 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'City!@#' successfully
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message4']' is 'Special characters are not allowed'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='city']' successfully
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ' City'
-INFO  | 2024-09-07 19:08:49 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys ' City' successfully
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message4']' is 'First character can not have space'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.014
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='state']' successfully
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:08:52 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message5']' is 'State must not be blank'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.006
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='state']' successfully
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.007
-INFO  | 2024-09-07 19:08:55 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'state123'
-INFO  | 2024-09-07 19:08:56 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'state123' successfully
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message5']' is 'Numbers are not allowed'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='state']' successfully
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.009
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'State!@#'
-INFO  | 2024-09-07 19:08:59 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'State!@#' successfully
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message5']' is 'Special characters are not allowed'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.007
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='state']' successfully
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ' State'
-INFO  | 2024-09-07 19:09:02 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys ' State' successfully
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message5']' is 'First character can not have space'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='pinno']' successfully
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys '1234PIN'
-INFO  | 2024-09-07 19:09:05 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '1234PIN' successfully
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message6']' is 'Characters are not allowed'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='pinno']' successfully
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:09:08 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message6']' is 'PIN Code must not be blank'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.01
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='pinno']' successfully
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.001
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:09:11 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message6']' is 'PIN Code must not be blank'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='pinno']' successfully
-INFO  | 2024-09-07 19:09:14 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:15 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:15 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:15 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys '123!@#'
-INFO  | 2024-09-07 19:09:15 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '123!@#' successfully
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message6']' is 'Special characters are not allowed'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.017
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='pinno']' successfully
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.009
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ' 123'
-INFO  | 2024-09-07 19:09:18 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys ' 123' successfully
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.012
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message6']' is 'First character can not have space'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.01
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.006
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='pinno']' successfully
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.008
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys '12 3'
-INFO  | 2024-09-07 19:09:21 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '12 3' successfully
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message6']' is 'Characters are not allowed'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.032
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:09:24 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message7']' is 'Mobile no must not be blank'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.013
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.01
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ' 099'
-INFO  | 2024-09-07 19:09:27 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys ' 099' successfully
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message7']' is 'First character can not have space'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.006
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys '09 9'
-INFO  | 2024-09-07 19:09:30 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '09 9' successfully
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message7']' is 'Characters are not allowed'
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:33 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys '099!@#'
-INFO  | 2024-09-07 19:09:34 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '099!@#' successfully
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message7']' is 'Special characters are not allowed'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.007
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='E-mail']' successfully
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='emailid']' successfully
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys ''
-INFO  | 2024-09-07 19:09:37 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys '' successfully
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message9']' is 'Email-ID must not be blank'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='E-mail']' successfully
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='emailid']' successfully
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.007
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'guru99gmail.com'
-INFO  | 2024-09-07 19:09:40 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'guru99gmail.com' successfully
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message9']' is 'Email-ID is not valid'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:791) - Scrolling to web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolled to web element located by '//td[normalize-space()='E-mail']' successfully
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:286) - Clearing text in web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:288) - Cleared text in web element located by '//input[@name='emailid']' successfully
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:275) - Sending keys 'Guru 99@'
-INFO  | 2024-09-07 19:09:43 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:277) - Sent keys 'Guru 99@' successfully
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:298) - Delayed 3 seconds
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//label[@id='message9']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//label[@id='message9']' is 'Email-ID is not valid'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Customer Name']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Customer Name']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.032
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='Customer Name']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='Customer Name']' is 'Customer Name'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Date of Birth']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Date of Birth']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='Date of Birth']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='Date of Birth']' is 'Date of Birth'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='Address']' is 'Address'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='City']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='City']' is 'City'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.013
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='State']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='State']' is 'State'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.018
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='PIN']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='PIN']' is 'PIN'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='Mobile Number']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='Mobile Number']' is 'Mobile Number'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='E-mail']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='E-mail']' is 'E-mail'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:209) - Finding web element located by '//td[normalize-space()='Password']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//td[normalize-space()='Password']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:860) - Verifying text of web element located by '//td[normalize-space()='Password']'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Text of web element located by '//td[normalize-space()='Password']' is 'Password'
-INFO  | 2024-09-07 19:09:46 | [main] Autotest.keywords.WebUI (WebUI.java:closeBrowser:104) - Closing the browser
-INFO  | 2024-09-07 19:09:47 | [main] Autotest.keywords.WebUI (WebUI.java:closeBrowser:106) - Closed browser
+INFO  | 2024-09-10 18:16:57 | [main] Autotest.keywords.WebUI (WebUI.java:openBrowser:66) - Opening browser: CHROME
+INFO  | 2024-09-10 18:17:01 | [main] Autotest.keywords.WebUI (WebUI.java:openBrowser:79) - Opened browser 'CHROME' successfully
+INFO  | 2024-09-10 18:17:01 | [main] Autotest.keywords.WebUI (WebUI.java:openBrowser:83) - Navigating to https://demo.guru99.com/V4
+INFO  | 2024-09-10 18:17:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='uid']'
+INFO  | 2024-09-10 18:17:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='uid']'
+INFO  | 2024-09-10 18:17:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.177
+INFO  | 2024-09-10 18:17:06 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'mngr588638'
+INFO  | 2024-09-10 18:17:06 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'mngr588638' successfully
+INFO  | 2024-09-10 18:17:09 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:09 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='password']'
+INFO  | 2024-09-10 18:17:09 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='password']'
+INFO  | 2024-09-10 18:17:09 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.03
+INFO  | 2024-09-10 18:17:09 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'sYgEpeg'
+INFO  | 2024-09-10 18:17:09 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'sYgEpeg' successfully
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='btnLogin']'
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='btnLogin']'
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.032
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='btnLogin']'
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='btnLogin']'
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.019
+INFO  | 2024-09-10 18:17:12 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:807) - Scrolling to web element located by '//input[@name='btnLogin']' at the center of page
+INFO  | 2024-09-10 18:17:13 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:813) - Scrolled to web element located by '//input[@name='btnLogin']' at the center of page successfully
+INFO  | 2024-09-10 18:17:13 | [main] Autotest.keywords.WebUI (WebUI.java:click:702) - Clicking web element located by '//input[@name='btnLogin']'
+INFO  | 2024-09-10 18:17:14 | [main] Autotest.keywords.WebUI (WebUI.java:click:704) - Web element located by '//input[@name='btnLogin']' is clicked
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.032
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.018
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:807) - Scrolling to web element located by '//a[normalize-space()='New Customer']' at the center of page
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:813) - Scrolled to web element located by '//a[normalize-space()='New Customer']' at the center of page successfully
+INFO  | 2024-09-10 18:17:17 | [main] Autotest.keywords.WebUI (WebUI.java:click:702) - Clicking web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-09-10 18:17:18 | [main] Autotest.keywords.WebUI (WebUI.java:click:704) - Web element located by '//a[normalize-space()='New Customer']' is clicked
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.033
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='name']' successfully
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:17:21 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:17:24 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:24 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.029
+INFO  | 2024-09-10 18:17:24 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:24 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message']' is 'Customer name must not be blank'
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.026
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='name']' successfully
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.026
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys '1234'
+INFO  | 2024-09-10 18:17:25 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '1234' successfully
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message']' is 'Numbers are not allowed'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='name']' successfully
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.026
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys '@s123'
+INFO  | 2024-09-10 18:17:28 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '@s123' successfully
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.011
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message']' is 'Special characters are not allowed'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.012
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='name']' successfully
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.013
+INFO  | 2024-09-10 18:17:31 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ' Nguyen'
+INFO  | 2024-09-10 18:17:32 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys ' Nguyen' successfully
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.018
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message']' is 'First character can not have space'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.021
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='Address']' successfully
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//textarea[@name='addr']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//textarea[@name='addr']'
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.021
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:17:35 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message3']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message3']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.051
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message3']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message3']' is 'Address Field must not be blank'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.037
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='Address']' successfully
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//textarea[@name='addr']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//textarea[@name='addr']'
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.021
+INFO  | 2024-09-10 18:17:38 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ' Address'
+INFO  | 2024-09-10 18:17:39 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys ' Address' successfully
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message3']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message3']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.039
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message3']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message3']' is 'First character can not have space'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.028
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='city']' successfully
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.016
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:17:42 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.07
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message4']' is 'City Field must not be blank'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.011
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.021
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='city']' successfully
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:17:45 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'city123'
+INFO  | 2024-09-10 18:17:46 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'city123' successfully
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.104
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message4']' is 'Numbers are not allowed'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.022
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.022
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='city']' successfully
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.029
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'City!@#'
+INFO  | 2024-09-10 18:17:49 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'City!@#' successfully
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.086
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message4']' is 'Special characters are not allowed'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='City']' successfully
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='city']' successfully
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='city']'
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.056
+INFO  | 2024-09-10 18:17:52 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ' City'
+INFO  | 2024-09-10 18:17:53 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys ' City' successfully
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message4']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message4']' is 'First character can not have space'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.04
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='state']' successfully
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.032
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:17:56 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.043
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message5']' is 'State must not be blank'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.02
+INFO  | 2024-09-10 18:17:59 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:00 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='state']' successfully
+INFO  | 2024-09-10 18:18:00 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:00 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:00 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.054
+INFO  | 2024-09-10 18:18:00 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'state123'
+INFO  | 2024-09-10 18:18:00 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'state123' successfully
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.016
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message5']' is 'Numbers are not allowed'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.037
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.02
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='state']' successfully
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.035
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'State!@#'
+INFO  | 2024-09-10 18:18:03 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'State!@#' successfully
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.02
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message5']' is 'Special characters are not allowed'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.024
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='State']' successfully
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:18:06 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:07 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='state']' successfully
+INFO  | 2024-09-10 18:18:07 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:07 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='state']'
+INFO  | 2024-09-10 18:18:07 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.021
+INFO  | 2024-09-10 18:18:07 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ' State'
+INFO  | 2024-09-10 18:18:07 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys ' State' successfully
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message5']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message5']' is 'First character can not have space'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.019
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='pinno']' successfully
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.026
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys '1234PIN'
+INFO  | 2024-09-10 18:18:10 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '1234PIN' successfully
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.013
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message6']' is 'Characters are not allowed'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.023
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.015
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='pinno']' successfully
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:18:13 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:18:16 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.018
+INFO  | 2024-09-10 18:18:16 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:16 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message6']' is 'PIN Code must not be blank'
+INFO  | 2024-09-10 18:18:16 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.026
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.014
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='pinno']' successfully
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.005
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:18:17 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.037
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message6']' is 'PIN Code must not be blank'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.022
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.018
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='pinno']' successfully
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.03
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys '123!@#'
+INFO  | 2024-09-10 18:18:20 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '123!@#' successfully
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message6']' is 'Special characters are not allowed'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.024
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.022
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='pinno']' successfully
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.02
+INFO  | 2024-09-10 18:18:23 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ' 123'
+INFO  | 2024-09-10 18:18:24 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys ' 123' successfully
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.016
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message6']' is 'First character can not have space'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.027
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='PIN']' successfully
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.021
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='pinno']' successfully
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='pinno']'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.013
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys '12 3'
+INFO  | 2024-09-10 18:18:27 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '12 3' successfully
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message6']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message6']' is 'Characters are not allowed'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.029
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.024
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.07
+INFO  | 2024-09-10 18:18:30 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:18:31 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.022
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message7']' is 'Mobile no must not be blank'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.013
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.019
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.007
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ' 099'
+INFO  | 2024-09-10 18:18:34 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys ' 099' successfully
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.0
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message7']' is 'First character can not have space'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.035
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.012
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.02
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys '09 9'
+INFO  | 2024-09-10 18:18:37 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '09 9' successfully
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.138
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message7']' is 'Characters are not allowed'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.01
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='Mobile Number']' successfully
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.012
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='telephoneno']' successfully
+INFO  | 2024-09-10 18:18:40 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:41 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='telephoneno']'
+INFO  | 2024-09-10 18:18:41 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.054
+INFO  | 2024-09-10 18:18:41 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys '099!@#'
+INFO  | 2024-09-10 18:18:41 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '099!@#' successfully
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.015
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message7']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message7']' is 'Special characters are not allowed'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.023
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='E-mail']' successfully
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.028
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='emailid']' successfully
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.015
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys ''
+INFO  | 2024-09-10 18:18:44 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys '' successfully
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.027
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message9']' is 'Email-ID must not be blank'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.018
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='E-mail']' successfully
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.012
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='emailid']' successfully
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.03
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'guru99gmail.com'
+INFO  | 2024-09-10 18:18:47 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'guru99gmail.com' successfully
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.017
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message9']' is 'Email-ID is not valid'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.011
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:794) - Scrolling to web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:scrollIntoView:797) - Scrolled to web element located by '//td[normalize-space()='E-mail']' successfully
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.012
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:289) - Clearing text in web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:clearText:291) - Cleared text in web element located by '//input[@name='emailid']' successfully
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//input[@name='emailid']'
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.012
+INFO  | 2024-09-10 18:18:50 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:278) - Sending keys 'Guru 99@'
+INFO  | 2024-09-10 18:18:51 | [main] Autotest.keywords.WebUI (WebUI.java:sendKeys:280) - Sent keys 'Guru 99@' successfully
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:delayInSecond:301) - Delayed 3 seconds
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.014
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//label[@id='message9']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//label[@id='message9']' is 'Email-ID is not valid'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Customer Name']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Customer Name']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.008
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='Customer Name']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='Customer Name']' is 'Customer Name'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Date of Birth']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Date of Birth']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.013
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='Date of Birth']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='Date of Birth']' is 'Date of Birth'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.022
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='Address']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='Address']' is 'Address'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.018
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='City']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='City']' is 'City'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.013
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='State']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='State']' is 'State'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.024
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='PIN']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='PIN']' is 'PIN'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.02
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='Mobile Number']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='Mobile Number']' is 'Mobile Number'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.02
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='E-mail']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='E-mail']' is 'E-mail'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:212) - Finding web element located by '//td[normalize-space()='Password']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:228) - Found 1 web element located by '//td[normalize-space()='Password']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:findWebElement:235) - Total time: 0.025
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:863) - Verifying text of web element located by '//td[normalize-space()='Password']'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:verifyElementText:866) - Text of web element located by '//td[normalize-space()='Password']' is 'Password'
+INFO  | 2024-09-10 18:18:54 | [main] Autotest.keywords.WebUI (WebUI.java:closeBrowser:107) - Closing the browser
+INFO  | 2024-09-10 18:18:55 | [main] Autotest.keywords.WebUI (WebUI.java:closeBrowser:109) - Closed browser

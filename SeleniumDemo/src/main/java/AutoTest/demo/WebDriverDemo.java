@@ -1,10 +1,12 @@
 package Autotest.demo;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import Autotest.keywords.WebUI;
 
@@ -17,11 +19,13 @@ import static org.testng.Assert.assertTrue;
 
 public class WebDriverDemo {
 
-    private static final String BROWSER = "FIREFOX";
+    private static final String BROWSER = "CHROME";
     private static final String DANTRI_URL = "https://dantri.com.vn";
     private static final String VNEXPRESS_URL = "https://vnexpress.net/";
     private static final String DEMOQA_TEXTBOX_URL = "https://demoqa.com/text-box";
     private static final String DEMOQA_SELECTMENU_URL = "https://demoqa.com/select-menu";
+    private static final String DEMOQA_WEBTABLE_URL = "https://demoqa.com/webtables";
+    private static final String DEMOQA_BUTTON_URL = "https://demoqa.com/buttons";
     private static final String GURU99_URL ="https://demo.guru99.com/test/guru99home/";
     private static final String DEMOQA_ALERT_URL = "https://demoqa.com/alerts";
     private static final String TXT_FULL_NAME = "//input[@id='userName']";
@@ -35,6 +39,7 @@ public class WebDriverDemo {
         webUI = new WebUI();
         webUI.openBrowser(BROWSER, DANTRI_URL);
     }
+
 
     @Test(description = "TC001: Verify title of the page")
     public void TC001_Verify_title_of_the_page() {
@@ -308,25 +313,66 @@ public class WebDriverDemo {
         Assert.assertEquals(resultText, expectedText, "The result text should be 'You entered hello'");
     }
 
-//    @Test(description = "TC019: Switch to an iframe and interact with elements inside it")
-//    public void TC019_Switch_To_Iframe_And_Interact() throws InterruptedException {
-//        webUI.navigateTo(GURU99_URL);
-//        Thread.sleep(3000);
-//
-//        webUI.scrollToElement("xpath://h3[text()='iFrame will not show if you have adBlock extension enabled']");
-//        Thread.sleep(3000);
-//
-//        webUI.switchtoFrame("id:a077aa5e");
-//        Thread.sleep(5000);
-//
-//        WebElement iframeElement = webUI.findWebElement("xpath://html/body/a/img");
-//        Assert.assertNotNull(iframeElement, "Failed to find the element inside the iframe.");
-//        iframeElement.click();
-//        Thread.sleep(3000);
-//    }
+    @Test(description = "TC019: Switch to an iframe and interact with elements inside it")
+    public void TC019_Switch_To_Iframe_And_Interact() throws InterruptedException {
+        webUI.navigateTo(GURU99_URL);
+        Thread.sleep(3000);
+
+        webUI.scrollToElement("xpath://h3[text()='iFrame will not show if you have adBlock extension enabled']");
+        Thread.sleep(3000);
+        //body//a
+        WebElement iframeElement = webUI.findWebElement("//iframe[@id='a077aa5e']");
+        iframeElement.click();
+        Thread.sleep(3000);
+
+        webUI.switchtoFrame("//body//a");
+        Thread.sleep(5000);
+
+        WebElement insideIframeElement = webUI.findWebElement("//body//a");
+        Assert.assertNotNull(insideIframeElement, "Failed to switch to the iframe or the element inside iframe was not found.");
+        insideIframeElement.click();
+    }
 
 
+    @Test(description = "TC020 Add a new record to the web table")
+    public void TC020_Add_a_new_record_to_the_web_table() throws InterruptedException{
+        // Navigate to the web tables page
+        webUI.navigateTo(DEMOQA_WEBTABLE_URL);
+        Thread.sleep(3000);
 
+        webUI.scrollToElementAtCenterOfPage("//div[contains(text(),'First Name')]");
+
+        webUI.findWebElement("id:addNewRecordButton").click();
+
+        webUI.sendKeys("id:firstName", "Nguyen");
+        webUI.sendKeys("id:lastName", "Le");
+        webUI.sendKeys("id:userEmail", "lenguyen@example.com");
+        webUI.sendKeys("id:age", "22");
+        webUI.sendKeys("id:salary", "50000");
+        webUI.sendKeys("id:department", "Engineering");
+
+        webUI.findWebElement("id:submit").click();
+
+        WebElement newRecord = webUI.findWebElement("xpath://div[@role='gridcell' and contains(text(),'Nguyen')]");
+        Assert.assertNotNull(newRecord, "The new record should be present in the table.");
+    }
+
+    @Test(description = "TC021 Edit and delete any record")
+    public void TC021_Edit_And_Delete_Any_Record() throws InterruptedException{
+        webUI.navigateTo(DEMOQA_WEBTABLE_URL);
+        Thread.sleep(3000);
+
+        webUI.scrollIntoView("//h1[normalize-space()='Web Tables']");
+        String nameToEdit = "Cierra";
+        String newFirstName = "Jane";
+        String nameToDelete = "Alden";
+
+        webUI.editRecordByName(nameToEdit, newFirstName);
+        Thread.sleep(3000);
+
+        webUI.deleteRecordByName(nameToDelete);
+        Thread.sleep(3000);
+    }
 
     @AfterMethod
     public void tearDown() {

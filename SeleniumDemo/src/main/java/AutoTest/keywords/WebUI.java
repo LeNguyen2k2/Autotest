@@ -11,13 +11,16 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -871,6 +874,58 @@ public class WebUI {
         return false;
     }
 
+    public void editRecordByName(String nameToEdit, String newFirstName) {
+        WebElement rowToEdit = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + nameToEdit + "')]");
+
+        WebElement editButton = rowToEdit.findElement(By.xpath("//span[starts-with(@id, 'edit-record-')]//*[name()='svg']//*[name()='path']"));
+        editButton.click();
+
+        WebElement firstNameField = findWebElement("id:firstName");
+        firstNameField.clear();
+        firstNameField.sendKeys(newFirstName);
+
+        findWebElement("id:submit").click();
+
+        WebElement updatedRecord = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + newFirstName + "')]");
+        Assert.assertNotNull(updatedRecord, "The record should be updated with the new name '" + newFirstName + "'.");
+    }
+
+    public void deleteRecordByName(String nameToDelete) {
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        WebElement rowToDelete = findWebElement("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]");
+
+        if (rowToDelete == null) {
+            logger.error("Record with name '{}' not found.", nameToDelete);
+            throw new NoSuchElementException("Record with name '" + nameToDelete + "' not found.");
+        }
+
+        WebElement deleteButton = rowToDelete.findElement(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]/following-sibling::div//span[starts-with(@id, 'delete-record-')]//*[name()='svg']//*[name()='path']"));
+        if (deleteButton == null) {
+            logger.error("Delete button for record with name '{}' not found.", nameToDelete);
+            throw new NoSuchElementException("Delete button for record with name '" + nameToDelete + "' not found.");
+        }
+        deleteButton.click();
+
+        try {
+            boolean isDeleted = wait.until(new ExpectedCondition<Boolean>() {
+                public Boolean apply(WebDriver driver) {
+                    return driver.findElements(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]")).isEmpty();
+                }
+            });
+
+            if (!isDeleted) {
+                logger.error("Record with name '{}' still exists after deletion attempt.", nameToDelete);
+                throw new AssertionError("Record with name '" + nameToDelete + "' still exists after deletion attempt.");
+            }
+
+            logger.info("Record with name '{}' successfully deleted.", nameToDelete);
+        } catch (TimeoutException e) {
+            logger.error("Timed out waiting for record with name '{}' to be deleted.", nameToDelete);
+            throw new AssertionError("Timed out waiting for record with name '" + nameToDelete + "' to be deleted.", e);
+        }
+    }
 
 
 }
