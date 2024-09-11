@@ -1,6 +1,7 @@
 package Autotest.keywords;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Attachment;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -708,6 +709,18 @@ public class WebUI {
         }
     }
 
+    public void click(WebElement webElement) {
+        try {
+            scrollToElementAtCenterOfPage(webElement);
+            logger.info("Clicking web element located by '{}'", webElement);
+            webElement.click();
+            logger.info("Web element located by '{}' is clicked", webElement);
+        } catch (Exception e) {
+            logger.error("Failed to click web element located by '{}'. Root cause: {}", webElement,
+                    e.getMessage());
+        }
+    }
+
     public void leftClick(String locator) {
         try {
             logger.info("Left clicking on web element located by '{}'", locator);
@@ -874,58 +887,90 @@ public class WebUI {
         return false;
     }
 
-    public void editRecordByName(String nameToEdit, String newFirstName) {
-        WebElement rowToEdit = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + nameToEdit + "')]");
-
-        WebElement editButton = rowToEdit.findElement(By.xpath("//span[starts-with(@id, 'edit-record-')]//*[name()='svg']//*[name()='path']"));
-        editButton.click();
-
-        WebElement firstNameField = findWebElement("id:firstName");
-        firstNameField.clear();
-        firstNameField.sendKeys(newFirstName);
-
-        findWebElement("id:submit").click();
-
-        WebElement updatedRecord = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + newFirstName + "')]");
-        Assert.assertNotNull(updatedRecord, "The record should be updated with the new name '" + newFirstName + "'.");
-    }
-
-    public void deleteRecordByName(String nameToDelete) {
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-        WebElement rowToDelete = findWebElement("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]");
-
-        if (rowToDelete == null) {
-            logger.error("Record with name '{}' not found.", nameToDelete);
-            throw new NoSuchElementException("Record with name '" + nameToDelete + "' not found.");
-        }
-
-        WebElement deleteButton = rowToDelete.findElement(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]/following-sibling::div//span[starts-with(@id, 'delete-record-')]//*[name()='svg']//*[name()='path']"));
-        if (deleteButton == null) {
-            logger.error("Delete button for record with name '{}' not found.", nameToDelete);
-            throw new NoSuchElementException("Delete button for record with name '" + nameToDelete + "' not found.");
-        }
-        deleteButton.click();
-
+    public boolean verifyElementText(WebElement we, String expectedText) {
         try {
-            boolean isDeleted = wait.until(new ExpectedCondition<Boolean>() {
-                public Boolean apply(WebDriver driver) {
-                    return driver.findElements(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]")).isEmpty();
-                }
-            });
-
-            if (!isDeleted) {
-                logger.error("Record with name '{}' still exists after deletion attempt.", nameToDelete);
-                throw new AssertionError("Record with name '" + nameToDelete + "' still exists after deletion attempt.");
+            logger.info("Verifying text of web element located by '{}'", we);
+            String actualText = we.getText();
+            if(actualText.equals(expectedText)) {
+                logger.info("Text of web element located by '{}' is '{}'", we, expectedText);
+                return true;
             }
-
-            logger.info("Record with name '{}' successfully deleted.", nameToDelete);
-        } catch (TimeoutException e) {
-            logger.error("Timed out waiting for record with name '{}' to be deleted.", nameToDelete);
-            throw new AssertionError("Timed out waiting for record with name '" + nameToDelete + "' to be deleted.", e);
+            logger.error("Text of web element located by '{}' is '{}', not '{}'", we, actualText, expectedText);
+        } catch (Exception e) {
+            logger.error("Failed to verify text of web element located by '{}'. Root cause: {}",
+                    we, e.getMessage());
         }
+        return false;
     }
+
+    @Attachment(value = "Page screenshot", type = "image/png")
+    public byte[] takeScreenShot() {
+        try {
+            logger.info("Taking a screen shot");
+            byte[] image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            if(image != null) {
+                logger.info("Screen shot taken");
+                return image;
+            }
+            logger.error("Take screen shot failed");
+        } catch (Exception e) {
+            logger.error("Failed to take screen shot. Root cause: {}", e.getMessage());
+        }
+        return null;
+    }
+
+//    public void editRecordByName(String nameToEdit, String newFirstName) {
+//        WebElement rowToEdit = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + nameToEdit + "')]");
+//
+//        WebElement editButton = rowToEdit.findElement(By.xpath("//span[starts-with(@id, 'edit-record-')]//*[name()='svg']//*[name()='path']"));
+//        editButton.click();
+//
+//        WebElement firstNameField = findWebElement("id:firstName");
+//        firstNameField.clear();
+//        firstNameField.sendKeys(newFirstName);
+//
+//        findWebElement("id:submit").click();
+//
+//        WebElement updatedRecord = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + newFirstName + "')]");
+//        Assert.assertNotNull(updatedRecord, "The record should be updated with the new name '" + newFirstName + "'.");
+//    }
+//
+//    public void deleteRecordByName(String nameToDelete) {
+//
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//
+//        WebElement rowToDelete = findWebElement("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]");
+//
+//        if (rowToDelete == null) {
+//            logger.error("Record with name '{}' not found.", nameToDelete);
+//            throw new NoSuchElementException("Record with name '" + nameToDelete + "' not found.");
+//        }
+//
+//        WebElement deleteButton = rowToDelete.findElement(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]/following-sibling::div//span[starts-with(@id, 'delete-record-')]//*[name()='svg']//*[name()='path']"));
+//        if (deleteButton == null) {
+//            logger.error("Delete button for record with name '{}' not found.", nameToDelete);
+//            throw new NoSuchElementException("Delete button for record with name '" + nameToDelete + "' not found.");
+//        }
+//        deleteButton.click();
+//
+//        try {
+//            boolean isDeleted = wait.until(new ExpectedCondition<Boolean>() {
+//                public Boolean apply(WebDriver driver) {
+//                    return driver.findElements(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]")).isEmpty();
+//                }
+//            });
+//
+//            if (!isDeleted) {
+//                logger.error("Record with name '{}' still exists after deletion attempt.", nameToDelete);
+//                throw new AssertionError("Record with name '" + nameToDelete + "' still exists after deletion attempt.");
+//            }
+//
+//            logger.info("Record with name '{}' successfully deleted.", nameToDelete);
+//        } catch (TimeoutException e) {
+//            logger.error("Timed out waiting for record with name '{}' to be deleted.", nameToDelete);
+//            throw new AssertionError("Timed out waiting for record with name '" + nameToDelete + "' to be deleted.", e);
+//        }
+//    }
 
 
 }

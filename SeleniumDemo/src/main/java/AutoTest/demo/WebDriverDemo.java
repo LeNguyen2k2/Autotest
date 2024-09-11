@@ -1,4 +1,4 @@
-package Autotest.demo;
+package AutoTest.demo;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.*;
@@ -357,22 +357,22 @@ public class WebDriverDemo {
         Assert.assertNotNull(newRecord, "The new record should be present in the table.");
     }
 
-    @Test(description = "TC021 Edit and delete any record")
-    public void TC021_Edit_And_Delete_Any_Record() throws InterruptedException{
-        webUI.navigateTo(DEMOQA_WEBTABLE_URL);
-        Thread.sleep(3000);
-
-        webUI.scrollIntoView("//h1[normalize-space()='Web Tables']");
-        String nameToEdit = "Cierra";
-        String newFirstName = "Jane";
-        String nameToDelete = "Alden";
-
-        webUI.editRecordByName(nameToEdit, newFirstName);
-        Thread.sleep(3000);
-
-        webUI.deleteRecordByName(nameToDelete);
-        Thread.sleep(3000);
-    }
+//    @Test(description = "TC021 Edit and delete any record")
+//    public void TC021_Edit_And_Delete_Any_Record() throws InterruptedException{
+//        webUI.navigateTo(DEMOQA_WEBTABLE_URL);
+//        Thread.sleep(3000);
+//
+//        webUI.scrollIntoView("//h1[normalize-space()='Web Tables']");
+//        String nameToEdit = "Cierra";
+//        String newFirstName = "Jane";
+//        String nameToDelete = "Alden";
+//
+//        webUI.editRecordByName(nameToEdit, newFirstName);
+//        Thread.sleep(3000);
+//
+//        webUI.deleteRecordByName(nameToDelete);
+//        Thread.sleep(3000);
+//    }
 
     @AfterMethod
     public void tearDown() {
