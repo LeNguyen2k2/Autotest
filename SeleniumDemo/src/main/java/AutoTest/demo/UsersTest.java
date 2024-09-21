@@ -1,4 +1,4 @@
-package AutoTest.demo;
+package Autotest.demo;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
@@ -199,6 +199,7 @@ public class UsersTest {
   public void setUp() {
     webUI = new WebUI();
     webUI.openBrowser(BROWSER, URL);
+    webUI.maximizeWindow();
   }
 
   @Test(description = "US001: Create/Add a new user successfully")

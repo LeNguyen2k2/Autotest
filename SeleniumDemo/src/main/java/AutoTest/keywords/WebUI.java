@@ -32,36 +32,6 @@ public class WebUI {
     private final int DEFAUT_TIMEOUT = 60;
     private WebDriver driver;
 
-//    public void openBrowser(String browser, String... url) {
-//        try {
-//            logger.info("Opening browser: {}", browser);
-//            switch (browser.toUpperCase()) {
-//                case "CHROME":
-//                    ChromeOptions chromeOptions = new ChromeOptions();
-//                    chromeOptions.addArguments("--remote-allow-origins=*");
-//                    driver = new ChromeDriver(chromeOptions);
-//                    break;
-//                case "EDGE": // Cập nhật cho Edge
-//                    EdgeOptions edgeOptions = new EdgeOptions();
-//                    edgeOptions.addArguments("--remote-allow-origins=*");
-//                    driver = new EdgeDriver(edgeOptions);
-//                    break;
-//                default:
-//                    throw new IllegalArgumentException("Browser not supported: " + browser);
-//            }
-//            logger.info("Opened browser '{}' successfully", browser);
-//
-//            if (url.length > 0) {
-//                String rawUrl = url[0];
-//                logger.info("Navigating to {}", rawUrl);
-//                driver.get(rawUrl);
-//            }
-//        } catch (Exception e) {
-//            logger.error("Failed to open browser '{}'. Root cause: {}", browser, e.getMessage());
-//        }
-//        driver.manage().window().maximize();
-//    }
-
     public void openBrowser(String browser, String... url) {
         try {
             logger.info("Opening browser: {}", browser);
@@ -72,8 +42,14 @@ public class WebUI {
                     driver = new ChromeDriver(chromeOptions);
                     break;
                 case "FIREFOX": // Updated for Firefox
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    driver = new FirefoxDriver(firefoxOptions);
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                case "EDGE": // Cập nhật cho Edge
+                    EdgeOptions edgeOptions = new EdgeOptions();
+                    edgeOptions.addArguments("--remote-allow-origins=*");
+                    driver = new EdgeDriver(edgeOptions);
+                    break;
                 default:
                     throw new IllegalArgumentException("Browser not supported: " + browser);
             }
@@ -87,7 +63,18 @@ public class WebUI {
         } catch (Exception e) {
             logger.error("Failed to open browser '{}'. Root cause: {}", browser, e.getMessage());
         }
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
+    }
+
+
+    public void maximizeWindow() {
+        try {
+            logger.info("Maximizing window");
+            driver.manage().window().maximize();
+            logger.info("Maximized window");
+        } catch (Exception e) {
+            logger.error("Failed to maximize window. Root cause: {}", e.getMessage());
+        }
     }
 
     public String getTitle() {
@@ -186,8 +173,6 @@ public class WebUI {
 //    }
 
 
-
-
     private By findBy(String locator) {
         String prefix = StringUtils.substringBefore(locator, ":");
         String locatorValue = StringUtils.substringAfter(locator, ":");
@@ -277,6 +262,18 @@ public class WebUI {
         WebElement we = findWebElement(locator);
         try {
             logger.info("Sending keys '{}'", text);
+            we.clear();
+            we.sendKeys(text);
+            logger.info("Sent keys '{}' successfully", text);
+        } catch (Exception e) {
+            logger.error("Failed to send keys. Root cause: {}", e.getMessage());
+        }
+    }
+
+    public void sendKeys(WebElement we, String text) {
+        try {
+            logger.info("Sending keys '{}'", text);
+            we.clear();
             we.sendKeys(text);
             logger.info("Sent keys '{}' successfully", text);
         } catch (Exception e) {
@@ -317,7 +314,6 @@ public class WebUI {
         }
         return actualAttributeValue;
     }
-
 
 
     public void waitForElementToBeVisible(String locator, int timeoutInSeconds) {
@@ -622,14 +618,14 @@ public class WebUI {
         }
     }
 
-    public void acceptAlert (){
-        try{
+    public void acceptAlert() {
+        try {
             logger.info("Accepting alert...");
             Alert alert = driver.switchTo().alert();
             alert.accept();
             logger.info("Accepted alert.");
-        } catch (Exception e){
-            logger.error("Failed to accept alert. Root cause: {}",e.getMessage());
+        } catch (Exception e) {
+            logger.error("Failed to accept alert. Root cause: {}", e.getMessage());
         }
     }
 
@@ -669,13 +665,13 @@ public class WebUI {
         }
     }
 
-    public void switchtoFrame (String locator){
+    public void switchtoFrame(String locator) {
         WebElement we = findWebElement(locator);
-        try{
+        try {
             logger.info("Switching to frame located by '{}'", locator);
             driver.switchTo().frame(we);
             logger.info("Switched to frame '{}' successfully", locator);
-        }catch (Exception e){
+        } catch (Exception e) {
             logger.error("Failed to switch to frame located by '{}'. Root cause: {}", locator, e.getMessage());
         }
     }
@@ -854,11 +850,11 @@ public class WebUI {
             List<WebElement> options = select.getOptions();
             int count = 0;
             for (WebElement option : options) {
-                if(option.isSelected()) {
+                if (option.isSelected()) {
                     count++;
                 }
             }
-            if(count == index) {
+            if (count == index) {
                 logger.info("Option of web element located by '{}' is selected by index '{}'", locator, index);
                 return true;
             } else {
@@ -875,7 +871,7 @@ public class WebUI {
         try {
             logger.info("Verifying text of web element located by '{}'", locator);
             String actualText = we.getText();
-            if(actualText.equals(expectedText)) {
+            if (actualText.equals(expectedText)) {
                 logger.info("Text of web element located by '{}' is '{}'", locator, expectedText);
                 return true;
             }
@@ -891,7 +887,7 @@ public class WebUI {
         try {
             logger.info("Verifying text of web element located by '{}'", we);
             String actualText = we.getText();
-            if(actualText.equals(expectedText)) {
+            if (actualText.equals(expectedText)) {
                 logger.info("Text of web element located by '{}' is '{}'", we, expectedText);
                 return true;
             }
@@ -908,7 +904,7 @@ public class WebUI {
         try {
             logger.info("Taking a screen shot");
             byte[] image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            if(image != null) {
+            if (image != null) {
                 logger.info("Screen shot taken");
                 return image;
             }
@@ -919,58 +915,9 @@ public class WebUI {
         return null;
     }
 
-//    public void editRecordByName(String nameToEdit, String newFirstName) {
-//        WebElement rowToEdit = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + nameToEdit + "')]");
-//
-//        WebElement editButton = rowToEdit.findElement(By.xpath("//span[starts-with(@id, 'edit-record-')]//*[name()='svg']//*[name()='path']"));
-//        editButton.click();
-//
-//        WebElement firstNameField = findWebElement("id:firstName");
-//        firstNameField.clear();
-//        firstNameField.sendKeys(newFirstName);
-//
-//        findWebElement("id:submit").click();
-//
-//        WebElement updatedRecord = findWebElement("xpath://div[@role='gridcell' and contains(text(),'" + newFirstName + "')]");
-//        Assert.assertNotNull(updatedRecord, "The record should be updated with the new name '" + newFirstName + "'.");
-//    }
-//
-//    public void deleteRecordByName(String nameToDelete) {
-//
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//
-//        WebElement rowToDelete = findWebElement("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]");
-//
-//        if (rowToDelete == null) {
-//            logger.error("Record with name '{}' not found.", nameToDelete);
-//            throw new NoSuchElementException("Record with name '" + nameToDelete + "' not found.");
-//        }
-//
-//        WebElement deleteButton = rowToDelete.findElement(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]/following-sibling::div//span[starts-with(@id, 'delete-record-')]//*[name()='svg']//*[name()='path']"));
-//        if (deleteButton == null) {
-//            logger.error("Delete button for record with name '{}' not found.", nameToDelete);
-//            throw new NoSuchElementException("Delete button for record with name '" + nameToDelete + "' not found.");
-//        }
-//        deleteButton.click();
-//
-//        try {
-//            boolean isDeleted = wait.until(new ExpectedCondition<Boolean>() {
-//                public Boolean apply(WebDriver driver) {
-//                    return driver.findElements(By.xpath("//div[@role='gridcell' and contains(text(),'" + nameToDelete + "')]")).isEmpty();
-//                }
-//            });
-//
-//            if (!isDeleted) {
-//                logger.error("Record with name '{}' still exists after deletion attempt.", nameToDelete);
-//                throw new AssertionError("Record with name '" + nameToDelete + "' still exists after deletion attempt.");
-//            }
-//
-//            logger.info("Record with name '{}' successfully deleted.", nameToDelete);
-//        } catch (TimeoutException e) {
-//            logger.error("Timed out waiting for record with name '{}' to be deleted.", nameToDelete);
-//            throw new AssertionError("Timed out waiting for record with name '" + nameToDelete + "' to be deleted.", e);
-//        }
-//    }
+    public WebDriver getDriver() {
+        return driver;
+    }
 
 
 }

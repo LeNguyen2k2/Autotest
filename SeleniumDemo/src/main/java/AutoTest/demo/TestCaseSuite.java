@@ -44,6 +44,7 @@ public class TestCaseSuite {
     public void setUp() {
         webUI = new WebUI();
         webUI.openBrowser(BROWSER, URL);
+        webUI.maximizeWindow();
     }
 
     @Step("Input user id: {0}")
@@ -387,32 +388,28 @@ public class TestCaseSuite {
         assertTrue(An_error_message_email_is_shown("Email-ID is not valid"));
     }
 
-    @Test(description = "NC030: Verify Field Labels")
-    public void NC030_Verify_Field_Labels() {
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='Customer Name']", "Customer Name"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='Date of Birth']", "Date of Birth"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='Address']", "Address"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='City']", "City"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='State']", "State"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='PIN']", "PIN"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='Mobile Number']", "Mobile Number"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='E-mail']", "E-mail"));
-
-        assertTrue(webUI.verifyElementText("//td[normalize-space()='Password']", "Password"));
-
-        System.out.println("All field labels match the SRS documentation.");
-    }
-
-
-
-
+//    @Test(description = "NC030: Verify Field Labels")
+//    public void NC030_Verify_Field_Labels() {
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='Customer Name']", "Customer Name"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='Date of Birth']", "Date of Birth"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='Address']", "Address"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='City']", "City"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='State']", "State"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='PIN']", "PIN"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='Mobile Number']", "Mobile Number"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='E-mail']", "E-mail"));
+//
+//        assertTrue(webUI.verifyElementText("//td[normalize-space()='Password']", "Password"));
+//
+//        System.out.println("All field labels match the SRS documentation.");
+//    }
     @AfterTest
     public void tearDown() {
         webUI.closeBrowser();

@@ -1,0 +1,16 @@
+{
+   "TXT_CUSTOMER_NAME" : "//input[@name='name']",
+   "TXT_ADDRESS" :"//textarea[@name='addr']",
+   "TXT_CITY" :"//input[@name='city']",
+   "TXT_STATE" :"//input[@name='state']",
+   "TXT_PIN" :"//input[@name='pinno']",
+   "TXT_TELEPHONE" :"//input[@name='telephoneno']",
+   "TXT_EMAIL" :"//input[@name='emailid']",
+   "LBL_CUSTOMER_NAME_ERROR_MESSAGE" : "//label[@id='message']",
+   "LBL_ADDRESS_ERROR_MESSAGE" : "//label[@id='message3']",
+   "LBL_CITY_ERROR_MESSAGE" : "//label[@id='message4']",
+   "LBL_STATE_ERROR_MESSAGE" : "//label[@id='message5']",
+   "LBL_PIN_ERROR_MESSAGE" : "//label[@id='message6']",
+   "LBL_TELEPHONE_ERROR_MESSAGE" : "//label[@id='message7']",
+   "LBL_EMAIL_ERROR_MESSAGE" : "//label[@id='message9']"
+}

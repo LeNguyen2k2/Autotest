@@ -1,4 +1,4 @@
-package AutoTest.demo;
+package Autotest.demo;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.*;
@@ -38,6 +38,7 @@ public class WebDriverDemo {
     public void setUp() {
         webUI = new WebUI();
         webUI.openBrowser(BROWSER, DANTRI_URL);
+        webUI.maximizeWindow();
     }
 
 
