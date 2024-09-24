@@ -1,0 +1,5 @@
+{
+  "LNK_MANAGER": "//a[normalize-space()='Manager']",
+  "LNK_NEW_CUSTOMER": "//a[normalize-space()='New Customer']",
+  "LNK_EDIT_CUSTOMER": "//a[normalize-space()='Edit Customer']"
+}

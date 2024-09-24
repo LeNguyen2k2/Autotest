@@ -3,7 +3,10 @@ package Autotest.pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import Autotest.keywords.WebUI;
-import Autotest.object_repo.NewCustomerRepo;
+import Autotest.model.Customer;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class NewCustomer extends BasePage {
 
@@ -19,7 +22,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_CUSTOMER_NAME"), customerName);
     }
-    webUI.delayInSecond(3);
+//    webUI.delayInSecond(1);
   }
 
   @Step("Input Address: {0}")
@@ -29,7 +32,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_ADDRESS"), address);
     }
-    webUI.delayInSecond(3);
+//    webUI.delayInSecond(1);
   }
 
   @Step("Input City: {0}")
@@ -39,7 +42,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_CITY"), city);
     }
-    webUI.delayInSecond(3);
+//    webUI.delayInSecond(1);
   }
 
   @Step("Input State: {0}")
@@ -49,7 +52,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_STATE"), state);
     }
-    webUI.delayInSecond(3);
+//    webUI.delayInSecond(1);
   }
 
   @Step("Input PIN: {0}")
@@ -59,7 +62,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_PIN"), pin);
     }
-    webUI.delayInSecond(3);
+//    webUI.delayInSecond(1);
   }
 
   @Step("Input Telephone: {0}")
@@ -69,7 +72,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_TELEPHONE"), telephone);
     }
-    webUI.delayInSecond(3);
+//    webUI.delayInSecond(1);
   }
 
   @Step("Input Email: {0}")
@@ -79,7 +82,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_EMAIL"), email);
     }
-    webUI.delayInSecond(3);
+//    webUI.delayInSecond(1);
   }
 
   @Step("Should show customer name error message: {0}")
@@ -116,4 +119,169 @@ public class NewCustomer extends BasePage {
   public boolean an_Error_Message_Email_Is_Shown(String errorMessage) {
     return webUI.verifyElementText(findElementObject("LBL_EMAIL_ERROR_MESSAGE"), errorMessage);
   }
+
+  @Step("Input password: {0}")
+  public void input_Password(String password) {
+    if (password.isEmpty()) {
+      webUI.sendKeys(findElementObject("TXT_PASSWORD"), password);
+    } else {
+      webUI.sendKeys(findElementObject("TXT_PASSWORD"), password);
+    }
+  }
+
+  @Step("Should show password error message: {0}")
+  public boolean should_show_password_error_message(String errorMessage) {
+    return webUI.verifyElementText(findElementObject("LBL_PASSWORD_ERROR_MESSAGE"), errorMessage);
+  }
+
+  @Step("Input date of birth: {0}")
+  public void input_date_of_birth(String dateOfBirth) {
+    webUI.takeScreenShot();
+    String browserName = webUI.getBrowserName();
+    if (dateOfBirth.isEmpty()) {
+      if (browserName.equalsIgnoreCase("FIREFOX")) {
+        webUI.click(findElementObject("DTP_DATE_OF_BIRTH"));
+        try {
+          Robot robot = new Robot();
+          robot.keyPress(KeyEvent.VK_TAB);
+          Thread.sleep(200);
+          robot.keyRelease(KeyEvent.VK_TAB);
+        } catch (Exception e) {
+//          logger.error("Failed to TAB. Root cause: {}", e.getMessage());
+        }
+      } else {
+        webUI.sendKeys(findElementObject("DTP_DATE_OF_BIRTH"), Keys.chord(Keys.TAB));
+      }
+    } else {
+      if (browserName.equalsIgnoreCase("FIREFOX")) {
+        webUI.click(findElementObject("DTP_DATE_OF_BIRTH"));
+        try {
+          Robot robot = new Robot();
+          for (char c : dateOfBirth.toCharArray()) {
+            int keyCode = KeyEvent.getExtendedKeyCodeForChar(c);
+            if (KeyEvent.CHAR_UNDEFINED == keyCode) {
+              throw new RuntimeException(
+                      "Key code not found for character '" + c + "'");
+            }
+            robot.keyPress(keyCode);
+            robot.delay(100);
+            robot.keyRelease(keyCode);
+            robot.delay(100);
+          }
+        } catch (Exception e) {
+//          logger.error("Failed to send key date of birth. Root cause: {}", e.getMessage());
+        }
+      } else {
+        webUI.sendKeys(findElementObject("DTP_DATE_OF_BIRTH"), dateOfBirth);
+      }
+    }
+    webUI.takeScreenShot();
+  }
+
+  @Step("Should show date of birth error message")
+  public boolean should_show_date_of_birth_error_message(String errorMessage) {
+    return webUI.verifyElementText(findElementObject("LBL_DATE_OF_BIRTH_ERROR_MESSAGE"),
+            errorMessage);
+  }
+
+  @Step("Click submit button in New Customer")
+  public CustomerRegMsg clickSubmitNewCustomer() {
+    webUI.click(findElementObject("NEW_CUSTOMER_BTN_SUBMIT"));
+    return new CustomerRegMsg(webUI);
+  }
+
+  @Step("Should show error alert message")
+  public boolean should_show_error_alert_message() {
+    return webUI.verifyAlertPresent();
+  }
+
+  @Step("Click reset button in New Customer")
+  public void clickResetNewCustomer() {
+    webUI.click(findElementObject("NEW_CUSTOMER_BTN_RESET"));
+  }
+
+  @Step("Choose gender: {0}")
+  public void chooseGender(String gender) {
+    if (gender.equalsIgnoreCase("female")) {
+      webUI.click(findElementObject("CHK_FEMALE"));
+    } else {
+      webUI.click(findElementObject("CHK_MALE"));
+    }
+  }
+
+  @Step("Create new customer: {0}")
+  public void create_new_customer(Customer customer) {
+    input_Customer_Name(customer.getCustomerName());
+    chooseGender(customer.getGender());
+    input_date_of_birth(customer.getDateOfBirth());
+    input_Address(customer.getAddress());
+    input_City(customer.getCity());
+    input_State(customer.getState());
+    input_PIN(customer.getPin());
+    input_Telephone(customer.getTelephone());
+    input_Email(customer.getEmail());
+    input_Password(customer.getPassword());
+  }
+
+  @Step("get Customer id: {0}")
+  public String getCustomerID(String customerID) {
+    return getCustomerID(customerID);
+  }
+
+  @Step("Get the value of customer name")
+  public String customerName() {
+    return webUI.getText(findElementObject("TXT_CUSTOMER_NAME"));
+  }
+
+  @Step("Get the value of address")
+  public String address() {
+    return webUI.getText(findElementObject("TXT_ADDRESS"));
+  }
+
+  @Step("Get the value of city")
+  public String city() {
+    return webUI.getText(findElementObject("TXT_CITY"));
+  }
+
+  @Step("Get the value of state")
+  public String state() {
+    return webUI.getText(findElementObject("TXT_STATE"));
+  }
+
+  @Step("Get the value of pin")
+  public String pin() {
+    return webUI.getText(findElementObject("TXT_PIN"));
+  }
+
+  @Step("Get the value of telephone")
+  public String telephone() {
+    return webUI.getText(findElementObject("TXT_TELEPHONE"));
+  }
+
+  @Step("Get the value of telephone")
+  public String email() {
+    return webUI.getText(findElementObject("TXT_EMAIL"));
+  }
+
+  @Step("Get the value of password")
+  public String password() {
+    return webUI.getText(findElementObject("TXT_PASSWORD"));
+  }
+
+  @Step("Get the value of date of birth")
+  public String dateOfBirth() {
+    return webUI.getText(findElementObject("DTP_DATE_OF_BIRTH"));
+  }
+
+  @Step("Click continue")
+  public void clickContinue() {
+    webUI.click(findElementObject("LNK_CONTINUE"));
+  }
+
+  @Step("Click home")
+  public Manager clickHome() {
+    webUI.click(findElementObject("LNK_HOME"));
+    return new Manager(webUI);
+  }
+
 }

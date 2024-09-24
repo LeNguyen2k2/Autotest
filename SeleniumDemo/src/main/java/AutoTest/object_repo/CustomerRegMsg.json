@@ -1,0 +1,4 @@
+{
+  "LBL_HEADING": "//p[@class='heading3']",
+  "LBL_CUSTOMER_ID": "//td[normalize-space()='Customer ID']/following-sibling::td"
+}

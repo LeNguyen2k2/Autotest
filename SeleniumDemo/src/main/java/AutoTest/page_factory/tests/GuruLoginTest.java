@@ -28,10 +28,10 @@ public class GuruLoginTest extends BaseTest {
 
   @Test (description = "LG004: Login Guru99 successfully")
   public void LG004_Login_Guru99_successfully() {
-    String userId = objdata.getCellData("Username", 1);
+    String userId = objdata.getCellData(0, 1);
     System.out.println("Username from Excel: " + userId);
 
-    String password = objdata.getCellData("Password", 1);
+    String password = objdata.getCellData(1, 1);
     System.out.println("Password from Excel: " + password);
 
     Manager objManager = objLogin.login_Guru99_with(userId, password);

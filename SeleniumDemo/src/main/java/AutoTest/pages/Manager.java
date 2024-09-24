@@ -2,6 +2,7 @@ package Autotest.pages;
 
 import io.qameta.allure.Step;
 import Autotest.keywords.WebUI;
+import Autotest.components.LeftMenu;
 import Autotest.object_repo.ManagerRepo;
 
 public class Manager extends BasePage {
@@ -11,11 +12,15 @@ public class Manager extends BasePage {
     setRepoName(Manager.class.getSimpleName());
   }
 
-  @Step("Move to New Customer")
-  public NewCustomer move_to_New_Customer() {
-    webUI.click(findElementObject("LNK_NEW_CUSTOMER"));
-    webUI.delayInSecond(3);
-    return new NewCustomer(webUI);
+//  @Step("Move to New Customer")
+//  public NewCustomer move_to_New_Customer() {
+//    webUI.click(findElementObject("LNK_NEW_CUSTOMER"));
+//    webUI.delayInSecond(3);
+//    return new NewCustomer(webUI);
+//  }
+
+  public LeftMenu leftMenu() {
+    return new LeftMenu(webUI);
   }
 
   @Step("Should show Manager id: {0}")

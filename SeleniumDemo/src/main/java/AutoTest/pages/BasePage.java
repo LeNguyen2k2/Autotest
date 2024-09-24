@@ -5,11 +5,20 @@ import com.jayway.jsonpath.PathNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import Autotest.keywords.WebUI;
+import Autotest.components.LeftMenu;
 
 import java.io.File;
 import java.io.IOException;
 
 public class BasePage {
+
+  private String getRepoName() {
+    return repoName;
+  }
+
+  public void setRepoName(String repoName) {
+    this.repoName = repoName;
+  }
 
   private static final Logger logger = LoggerFactory.getLogger(BasePage.class);
 
@@ -26,14 +35,6 @@ public class BasePage {
 
   public BasePage(WebUI webUI) {
     this.webUI = webUI;
-  }
-
-  private String getRepoName() {
-    return repoName;
-  }
-
-  public void setRepoName(String repoName) {
-    this.repoName = repoName;
   }
 
   public String findElementObject(String elementName) {

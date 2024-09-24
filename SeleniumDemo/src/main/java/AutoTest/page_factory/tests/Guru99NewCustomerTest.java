@@ -14,10 +14,10 @@ public class Guru99NewCustomerTest extends BaseTest {
     @Test(description = "NC001: Name cannot be empty")
     public void NC001_Name_cannot_be_empty() {
 //        objManager = objLogin.login_Guru99_with(USER_ID, USER_PASSWORD);
-        String userId = objdata.getCellData("Username", 1);
+        String userId = objdata.getCellData(0, 1);
         System.out.println("Username from Excel: " + userId);
 
-        String password = objdata.getCellData("Password", 1);
+        String password = objdata.getCellData(1, 1);
         System.out.println("Password from Excel: " + password);
 
         objManager = objLogin.login_Guru99_with(userId, password);

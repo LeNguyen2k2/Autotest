@@ -1,0 +1,17 @@
+{
+  "TXT_CUSTOMER_ID": "//input[@name='cusid']",
+  "EDIT_CUSTOMER_FORM_BTN_SUBMIT": "//input[@name='AccSubmit']",
+  "TXT_ADDRESS": "//textarea[@name='addr']",
+  "LBL_ADDRESS_ERROR_MESSAGE": "//label[@id='message3']",
+  "TXT_CITY": "//input[@name='city']",
+  "LBL_CITY_ERROR_MESSAGE": "//label[@id='message4']",
+  "TXT_STATE": "//input[@name='state']",
+  "LBL_STATE_ERROR_MESSAGE": "//label[@id='message5']",
+  "TXT_PIN": "//input[@name='pinno']",
+  "LBL_PIN_ERROR_MESSAGE": "//label[@id='message6']",
+  "TXT_TELEPHONE": "//input[@name='telephoneno']",
+  "LBL_TELEPHONE_ERROR_MESSAGE": "//label[@id='message7']",
+  "TXT_EMAIL": "//input[@name='emailid']",
+  "LBL_EMAIL_ERROR_MESSAGE": "//label[@id='message9']",
+  "EDIT_CUSTOMER_BTN_SUBMIT": "//input[@name='sub']"
+}

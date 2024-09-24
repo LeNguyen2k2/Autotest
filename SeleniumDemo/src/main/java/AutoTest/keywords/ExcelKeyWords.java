@@ -1,84 +1,88 @@
 package Autotest.keywords;
 
-import java.awt.Color;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ExcelKeywords {
 
-    private FileInputStream fis;
-    private FileOutputStream fileOut;
-    private Workbook wb;
-    private Sheet sh;
-    private Cell cell;
-    private Row row;
-    private CellStyle cellstyle;
-    private Color mycolor;
-    private String excelFilePath;
-    private Map<String, Integer> columns = new HashMap<>();
+    private final Logger logger = LoggerFactory.getLogger(ExcelKeywords.class);
+    private XSSFWorkbook workbook;
+    private XSSFSheet sheet;
+    private XSSFRow row;
+    private XSSFCell cell;
 
-    public void setExcelFile(String Excelpath, String SheetName) {
+    public void setExcelFile(String excelFilePath, String sheetName) {
         try {
-            File f = new File(Excelpath);
+            logger.info("Setting excel file with path '{}', and sheet name '{}'", excelFilePath,
+                    sheetName);
+            //Create an object of File class to open xls file
+            File file = new File(excelFilePath);
 
-            if (!f.exists()) {
-                System.out.println("File doesn't exist.");
+            //Create an object of FileInputStream class to read excel file
+            FileInputStream inputStream = new FileInputStream(file);
+
+            //creating workbook instance that refers to .xls file
+            workbook = new XSSFWorkbook(inputStream);
+
+            //creating a Sheet object
+            sheet = workbook.getSheet(sheetName);
+            if (sheet == null) {
+                throw new IllegalArgumentException("Sheet named '" + sheetName + "' does not exist in the Excel file.");
             }
-
-            fis = new FileInputStream(Excelpath);
-            wb = WorkbookFactory.create(fis);
-            sh = wb.getSheet(SheetName);
-
-            if (sh == null) {
-                throw new Exception("Sheet name doesn't exist.");
-            }
-
-            this.excelFilePath = Excelpath;
-
-            //adding all the column header names to the map 'columns'
-            sh.getRow(0).forEach(cell -> {
-                columns.put(cell.getStringCellValue(), cell.getColumnIndex());
-            });
-
+            logger.info("Set excel file with path '{}', and sheet name '{}' successfully", excelFilePath,
+                    sheetName);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("Fail to set excel file with path '{}', and sheet name '{}'. Root cause: {}",
+                    excelFilePath, sheetName, e.getMessage());
         }
+
     }
 
-    public String getCellData(int Columnindex, int Rowindex) {
-        try {
-            cell = sh.getRow(Rowindex).getCell(Columnindex);
-            String CellData = null;
-            switch (cell.getCellType()) {
-                case STRING:
-                    CellData = cell.getStringCellValue();
-                    break;
-                case NUMERIC:
-                    if (DateUtil.isCellDateFormatted(cell)) {
-                        CellData = String.valueOf(cell.getDateCellValue());
-                    } else {
-                        CellData = String.valueOf((long) cell.getNumericCellValue());
-                    }
-                    break;
-                case BOOLEAN:
-                    CellData = Boolean.toString(cell.getBooleanCellValue());
-                    break;
-                case BLANK:
-                    CellData = "";
-                    break;
-            }
-            return CellData;
-        } catch (Exception e) {
+    public String getCellData(int rowNumber, int cellNumber) {
+        //getting the cell value from rowNumber and cell Number
+        cell = sheet.getRow(rowNumber).getCell(cellNumber);
+        if(cell == null) {
             return "";
         }
+        switch (cell.getCellType()) {
+            case STRING:
+                return cell.getStringCellValue();
+            case NUMERIC:
+                // Check if the cell contains a date
+                if (DateUtil.isCellDateFormatted(cell)) {
+                    return cell.getDateCellValue().toString();
+                } else {
+                    return String.valueOf((int) cell.getNumericCellValue());
+                }
+            case BOOLEAN:
+                return String.valueOf(cell.getBooleanCellValue());
+            case FORMULA:
+                return cell.getCellFormula();
+        }
+        return null;
     }
 
-    public String getCellData(String Columnname, int Rowindex) {
-        return getCellData(columns.get(Columnname), Rowindex);
+    public int getRowCountInSheet() {
+        return sheet.getLastRowNum() - sheet.getFirstRowNum();
+    }
+
+    public void setCellValue(int rowNum, int cellNum, String cellValue, String excelFilePath) {
+        try {
+            //creating a new cell in row and setting value to it
+            sheet.getRow(rowNum).createCell(cellNum).setCellValue(cellValue);
+
+            FileOutputStream outputStream = new FileOutputStream(excelFilePath);
+            workbook.write(outputStream);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }

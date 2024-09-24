@@ -12,6 +12,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -920,6 +921,79 @@ public class WebUI {
     }
 
 
+    public String getBrowserName() {
+        try {
+            Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities();
+            return capabilities.getBrowserName();
+        } catch (Exception e) {
+
+        }
+        return null;
+    }
+
+    public boolean verifyAlertPresent() {
+        try {
+            logger.info("Verifying alert is present");
+            Alert alert = driver.switchTo().alert();
+            if (alert != null) {
+                logger.info("Verified alert is present successfully");
+                return true;
+            }
+            logger.error("Alert is not present");
+        } catch (Exception e) {
+            logger.error("Failed to verify alert is present. Root cause: {}", e.getMessage());
+        }
+        return false;
+    }
+
+
+    public String getText(String locator) {
+        WebElement we = findWebElement(locator);
+        String actualText = null;
+        try {
+            logger.info("Getting text of web element located by '{}'", locator);
+            actualText = we.getText();
+            logger.info("Text of web element located by '{}' is '{}'", locator, actualText);
+            return actualText;
+        } catch (Exception e) {
+            logger.error("Failed to get text of web element located by '{}'. Root cause: {}", locator,
+                    e.getMessage());
+        }
+        return null;
+    }
+
+    public String getText(WebElement webElement) {
+        String actualText = null;
+        try {
+            logger.info("Getting text of web element located by '{}'", webElement);
+            actualText = webElement.getText();
+            logger.info("Text of web element located by '{}' is '{}'", webElement, actualText);
+            return actualText;
+        } catch (Exception e) {
+            logger.error("Failed to get text of web element located by '{}'. Root cause: {}", webElement,
+                    e.getMessage());
+        }
+        return null;
+    }
+
+    public void refresh() {
+        try {
+            logger.info("Refreshing the page");
+            driver.navigate().refresh();
+            logger.info("Refreshed the page successfully");
+        } catch (Exception e) {
+            logger.error("Failed to refresh the page. Root cause: {}", e.getMessage());
+        }
+    }
+
+    public void delayInSeconds(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000L);
+            logger.info("Delayed {} seconds", seconds);
+        } catch (Exception e) {
+            logger.error("Failed to delay {} second(s).Root cause: {}", seconds, e.getMessage());
+        }
+    }
 }
 
 

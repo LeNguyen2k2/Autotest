@@ -1,4 +1,3 @@
 {
-   "LNK_NEW_CUSTOMER" : "//a[normalize-space()='New Customer']",
    "LBL_MANGER_ID" : "//td[contains(text(),'Manger Id')]"
 }
