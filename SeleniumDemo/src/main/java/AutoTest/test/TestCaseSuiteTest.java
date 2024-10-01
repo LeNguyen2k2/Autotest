@@ -1,6 +1,7 @@
 package Autotest.test;
 
-import Autotest.keywords.ExcelKeywords;
+import Autotest.keywords.ExcelUtils;
+import Autotest.keywords.ExcelUtils;
 import org.testng.annotations.Test;
 import Autotest.pages.Manager;
 import Autotest.pages.NewCustomer;
@@ -18,7 +19,7 @@ public class TestCaseSuiteTest extends BaseTest {
   private NewCustomer objNewCustomer;
 
   public TestCaseSuiteTest() {
-    excelUtils = new ExcelKeywords();
+    excelUtils = new ExcelUtils();
     excelUtils.setExcelFile(DATA_FILE_PATH, TestCaseSuiteTest.class.getSimpleName());
   }
 
@@ -194,17 +195,17 @@ public class TestCaseSuiteTest extends BaseTest {
 
   @Test(description = "NC032: Reset all field in New Customer")
   public void NC032_Reset_all_field_in_New_customer() {
-    Customer customer = new Customer();
-    customer.setCustomerName("Thien Nguyen");
-    customer.setGender("Female");
-    customer.setDateOfBirth("01/02/2022");
-    customer.setAddress("123 Phan Van Tri");
-    customer.setState("Go Vap");
-    customer.setCity("Ho Chi Minh");
-    customer.setPin("123456");
-    customer.setTelephone("0912345678");
-    customer.setEmail(generateRandomValidEmail("abc", "@gmail.com"));
-    customer.setPassword("123@123");
+    Customer customer = Customer.Builder.aCustomer()
+            .withCustomerName("Thanh Hằng")
+            .withGender("Female")
+            .withDateOfBirth("09/05/2022")
+            .withAddress("123 Nguyen Trai")
+            .withState("Thanh Xuan")
+            .withCity("Ha Noi")
+            .withPin("123456")
+            .withTelephone("0912345657")
+            .withEmail(generateRandomValidEmail("abc", "@gmail.com"))
+            .withPassword("123@123").build();
     objNewCustomer.create_new_customer(customer);
     objNewCustomer.clickResetNewCustomer();
     assertEquals("", objNewCustomer.customerName());
@@ -243,17 +244,17 @@ public class TestCaseSuiteTest extends BaseTest {
 
   @Test(description = "NC035: Submit form with all fields entered and retrieve Customer ID")
   public void NC035_Check_submit_and_get_CustomerId() {
-    // Step 1: Enter customer details (hard-coded)
-    customer.setCustomerName("Thien Nguyen");
-    customer.setGender("Female");
-    customer.setDateOfBirth("01/02/2022");
-    customer.setAddress("123 Phan Van Tri");
-    customer.setState("Go Vap");
-    customer.setCity("Ho Chi Minh");
-    customer.setPin("123456");
-    customer.setTelephone("0912345678");
-    customer.setEmail(generateRandomValidEmail("abc", "@gmail.com"));
-    customer.setPassword("123@123");
+    Customer customer = Customer.Builder.aCustomer()
+            .withCustomerName("Thien Nguyen")
+            .withGender("Female")
+            .withDateOfBirth("01/02/2022")
+            .withAddress("123 Phan Van Tri")
+            .withState("Go Vap")
+            .withCity("Ho Chi Minh")
+            .withPin("123456")
+            .withTelephone("0912345657")
+            .withEmail(generateRandomValidEmail("abc", "@gmail.com"))
+            .withPassword("123@123").build();
 
     // Step 2: Create new customer
     webUI.delayInSecond(3);

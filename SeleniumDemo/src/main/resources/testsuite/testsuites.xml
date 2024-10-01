@@ -8,14 +8,21 @@
 <!--    </classes>-->
 <!--  </test>-->
 
-  <test name="Chrome - New Customer Test - Suite 1">
+  <test name="Chrome - New Customer Test">
     <parameter name="browser" value="Chrome" />
     <classes>
-      <class name="Autotest.test.TestCaseSuiteTest" />
+      <class name="Autotest.test.TestCaseSuiteTest_02" />
     </classes>
   </test>
 
-<!--  <test name="Chrome - New Customer Test - Suite 2">-->
+<!--  <test name="Chrome - New Customer Test - Suite 1">-->
+<!--    <parameter name="browser" value="Chrome" />-->
+<!--    <classes>-->
+<!--      <class name="Autotest.test.TestCaseSuiteTest" />-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Chrome - Edit Customer Test - Suite 2">-->
 <!--    <parameter name="browser" value="Chrome" />-->
 <!--    <classes>-->
 <!--      <class name="Autotest.test.Guru99EditCustomerTest" />-->

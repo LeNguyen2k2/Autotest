@@ -1,8 +1,9 @@
 package Autotest.test;
 
-import Autotest.keywords.ExcelKeywords;
-import org.testng.annotations.*;
+import Autotest.keywords.ExcelUtils;
+import Autotest.helpers.FileHelpers;
 import Autotest.keywords.WebUI;
+import org.testng.annotations.*;
 import Autotest.pages.Login;
 import Autotest.model.Customer;
 
@@ -10,6 +11,8 @@ import java.io.File;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,9 +26,12 @@ public class BaseTest {
                     + File.separator + "Autotest" + File.separator + "datafiles" + File.separator
                     + "TestData.xlsx";
 
+    private static final String DATA_FILE_NAME = "TestData";
+
     protected Login objLogin;
-    protected ExcelKeywords excelUtils = new ExcelKeywords();;
-    public static Customer customer = new Customer();
+    private String sheetName;
+    protected ExcelUtils excelUtils = new ExcelUtils();;
+    public static Customer customer;
     private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
     private static final String ALLURE_RESULTS_DIR = "target/allure-results";
 
@@ -42,18 +48,13 @@ public class BaseTest {
         webUI.openBrowser(browser, URL);
         webUI.maximizeWindow();
         objLogin = new Login(webUI);
-        excelUtils.setExcelFile(DATA_FILE_PATH, "TestCaseSuiteTest");
+        excelUtils.setExcelFile(DATA_FILE_PATH, this.getClass().getSimpleName());
     }
 
 
     @BeforeMethod
     public void beforeMethod(Method method) {
         logger.info("=============== Start {}", method.getName());
-    }
-
-    // Method to clean Allure results
-    public void cleanAllureResults() {
-        deleteAllureResults();
     }
 
     // Method to delete Allure results
@@ -93,5 +94,17 @@ public class BaseTest {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String date = simpleDateFormat.format(new Date());
         return prefix + date + suffix;
+    }
+
+    private String getSheetName() {
+        return sheetName;
+    }
+
+    public void setSheetName(String sheetName) {
+        this.sheetName = sheetName;
+    }
+
+    public List<HashMap<String, String>> findTestData(String tableName) {
+        return FileHelpers.getTestData(FileHelpers.getExcelDataFilePath(DATA_FILE_NAME), getSheetName(), tableName);
     }
 }

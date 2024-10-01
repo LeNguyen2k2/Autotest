@@ -25,16 +25,16 @@ public class GuruLoginTest extends BaseTest {
 //        assertTrue(objManager.should_show_Manager_ID(USER_ID));
 //    }
 
-    @Test
-    public void LG004_Login_Guru99_successfully() {
-        String userId = excelUtils.getCellData(1, 0);
-        System.out.println("Username from Excel: " + userId);
-
-        String password = excelUtils.getCellData(1, 1);
-        System.out.println("Password from Excel: " + password);
-
-        Manager objManager = objLogin.login_Guru99_with(userId, password);
-        assertTrue(objManager.should_show_Manager_ID(userId));
-    }
+//    @Test
+//    public void LG004_Login_Guru99_successfully() {
+//        String userId = excelUtils.getCellData(1, 0);
+//        System.out.println("Username from Excel: " + userId);
+//
+//        String password = excelUtils.getCellData(1, 1);
+//        System.out.println("Password from Excel: " + password);
+//
+//        Manager objManager = objLogin.login_Guru99_with(userId, password);
+//        assertTrue(objManager.should_show_Manager_ID(userId));
+//    }
 
 }

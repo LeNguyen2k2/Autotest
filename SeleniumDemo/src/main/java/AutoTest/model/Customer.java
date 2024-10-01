@@ -14,6 +14,22 @@ public class Customer {
   private String email;
   private String password;
 
+  public Customer(String customerId, String customerName, String gender, String dateOfBirth,
+                  String address, String city, String state, String pin, String telephone, String email,
+                  String password) {
+    this.customerId = customerId;
+    this.customerName = customerName;
+    this.gender = gender;
+    this.dateOfBirth = dateOfBirth;
+    this.address = address;
+    this.city = city;
+    this.state = state;
+    this.pin = pin;
+    this.telephone = telephone;
+    this.email = email;
+    this.password = password;
+  }
+
   public String getCustomerId() {
     return customerId;
   }
@@ -102,4 +118,84 @@ public class Customer {
     this.password = password;
   }
 
+  public static final class Builder {
+
+    private String customerId;
+    private String customerName;
+    private String gender;
+    private String dateOfBirth;
+    private String address;
+    private String city;
+    private String state;
+    private String pin;
+    private String telephone;
+    private String email;
+    private String password;
+
+    private Builder() {}
+
+    public static Builder aCustomer() {
+      return new Builder();
+    }
+
+    public Builder withCustomerId(String customerId) {
+      this.customerId = customerId;
+      return this;
+    }
+
+    public Builder withCustomerName(String customerName) {
+      this.customerName = customerName;
+      return this;
+    }
+
+    public Builder withGender(String gender) {
+      this.gender = gender;
+      return this;
+    }
+
+    public Builder withDateOfBirth(String dateOfBirth) {
+      this.dateOfBirth = dateOfBirth;
+      return this;
+    }
+
+    public Builder withAddress(String address) {
+      this.address = address;
+      return this;
+    }
+
+    public Builder withCity(String city) {
+      this.city = city;
+      return this;
+    }
+
+    public Builder withState(String state) {
+      this.state = state;
+      return this;
+    }
+
+    public Builder withPin(String pin) {
+      this.pin = pin;
+      return this;
+    }
+
+    public Builder withTelephone(String telephone) {
+      this.telephone = telephone;
+      return this;
+    }
+
+    public Builder withEmail(String email) {
+      this.email = email;
+      return this;
+    }
+
+    public Builder withPassword(String password) {
+      this.password = password;
+      return this;
+    }
+
+    public Customer build() {
+      return new Customer(customerId, customerName, gender, dateOfBirth, address, city, state, pin,
+          telephone, email, password);
+    }
+  }
 }

@@ -33,7 +33,7 @@ public class Login extends BasePage {
   @Step("Click Login button")
   private void clickLogin() {
     webUI.click(findElementObject("BTN_LOGIN"));
-    webUI.delayInSecond(3);
+    webUI.delayInSecond(2);
   }
 
   @Step("Should show user id error message: {0}")

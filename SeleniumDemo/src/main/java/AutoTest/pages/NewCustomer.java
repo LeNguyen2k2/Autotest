@@ -4,6 +4,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import Autotest.keywords.WebUI;
 import Autotest.model.Customer;
+import Autotest.components.LeftMenu;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -22,7 +23,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_CUSTOMER_NAME"), customerName);
     }
-//    webUI.delayInSecond(1);
+//    webUI.delayInSecond(2);
   }
 
   @Step("Input Address: {0}")
@@ -32,7 +33,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_ADDRESS"), address);
     }
-//    webUI.delayInSecond(1);
+//    webUI.delayInSecond(2);
   }
 
   @Step("Input City: {0}")
@@ -42,7 +43,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_CITY"), city);
     }
-//    webUI.delayInSecond(1);
+//    webUI.delayInSecond(2);
   }
 
   @Step("Input State: {0}")
@@ -52,7 +53,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_STATE"), state);
     }
-//    webUI.delayInSecond(1);
+//    webUI.delayInSecond(2);
   }
 
   @Step("Input PIN: {0}")
@@ -62,7 +63,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_PIN"), pin);
     }
-//    webUI.delayInSecond(1);
+//    webUI.delayInSecond(2);
   }
 
   @Step("Input Telephone: {0}")
@@ -72,7 +73,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_TELEPHONE"), telephone);
     }
-//    webUI.delayInSecond(1);
+//    webUI.delayInSecond(2);
   }
 
   @Step("Input Email: {0}")
@@ -82,7 +83,7 @@ public class NewCustomer extends BasePage {
     } else {
       webUI.sendKeys(findElementObject("TXT_EMAIL"), email);
     }
-//    webUI.delayInSecond(1);
+//    webUI.delayInSecond(2);
   }
 
   @Step("Should show customer name error message: {0}")
@@ -282,6 +283,10 @@ public class NewCustomer extends BasePage {
   public Manager clickHome() {
     webUI.click(findElementObject("LNK_HOME"));
     return new Manager(webUI);
+  }
+
+  public LeftMenu leftMenu() {
+    return new LeftMenu(webUI);
   }
 
 }
