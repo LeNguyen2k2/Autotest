@@ -1,6 +1,6 @@
 package Autotest.components;
 
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 import Autotest.pages.BasePage;
 import Autotest.pages.EditCustomer;
 import Autotest.pages.Manager;

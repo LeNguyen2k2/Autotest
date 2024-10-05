@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 
 public class BasePage {
 

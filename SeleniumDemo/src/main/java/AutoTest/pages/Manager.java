@@ -1,9 +1,8 @@
 package Autotest.pages;
 
 import io.qameta.allure.Step;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 import Autotest.components.LeftMenu;
-import Autotest.object_repo.ManagerRepo;
 
 public class Manager extends BasePage {
 

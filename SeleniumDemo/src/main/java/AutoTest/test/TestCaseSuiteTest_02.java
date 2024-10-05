@@ -1,6 +1,5 @@
 package Autotest.test;
 
-import Autotest.keywords.ExcelUtils;
 import org.testng.annotations.Test;
 import Autotest.model.Customer;
 import Autotest.pages.CustomerRegMsg;

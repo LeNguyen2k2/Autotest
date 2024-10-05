@@ -1,4 +1,4 @@
-package Autotest.helpers;
+package Autotest.common.helpers;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -6,7 +6,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import Autotest.keywords.ExcelUtils;
+import Autotest.common.utils.ExcelUtils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -18,8 +18,7 @@ public class FileHelpers {
   private static final String PROJECT_PATH = System.getProperty("user.dir");
   private static final String SOURCE_FOLDER = "src";
   private static final String MAIN_FOLDER = "main";
-  private static final String JAVA_FOLDER = "java";
-  private static final String AUTOTEST_FOLDER = "Autotest";
+  private static final String RESOURCES_FOLDER = "resources";
   private static final String TEST_DATA_FOLDER = "datafiles";
 
   private static final String EXCEL_EXTENSION = ".xlsx";
@@ -27,8 +26,8 @@ public class FileHelpers {
   private static final Logger logger = LoggerFactory.getLogger(FileHelpers.class);
 
   public static String getExcelDataFilePath(String excelFileName) {
-    return PROJECT_PATH + File.separator + SOURCE_FOLDER + File.separator + MAIN_FOLDER + File.separator + JAVA_FOLDER
-        + File.separator + AUTOTEST_FOLDER + File.separator + TEST_DATA_FOLDER + File.separator
+    return PROJECT_PATH + File.separator + SOURCE_FOLDER + File.separator + MAIN_FOLDER + File.separator + RESOURCES_FOLDER
+        + File.separator + TEST_DATA_FOLDER + File.separator
         + excelFileName + EXCEL_EXTENSION;
   }
 

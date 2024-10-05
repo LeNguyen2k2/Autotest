@@ -2,8 +2,7 @@ package Autotest.pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
-import Autotest.keywords.WebUI;
-import Autotest.object_repo.LoginRepo;
+import Autotest.common.keywords.WebUI;
 
 public class Login extends BasePage {
 

@@ -1,10 +1,10 @@
 package Autotest.page_factory.tests;
 
-import Autotest.keywords.ExcelUtils;
+import Autotest.common.utils.ExcelUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.*;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 import Autotest.page_factory.pages.Login;
 
 import java.lang.reflect.Method;

@@ -2,7 +2,7 @@ package Autotest.pages;
 
 import Autotest.model.Customer;
 import io.qameta.allure.Step;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 import org.openqa.selenium.Keys;
 
 public class EditCustomer extends BasePage {

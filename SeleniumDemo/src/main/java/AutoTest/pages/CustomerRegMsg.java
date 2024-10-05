@@ -1,7 +1,7 @@
 package Autotest.pages;
 
 import io.qameta.allure.Step;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 
 public class CustomerRegMsg extends BasePage {
 

@@ -1,8 +1,7 @@
-package Autotest.keywords;
+package Autotest.common.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;

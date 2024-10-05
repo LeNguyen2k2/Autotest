@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 
 import static org.testng.Assert.assertTrue;
 

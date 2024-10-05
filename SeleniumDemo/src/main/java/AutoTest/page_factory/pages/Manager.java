@@ -1,10 +1,9 @@
 package Autotest.page_factory.pages;
 
-import Autotest.page_factory.pages.NewCustomer;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 import Autotest.page_factory.components.LeftMenu;
 
 public class Manager extends BasePage {

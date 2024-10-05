@@ -2,7 +2,7 @@ package Autotest.pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 import Autotest.model.Customer;
 import Autotest.components.LeftMenu;
 

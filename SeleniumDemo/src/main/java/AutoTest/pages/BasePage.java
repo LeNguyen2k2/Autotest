@@ -4,8 +4,7 @@ import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.PathNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import Autotest.keywords.WebUI;
-import Autotest.components.LeftMenu;
+import Autotest.common.keywords.WebUI;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,8 +1,8 @@
 package Autotest.test;
 
-import Autotest.keywords.ExcelUtils;
-import Autotest.helpers.FileHelpers;
-import Autotest.keywords.WebUI;
+import Autotest.common.utils.ExcelUtils;
+import Autotest.common.helpers.FileHelpers;
+import Autotest.common.keywords.WebUI;
 import org.testng.annotations.*;
 import Autotest.pages.Login;
 import Autotest.model.Customer;
@@ -22,8 +22,8 @@ public class BaseTest {
     protected WebUI webUI;
     private static final String URL = "https://demo.guru99.com/V4";
     protected static final String DATA_FILE_PATH =
-            System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "java"
-                    + File.separator + "Autotest" + File.separator + "datafiles" + File.separator
+            System.getProperty("user.dir") + File.separator + "src" + File.separator + "main"
+                    + File.separator + "resources" + File.separator + "datafiles" + File.separator
                     + "TestData.xlsx";
 
     private static final String DATA_FILE_NAME = "TestData";

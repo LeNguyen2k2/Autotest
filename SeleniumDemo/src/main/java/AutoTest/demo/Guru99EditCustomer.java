@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 
 public class Guru99EditCustomer {
 

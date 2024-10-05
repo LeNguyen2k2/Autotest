@@ -1,11 +1,10 @@
 package Autotest.page_factory.pages;
 
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class NewCustomer extends BasePage {
   @FindBy(name = "name")

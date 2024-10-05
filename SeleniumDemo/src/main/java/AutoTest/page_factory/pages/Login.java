@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 
 public class Login extends BasePage {
 

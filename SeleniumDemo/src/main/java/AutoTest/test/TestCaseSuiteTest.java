@@ -1,7 +1,6 @@
 package Autotest.test;
 
-import Autotest.keywords.ExcelUtils;
-import Autotest.keywords.ExcelUtils;
+import Autotest.common.utils.ExcelUtils;
 import org.testng.annotations.Test;
 import Autotest.pages.Manager;
 import Autotest.pages.NewCustomer;

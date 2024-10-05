@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import Autotest.keywords.WebUI;
+import Autotest.common.keywords.WebUI;
 
 import java.util.List;
 
