@@ -1,0 +1,20 @@
+{
+  "NC001": {
+    "UserId": "mngr595227",
+    "password": "nemeguz",
+    "CustomerName": "",
+    "CustomerErrorMessage": "Customer name must not be blank"
+  },
+  "NC002": {
+    "CustomerName": "1234",
+    "CustomerErrorMessage": "Numbers are not allowed"
+  },
+  "NC003": {
+    "CustomerName": "name!@#",
+    "CustomerErrorMessage": "Special characters are not allowed"
+  },
+  "NC004": {
+    "CustomerName": " NguyetLTM",
+    "CustomerErrorMessage": "First character can not have space"
+  }
+}

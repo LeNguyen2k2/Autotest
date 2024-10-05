@@ -11,7 +11,7 @@
   <test name="Chrome - New Customer Test">
     <parameter name="browser" value="Chrome" />
     <classes>
-      <class name="Autotest.test.TestCaseSuiteTest_02" />
+      <class name="Autotest.test.TestCaseSuiteTest_04" />
     </classes>
   </test>
 

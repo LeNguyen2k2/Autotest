@@ -1,6 +1,7 @@
 package Autotest.test;
 
 import Autotest.common.utils.ExcelUtils;
+import Autotest.common.utils.JsonUtils;  // Import JsonUtils
 import Autotest.common.helpers.FileHelpers;
 import Autotest.common.keywords.WebUI;
 import org.testng.annotations.*;
@@ -21,16 +22,24 @@ public class BaseTest {
 
     protected WebUI webUI;
     private static final String URL = "https://demo.guru99.com/V4";
+
     protected static final String DATA_FILE_PATH =
             System.getProperty("user.dir") + File.separator + "src" + File.separator + "main"
                     + File.separator + "resources" + File.separator + "datafiles" + File.separator
                     + "TestData.xlsx";
 
+    private static final String JSON_FILE_PATH =
+            System.getProperty("user.dir") + File.separator + "src" + File.separator + "main"
+                    + File.separator + "java" + File.separator + "Autotest" + File.separator + File.separator + "object_repo"
+                    + File.separator + "CustomerDataTests.json";  // Path for the JSON file
+
     private static final String DATA_FILE_NAME = "TestData";
 
     protected Login objLogin;
     private String sheetName;
-    protected ExcelUtils excelUtils = new ExcelUtils();;
+    protected ExcelUtils excelUtils = new ExcelUtils();
+    protected JsonUtils jsonUtils;  // Declare JsonUtils
+
     public static Customer customer;
     private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
     private static final String ALLURE_RESULTS_DIR = "target/allure-results";
@@ -49,8 +58,8 @@ public class BaseTest {
         webUI.maximizeWindow();
         objLogin = new Login(webUI);
         excelUtils.setExcelFile(DATA_FILE_PATH, this.getClass().getSimpleName());
+        jsonUtils = new JsonUtils(JSON_FILE_PATH);  // Initialize JsonUtils
     }
-
 
     @BeforeMethod
     public void beforeMethod(Method method) {
@@ -104,7 +113,13 @@ public class BaseTest {
         this.sheetName = sheetName;
     }
 
+    // Method to find test data in Excel
     public List<HashMap<String, String>> findTestData(String tableName) {
         return FileHelpers.getTestData(FileHelpers.getExcelDataFilePath(DATA_FILE_NAME), getSheetName(), tableName);
+    }
+
+    // Method to get data from JSON based on test case ID and field name
+    public HashMap<String, String> getJsonTestData(String testCaseId) {
+        return jsonUtils.getTestData(testCaseId);
     }
 }

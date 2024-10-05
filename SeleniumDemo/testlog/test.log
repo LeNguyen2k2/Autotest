@@ -1,737 +1,127 @@
-DEBUG | 2024-10-01 19:07:31 | [main] testng.log4testng.Logger (Logger.java:debug:82) - suiteXmlPath: "D:\Autotest\SeleniumDemo\src\main\resources\testsuite\testsuites.xml"
-INFO  | 2024-10-01 19:07:38 | [main] testng.log4testng.Logger (Logger.java:info:112) - [TestNG] Running:
-  D:\Autotest\SeleniumDemo\src\main\resources\testsuite\testsuites.xml
+DEBUG | 2024-10-05 09:44:32 | [main] testng.log4testng.Logger (Logger.java:debug:82) - suiteXmlPath: "/Users/lenguyen/Documents/Autotest/SeleniumDemo/src/main/resources/testsuite/testsuites.xml"
+INFO  | 2024-10-05 09:44:34 | [main] testng.log4testng.Logger (Logger.java:info:112) - [TestNG] Running:
+  /Users/lenguyen/Documents/Autotest/SeleniumDemo/src/main/resources/testsuite/testsuites.xml
 
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: 474dc43e-75be-487b-adbd-047b48d61c31-result.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: 53e8f339-298e-4778-b61c-e9ba801484ed-attachment
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: 6c89b8ee-e3f8-4991-be6c-6b0935c455a7-container.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: 7115dfa0-bc32-48ee-a07f-2b958c414900-attachment
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: 9115ecfd-dd71-4937-bc79-cfeec655cca7-container.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: 971e48ef-c871-4eb8-81d4-da1e5e1e716a-container.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: 9b332841-3913-444b-b9b2-ef2bde1dd6d0-container.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: c9baa48f-8cf2-4f78-a546-e0c214408645-container.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: cf26c98c-a3dd-4319-81e4-8d7ef4dcf230-container.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: d65b06cf-1bf8-4c7d-8872-15dfa3249424-attachment
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: efbb2de2-a8d2-4703-9d42-cbcb2d262ea6-container.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:69) - Deleted file: f5283655-8d1d-41bd-99e9-ab70779950b9-result.json
-INFO  | 2024-10-01 19:07:39 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:76) - Allure results deleted.
-INFO  | 2024-10-01 19:07:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:openBrowser:38) - Opening browser: Chrome
-INFO  | 2024-10-01 19:07:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:openBrowser:57) - Opened browser 'Chrome' successfully
-INFO  | 2024-10-01 19:07:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:openBrowser:61) - Navigating to https://demo.guru99.com/V4
-INFO  | 2024-10-01 19:07:53 | [main] Autotest.common.keywords.WebUI (WebUI.java:maximizeWindow:73) - Maximizing window
-INFO  | 2024-10-01 19:07:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:maximizeWindow:75) - Maximized window
-INFO  | 2024-10-01 19:07:56 | [main] Autotest.common.utils.ExcelUtils (ExcelUtils.java:setExcelFile:31) - Setting excel file with path 'D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx', and sheet name 'TestCaseSuiteTest_02'
-INFO  | 2024-10-01 19:08:02 | [main] Autotest.common.utils.ExcelUtils (ExcelUtils.java:setExcelFile:44) - Set excel file with path 'D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx', and sheet name 'TestCaseSuiteTest_02' successfully
-INFO  | 2024-10-01 19:08:02 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC001_Name_cannot_be_empty
-INFO  | 2024-10-01 19:08:04 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [7 - 8] - Column [1 - 6]
-DEBUG | 2024-10-01 19:08:07 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_USER_ID']
-INFO  | 2024-10-01 19:08:07 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='uid']'
-INFO  | 2024-10-01 19:08:07 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='uid']'
-INFO  | 2024-10-01 19:08:07 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.704
-INFO  | 2024-10-01 19:08:07 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'mngr595227'
-INFO  | 2024-10-01 19:08:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'mngr595227' successfully
-DEBUG | 2024-10-01 19:08:08 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PASSWORD']
-INFO  | 2024-10-01 19:08:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:08:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:08:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.295
-INFO  | 2024-10-01 19:08:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'nemeguz'
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'nemeguz' successfully
-DEBUG | 2024-10-01 19:08:09 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_LOGIN']
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='btnLogin']'
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='btnLogin']'
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.032
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='btnLogin']'
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='btnLogin']'
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.019
-INFO  | 2024-10-01 19:08:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:817) - Scrolling to web element located by '//input[@name='btnLogin']' at the center of page
-INFO  | 2024-10-01 19:08:10 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:823) - Scrolled to web element located by '//input[@name='btnLogin']' at the center of page successfully
-INFO  | 2024-10-01 19:08:10 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:700) - Clicking web element located by '//input[@name='btnLogin']'
-INFO  | 2024-10-01 19:08:12 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:702) - Web element located by '//input[@name='btnLogin']' is clicked
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:delayInSecond:300) - Delayed 2 seconds
-DEBUG | 2024-10-01 19:08:14 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LNK_NEW_CUSTOMER']
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.148
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.035
-INFO  | 2024-10-01 19:08:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:817) - Scrolling to web element located by '//a[normalize-space()='New Customer']' at the center of page
-INFO  | 2024-10-01 19:08:16 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:823) - Scrolled to web element located by '//a[normalize-space()='New Customer']' at the center of page successfully
-INFO  | 2024-10-01 19:08:16 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:700) - Clicking web element located by '//a[normalize-space()='New Customer']'
-INFO  | 2024-10-01 19:08:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:702) - Web element located by '//a[normalize-space()='New Customer']' is clicked
-DEBUG | 2024-10-01 19:08:18 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
-INFO  | 2024-10-01 19:08:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.188
-INFO  | 2024-10-01 19:08:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ''
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '' successfully
-DEBUG | 2024-10-01 19:08:19 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.076
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message']' is 'Customer name must not be blank'
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC001_Name_cannot_be_empty
-INFO  | 2024-10-01 19:08:19 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC002_Name_cannot_be_numeric
-INFO  | 2024-10-01 19:08:20 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [11 - 12] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:21 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
-INFO  | 2024-10-01 19:08:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.11
-INFO  | 2024-10-01 19:08:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'name1234'
-INFO  | 2024-10-01 19:08:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'name1234' successfully
-DEBUG | 2024-10-01 19:08:22 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.183
-INFO  | 2024-10-01 19:08:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message']' is 'Numbers are not allowed'
-INFO  | 2024-10-01 19:08:23 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC002_Name_cannot_be_numeric
-INFO  | 2024-10-01 19:08:23 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC003_Name_cannot_have_special_characters
-INFO  | 2024-10-01 19:08:24 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [14 - 15] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:24 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
-INFO  | 2024-10-01 19:08:24 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.251
-INFO  | 2024-10-01 19:08:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'name!@#'
-INFO  | 2024-10-01 19:08:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'name!@#' successfully
-DEBUG | 2024-10-01 19:08:25 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.283
-INFO  | 2024-10-01 19:08:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message']' is 'Special characters are not allowed'
-INFO  | 2024-10-01 19:08:26 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC003_Name_cannot_have_special_characters
-INFO  | 2024-10-01 19:08:26 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC004_Name_cannot_have_first_characters_as_blank_space
-INFO  | 2024-10-01 19:08:27 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [17 - 18] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:27 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
-INFO  | 2024-10-01 19:08:27 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:08:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.43
-INFO  | 2024-10-01 19:08:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ' Nguyen'
-INFO  | 2024-10-01 19:08:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys ' Nguyen' successfully
-DEBUG | 2024-10-01 19:08:29 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.371
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message']'
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message']' is 'First character can not have space'
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC004_Name_cannot_have_first_characters_as_blank_space
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC005_Address_cannot_be_empty
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.03
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollIntoView:804) - Scrolling to web element located by '//td[normalize-space()='Address']'
-INFO  | 2024-10-01 19:08:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollIntoView:807) - Scrolled to web element located by '//td[normalize-space()='Address']' successfully
-INFO  | 2024-10-01 19:08:31 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [20 - 21] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:31 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_ADDRESS']
-INFO  | 2024-10-01 19:08:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:08:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:08:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.164
-INFO  | 2024-10-01 19:08:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ''
-INFO  | 2024-10-01 19:08:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '' successfully
-DEBUG | 2024-10-01 19:08:32 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_ADDRESS_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message3']'
-INFO  | 2024-10-01 19:08:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message3']'
-INFO  | 2024-10-01 19:08:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.353
-INFO  | 2024-10-01 19:08:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message3']'
-INFO  | 2024-10-01 19:08:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message3']' is 'Address Field must not be blank'
-INFO  | 2024-10-01 19:08:33 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC005_Address_cannot_be_empty
-INFO  | 2024-10-01 19:08:33 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC006_Address_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:08:34 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [22 - 23] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:34 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_ADDRESS']
-INFO  | 2024-10-01 19:08:34 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:08:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:08:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.433
-INFO  | 2024-10-01 19:08:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ' Address'
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys ' Address' successfully
-DEBUG | 2024-10-01 19:08:36 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_ADDRESS_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message3']'
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message3']'
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.028
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message3']'
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message3']' is 'First character can not have space'
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC006_Address_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:08:36 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC008_City_cannot_be_empty
-INFO  | 2024-10-01 19:08:37 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [25 - 26] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:37 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CITY']
-INFO  | 2024-10-01 19:08:37 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:38 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:38 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.594
-INFO  | 2024-10-01 19:08:38 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ''
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '' successfully
-DEBUG | 2024-10-01 19:08:42 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CITY_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.186
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message4']' is 'City Field must not be blank'
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC008_City_cannot_be_empty
-INFO  | 2024-10-01 19:08:42 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC009_City_cannot_be_numeric
-INFO  | 2024-10-01 19:08:43 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [28 - 29] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:43 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CITY']
-INFO  | 2024-10-01 19:08:43 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:44 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:44 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.37
-INFO  | 2024-10-01 19:08:44 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'city123'
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'city123' successfully
-DEBUG | 2024-10-01 19:08:47 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CITY_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.421
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message4']' is 'Numbers are not allowed'
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC009_City_cannot_be_numeric
-INFO  | 2024-10-01 19:08:47 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC010_City_cannot_have_special_characters
-INFO  | 2024-10-01 19:08:48 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [30 - 31] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:49 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CITY']
-INFO  | 2024-10-01 19:08:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.454
-INFO  | 2024-10-01 19:08:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'City!@#'
-INFO  | 2024-10-01 19:08:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'City!@#' successfully
-DEBUG | 2024-10-01 19:08:55 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CITY_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:08:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.33
-INFO  | 2024-10-01 19:08:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:08:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message4']' is 'Special characters are not allowed'
-INFO  | 2024-10-01 19:08:56 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC010_City_cannot_have_special_characters
-INFO  | 2024-10-01 19:08:56 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC011_City_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:08:56 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [33 - 34] - Column [1 - 4]
-DEBUG | 2024-10-01 19:08:57 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CITY']
-INFO  | 2024-10-01 19:08:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:08:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.25
-INFO  | 2024-10-01 19:08:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ' City'
-INFO  | 2024-10-01 19:09:01 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys ' City' successfully
-DEBUG | 2024-10-01 19:09:01 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CITY_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:01 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:09:01 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:09:01 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.539
-INFO  | 2024-10-01 19:09:01 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message4']'
-INFO  | 2024-10-01 19:09:02 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message4']' is 'First character can not have space'
-INFO  | 2024-10-01 19:09:02 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC011_City_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:09:02 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC012_State_cannot_be_empty
-INFO  | 2024-10-01 19:09:03 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [35 - 36] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:03 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_STATE']
-INFO  | 2024-10-01 19:09:03 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:04 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:04 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.353
-INFO  | 2024-10-01 19:09:04 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ''
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '' successfully
-DEBUG | 2024-10-01 19:09:08 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_STATE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.297
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message5']' is 'State must not be blank'
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC012_State_cannot_be_empty
-INFO  | 2024-10-01 19:09:08 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC013_State_cannot_be_numeric
-INFO  | 2024-10-01 19:09:09 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [38 - 39] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:10 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_STATE']
-INFO  | 2024-10-01 19:09:10 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:10 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:10 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.377
-INFO  | 2024-10-01 19:09:10 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'state123'
-INFO  | 2024-10-01 19:09:13 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'state123' successfully
-DEBUG | 2024-10-01 19:09:13 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_STATE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:13 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:13 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:13 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.209
-INFO  | 2024-10-01 19:09:13 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message5']' is 'Numbers are not allowed'
-INFO  | 2024-10-01 19:09:14 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC013_State_cannot_be_numeric
-INFO  | 2024-10-01 19:09:14 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC014_State_cannot_have_special_characters
-INFO  | 2024-10-01 19:09:14 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [40 - 41] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:15 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_STATE']
-INFO  | 2024-10-01 19:09:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.416
-INFO  | 2024-10-01 19:09:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'State!@#'
-INFO  | 2024-10-01 19:09:20 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'State!@#' successfully
-DEBUG | 2024-10-01 19:09:20 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_STATE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:20 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.376
-INFO  | 2024-10-01 19:09:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message5']' is 'Special characters are not allowed'
-INFO  | 2024-10-01 19:09:21 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC014_State_cannot_have_special_characters
-INFO  | 2024-10-01 19:09:21 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC015_State_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:09:22 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [43 - 44] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:22 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_STATE']
-INFO  | 2024-10-01 19:09:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:09:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.357
-INFO  | 2024-10-01 19:09:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ' State'
-INFO  | 2024-10-01 19:09:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys ' State' successfully
-DEBUG | 2024-10-01 19:09:29 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_STATE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.771
-INFO  | 2024-10-01 19:09:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message5']'
-INFO  | 2024-10-01 19:09:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message5']' is 'First character can not have space'
-INFO  | 2024-10-01 19:09:31 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC015_State_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:09:31 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC016_PIN_cannot_be_numeric
-INFO  | 2024-10-01 19:09:31 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [45 - 46] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:34 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:09:34 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 1.444
-INFO  | 2024-10-01 19:09:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '1234PIN'
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '1234PIN' successfully
-DEBUG | 2024-10-01 19:09:40 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_PIN_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.343
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message6']' is 'Characters are not allowed'
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC016_PIN_cannot_be_numeric
-INFO  | 2024-10-01 19:09:40 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC017_PIN_cannot_be_empty
-INFO  | 2024-10-01 19:09:41 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [48 - 49] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:42 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:09:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.127
-INFO  | 2024-10-01 19:09:42 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ''
-INFO  | 2024-10-01 19:09:43 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '' successfully
-DEBUG | 2024-10-01 19:09:43 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_PIN_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:43 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:44 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:44 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.031
-INFO  | 2024-10-01 19:09:44 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:44 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message6']' is 'PIN Code must not be blank'
-INFO  | 2024-10-01 19:09:44 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC017_PIN_cannot_be_empty
-INFO  | 2024-10-01 19:09:44 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC018_PIN_must_have_6_digits
-INFO  | 2024-10-01 19:09:44 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [50 - 51] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:45 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:09:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.088
-INFO  | 2024-10-01 19:09:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '1234'
-INFO  | 2024-10-01 19:09:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '1234' successfully
-DEBUG | 2024-10-01 19:09:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_PIN_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.094
-INFO  | 2024-10-01 19:09:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message6']' is 'PIN Code must have 6 Digits'
-INFO  | 2024-10-01 19:09:47 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC018_PIN_must_have_6_digits
-INFO  | 2024-10-01 19:09:47 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC019_PIN_cannot_have_special_character
-INFO  | 2024-10-01 19:09:48 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [53 - 54] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:48 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:09:48 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.233
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '123@!#'
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '123@!#' successfully
-DEBUG | 2024-10-01 19:09:49 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_PIN_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.063
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message6']' is 'Special characters are not allowed'
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC019_PIN_cannot_have_special_character
-INFO  | 2024-10-01 19:09:49 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC020_PIN_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:09:50 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [55 - 56] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:51 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:09:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.116
-INFO  | 2024-10-01 19:09:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ' 123'
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys ' 123' successfully
-DEBUG | 2024-10-01 19:09:52 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_PIN_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.026
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message6']' is 'First character can not have space'
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC020_PIN_cannot_have_first_blank_space
-INFO  | 2024-10-01 19:09:52 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC021_PIN_cannot_have_blank_space
-INFO  | 2024-10-01 19:09:53 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [58 - 59] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:54 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.047
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '12 3'
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '12 3' successfully
-DEBUG | 2024-10-01 19:09:54 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_PIN_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.115
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message6']'
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message6']' is 'Characters are not allowed'
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC021_PIN_cannot_have_blank_space
-INFO  | 2024-10-01 19:09:54 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC022_Telephone_cannot_be_empty
-INFO  | 2024-10-01 19:09:55 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [60 - 61] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:56 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_TELEPHONE']
-INFO  | 2024-10-01 19:09:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:09:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:09:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.125
-INFO  | 2024-10-01 19:09:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ''
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '' successfully
-DEBUG | 2024-10-01 19:09:57 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_TELEPHONE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.129
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message7']' is 'Mobile no must not be blank'
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC022_Telephone_cannot_be_empty
-INFO  | 2024-10-01 19:09:57 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC023_Telephone_cannot_have_first_characters_blank_space
-INFO  | 2024-10-01 19:09:58 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [63 - 64] - Column [1 - 4]
-DEBUG | 2024-10-01 19:09:59 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_TELEPHONE']
-INFO  | 2024-10-01 19:09:59 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:09:59 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:09:59 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.081
-INFO  | 2024-10-01 19:09:59 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ' 099'
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys ' 099' successfully
-DEBUG | 2024-10-01 19:10:00 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_TELEPHONE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.066
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message7']' is 'First character can not have space'
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC023_Telephone_cannot_have_first_characters_blank_space
-INFO  | 2024-10-01 19:10:00 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC024_Telephone_cannot_have_blank_space
-INFO  | 2024-10-01 19:10:01 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [65 - 66] - Column [1 - 4]
-DEBUG | 2024-10-01 19:10:02 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_TELEPHONE']
-INFO  | 2024-10-01 19:10:02 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:02 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:02 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.426
-INFO  | 2024-10-01 19:10:02 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '09 9'
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '09 9' successfully
-DEBUG | 2024-10-01 19:10:03 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_TELEPHONE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.078
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message7']' is 'Characters are not allowed'
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC024_Telephone_cannot_have_blank_space
-INFO  | 2024-10-01 19:10:03 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC025_Telephone_cannot_have_special_character
-INFO  | 2024-10-01 19:10:04 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [68 - 69] - Column [1 - 4]
-DEBUG | 2024-10-01 19:10:05 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_TELEPHONE']
-INFO  | 2024-10-01 19:10:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.062
-INFO  | 2024-10-01 19:10:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '099!@#'
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '099!@#' successfully
-DEBUG | 2024-10-01 19:10:06 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_TELEPHONE_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.097
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message7']'
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message7']' is 'Special characters are not allowed'
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC025_Telephone_cannot_have_special_character
-INFO  | 2024-10-01 19:10:06 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC026_Email_cannot_be_empty
-INFO  | 2024-10-01 19:10:07 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [70 - 71] - Column [1 - 4]
-DEBUG | 2024-10-01 19:10:08 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_EMAIL']
-INFO  | 2024-10-01 19:10:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.078
-INFO  | 2024-10-01 19:10:08 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys ''
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '' successfully
-DEBUG | 2024-10-01 19:10:09 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_EMAIL_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.121
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message9']' is 'Email-ID must not be blank'
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC026_Email_cannot_be_empty
-INFO  | 2024-10-01 19:10:09 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC027_Email_must_be_in_correct_format
-INFO  | 2024-10-01 19:10:10 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [73 - 74] - Column [1 - 4]
-DEBUG | 2024-10-01 19:10:11 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_EMAIL']
-INFO  | 2024-10-01 19:10:11 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:11 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:11 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.205
-INFO  | 2024-10-01 19:10:11 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'guru99@gmail'
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'guru99@gmail' successfully
-DEBUG | 2024-10-01 19:10:12 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_EMAIL_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.117
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message9']' is 'Email-ID is not valid'
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC027_Email_must_be_in_correct_format
-INFO  | 2024-10-01 19:10:12 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC029_Email_cannot_have_space
-INFO  | 2024-10-01 19:10:13 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [76 - 77] - Column [1 - 4]
-DEBUG | 2024-10-01 19:10:14 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_EMAIL']
-INFO  | 2024-10-01 19:10:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.18
-INFO  | 2024-10-01 19:10:14 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'Guru 99@'
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'Guru 99@' successfully
-DEBUG | 2024-10-01 19:10:15 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_EMAIL_ERROR_MESSAGE']
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.04
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//label[@id='message9']'
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//label[@id='message9']' is 'Email-ID is not valid'
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC029_Email_cannot_have_space
-INFO  | 2024-10-01 19:10:15 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC032_Reset_all_field_in_New_customer
-INFO  | 2024-10-01 19:10:16 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [79 - 80] - Column [1 - 13]
-DEBUG | 2024-10-01 19:10:17 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
-INFO  | 2024-10-01 19:10:17 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:10:17 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:10:17 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.095
-INFO  | 2024-10-01 19:10:17 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'Thien Nguyen'
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'Thien Nguyen' successfully
-DEBUG | 2024-10-01 19:10:18 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['CHK_FEMALE']
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.11
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.079
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:817) - Scrolling to web element located by '//input[@value='f']' at the center of page
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:823) - Scrolled to web element located by '//input[@value='f']' at the center of page successfully
-INFO  | 2024-10-01 19:10:18 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:700) - Clicking web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:702) - Web element located by '//input[@value='f']' is clicked
-INFO  | 2024-10-01 19:10:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:906) - Taking a screen shot
-INFO  | 2024-10-01 19:10:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:909) - Screen shot taken
-DEBUG | 2024-10-01 19:10:19 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['DTP_DATE_OF_BIRTH']
-INFO  | 2024-10-01 19:10:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@id='dob']'
-INFO  | 2024-10-01 19:10:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@id='dob']'
-INFO  | 2024-10-01 19:10:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.206
-INFO  | 2024-10-01 19:10:19 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '01/02/2022'
-INFO  | 2024-10-01 19:10:20 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '01/02/2022' successfully
-INFO  | 2024-10-01 19:10:20 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:906) - Taking a screen shot
-INFO  | 2024-10-01 19:10:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:909) - Screen shot taken
-DEBUG | 2024-10-01 19:10:21 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_ADDRESS']
-INFO  | 2024-10-01 19:10:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:10:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:10:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.143
-INFO  | 2024-10-01 19:10:21 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '1 Phan Van Tri'
-INFO  | 2024-10-01 19:10:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '1 Phan Van Tri' successfully
-DEBUG | 2024-10-01 19:10:22 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CITY']
-INFO  | 2024-10-01 19:10:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:10:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:10:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.133
-INFO  | 2024-10-01 19:10:22 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'Ho Chi Minh'
-INFO  | 2024-10-01 19:10:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'Ho Chi Minh' successfully
-DEBUG | 2024-10-01 19:10:23 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_STATE']
-INFO  | 2024-10-01 19:10:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:10:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:10:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.039
-INFO  | 2024-10-01 19:10:23 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'Go Vap'
-INFO  | 2024-10-01 19:10:24 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'Go Vap' successfully
-DEBUG | 2024-10-01 19:10:24 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:10:24 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:10:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:10:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.145
-INFO  | 2024-10-01 19:10:25 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '123456'
-INFO  | 2024-10-01 19:10:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '123456' successfully
-DEBUG | 2024-10-01 19:10:26 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_TELEPHONE']
-INFO  | 2024-10-01 19:10:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.094
-INFO  | 2024-10-01 19:10:26 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '0912345678'
-INFO  | 2024-10-01 19:10:27 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '0912345678' successfully
-DEBUG | 2024-10-01 19:10:27 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_EMAIL']
-INFO  | 2024-10-01 19:10:27 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:27 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:27 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.125
-INFO  | 2024-10-01 19:10:27 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'abc202410275191017@gmail.com'
-INFO  | 2024-10-01 19:10:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'abc202410275191017@gmail.com' successfully
-DEBUG | 2024-10-01 19:10:28 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PASSWORD']
-INFO  | 2024-10-01 19:10:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:10:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:10:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.048
-INFO  | 2024-10-01 19:10:28 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '123'
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '123' successfully
-DEBUG | 2024-10-01 19:10:29 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['NEW_CUSTOMER_BTN_RESET']
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='res']'
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='res']'
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.161
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='res']'
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='res']'
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.173
-INFO  | 2024-10-01 19:10:29 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:817) - Scrolling to web element located by '//input[@name='res']' at the center of page
-INFO  | 2024-10-01 19:10:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:823) - Scrolled to web element located by '//input[@name='res']' at the center of page successfully
-INFO  | 2024-10-01 19:10:30 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:700) - Clicking web element located by '//input[@name='res']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:702) - Web element located by '//input[@name='res']' is clicked
-DEBUG | 2024-10-01 19:10:31 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.14
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@name='name']' is ''
-DEBUG | 2024-10-01 19:10:31 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['DTP_DATE_OF_BIRTH']
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@id='dob']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@id='dob']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.065
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@id='dob']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@id='dob']' is ''
-DEBUG | 2024-10-01 19:10:31 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_ADDRESS']
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.125
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//textarea[@name='addr']' is ''
-DEBUG | 2024-10-01 19:10:31 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CITY']
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.138
-INFO  | 2024-10-01 19:10:31 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@name='city']' is ''
-DEBUG | 2024-10-01 19:10:32 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_STATE']
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.203
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@name='state']' is ''
-DEBUG | 2024-10-01 19:10:32 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.11
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@name='pinno']' is ''
-DEBUG | 2024-10-01 19:10:32 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_TELEPHONE']
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.094
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@name='telephoneno']' is ''
-DEBUG | 2024-10-01 19:10:32 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_EMAIL']
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.062
-INFO  | 2024-10-01 19:10:32 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@name='emailid']' is ''
-DEBUG | 2024-10-01 19:10:33 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PASSWORD']
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.172
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//input[@name='password']' is ''
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC032_Reset_all_field_in_New_customer
-INFO  | 2024-10-01 19:10:33 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC033_Check_submit_with_no_enter_value_in_all_field_F5
-INFO  | 2024-10-01 19:10:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:delayInSeconds:992) - Delayed 2 seconds
-INFO  | 2024-10-01 19:10:35 | [main] Autotest.common.keywords.WebUI (WebUI.java:refresh:981) - Refreshing the page
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:refresh:983) - Refreshed the page successfully
-DEBUG | 2024-10-01 19:10:36 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['NEW_CUSTOMER_BTN_SUBMIT']
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.185
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.237
-INFO  | 2024-10-01 19:10:36 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:817) - Scrolling to web element located by '//input[@name='sub']' at the center of page
-INFO  | 2024-10-01 19:10:37 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:823) - Scrolled to web element located by '//input[@name='sub']' at the center of page successfully
-INFO  | 2024-10-01 19:10:37 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:700) - Clicking web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:38 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:702) - Web element located by '//input[@name='sub']' is clicked
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:delayInSeconds:992) - Delayed 2 seconds
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC033_Check_submit_with_no_enter_value_in_all_field_F5
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC034_Accept_alert
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:acceptAlert:624) - Accepting alert...
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:acceptAlert:627) - Accepted alert.
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyAlertPresent:936) - Verifying alert is present
-ERROR | 2024-10-01 19:10:40 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyAlertPresent:944) - Failed to verify alert is present. Root cause: no such alert
-  (Session info: chrome=129.0.6668.60)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5ee81d46437097662a8b2beca8067cd1, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\nguyn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58012/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5ee81d46437097662a8b2beca8067cd1
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC034_Accept_alert
-INFO  | 2024-10-01 19:10:40 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:57) - =============== Start NC035_Check_submit_and_get_CustomerId
-INFO  | 2024-10-01 19:10:41 | [main] Autotest.common.helpers.FileHelpers (FileHelpers.java:getTestData:64) - Loading data from excel file D:\Autotest\SeleniumDemo\src\main\java\Autotest\datafiles\TestData.xlsx at Row [82 - 83] - Column [1 - 13]
-INFO  | 2024-10-01 19:10:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:delayInSecond:300) - Delayed 3 seconds
-DEBUG | 2024-10-01 19:10:45 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
-INFO  | 2024-10-01 19:10:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:10:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='name']'
-INFO  | 2024-10-01 19:10:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.22
-INFO  | 2024-10-01 19:10:45 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'Thien Nguyen'
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'Thien Nguyen' successfully
-DEBUG | 2024-10-01 19:10:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['CHK_FEMALE']
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.058
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.094
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:817) - Scrolling to web element located by '//input[@value='f']' at the center of page
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:823) - Scrolled to web element located by '//input[@value='f']' at the center of page successfully
-INFO  | 2024-10-01 19:10:46 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:700) - Clicking web element located by '//input[@value='f']'
-INFO  | 2024-10-01 19:10:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:702) - Web element located by '//input[@value='f']' is clicked
-INFO  | 2024-10-01 19:10:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:906) - Taking a screen shot
-INFO  | 2024-10-01 19:10:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:909) - Screen shot taken
-DEBUG | 2024-10-01 19:10:47 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['DTP_DATE_OF_BIRTH']
-INFO  | 2024-10-01 19:10:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@id='dob']'
-INFO  | 2024-10-01 19:10:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@id='dob']'
-INFO  | 2024-10-01 19:10:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.125
-INFO  | 2024-10-01 19:10:47 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '01/02/2022'
-INFO  | 2024-10-01 19:10:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '01/02/2022' successfully
-INFO  | 2024-10-01 19:10:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:906) - Taking a screen shot
-INFO  | 2024-10-01 19:10:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:909) - Screen shot taken
-DEBUG | 2024-10-01 19:10:49 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_ADDRESS']
-INFO  | 2024-10-01 19:10:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:10:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//textarea[@name='addr']'
-INFO  | 2024-10-01 19:10:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.094
-INFO  | 2024-10-01 19:10:49 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '1 Vo Van Ngan'
-INFO  | 2024-10-01 19:10:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '1 Vo Van Ngan' successfully
-DEBUG | 2024-10-01 19:10:50 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CITY']
-INFO  | 2024-10-01 19:10:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:10:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='city']'
-INFO  | 2024-10-01 19:10:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.027
-INFO  | 2024-10-01 19:10:50 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'Ho Chi Minh'
-INFO  | 2024-10-01 19:10:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'Ho Chi Minh' successfully
-DEBUG | 2024-10-01 19:10:51 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_STATE']
-INFO  | 2024-10-01 19:10:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:10:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='state']'
-INFO  | 2024-10-01 19:10:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.216
-INFO  | 2024-10-01 19:10:51 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'Thu Duc'
-INFO  | 2024-10-01 19:10:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'Thu Duc' successfully
-DEBUG | 2024-10-01 19:10:52 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PIN']
-INFO  | 2024-10-01 19:10:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:10:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='pinno']'
-INFO  | 2024-10-01 19:10:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.078
-INFO  | 2024-10-01 19:10:52 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '123456'
-INFO  | 2024-10-01 19:10:53 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '123456' successfully
-DEBUG | 2024-10-01 19:10:53 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_TELEPHONE']
-INFO  | 2024-10-01 19:10:53 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:53 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='telephoneno']'
-INFO  | 2024-10-01 19:10:53 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.074
-INFO  | 2024-10-01 19:10:53 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '0912345678'
-INFO  | 2024-10-01 19:10:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '0912345678' successfully
-DEBUG | 2024-10-01 19:10:54 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_EMAIL']
-INFO  | 2024-10-01 19:10:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='emailid']'
-INFO  | 2024-10-01 19:10:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.028
-INFO  | 2024-10-01 19:10:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys 'abc202410275191042@gmail.com'
-INFO  | 2024-10-01 19:10:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys 'abc202410275191042@gmail.com' successfully
-DEBUG | 2024-10-01 19:10:54 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PASSWORD']
-INFO  | 2024-10-01 19:10:54 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:10:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='password']'
-INFO  | 2024-10-01 19:10:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.144
-INFO  | 2024-10-01 19:10:55 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:265) - Sending keys '123'
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:sendKeys:268) - Sent keys '123' successfully
-DEBUG | 2024-10-01 19:10:56 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['NEW_CUSTOMER_BTN_SUBMIT']
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.174
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.079
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:817) - Scrolling to web element located by '//input[@name='sub']' at the center of page
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:823) - Scrolled to web element located by '//input[@name='sub']' at the center of page successfully
-INFO  | 2024-10-01 19:10:56 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:700) - Clicking web element located by '//input[@name='sub']'
-INFO  | 2024-10-01 19:10:59 | [main] Autotest.common.keywords.WebUI (WebUI.java:click:702) - Web element located by '//input[@name='sub']' is clicked
-INFO  | 2024-10-01 19:11:04 | [main] Autotest.common.keywords.WebUI (WebUI.java:delayInSecond:300) - Delayed 5 seconds
-INFO  | 2024-10-01 19:11:04 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:906) - Taking a screen shot
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:takeScreenShot:909) - Screen shot taken
-DEBUG | 2024-10-01 19:11:05 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_HEADING']
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//p[@class='heading3']'
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//p[@class='heading3']'
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.202
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:873) - Verifying text of web element located by '//p[@class='heading3']'
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:verifyElementText:876) - Text of web element located by '//p[@class='heading3']' is 'Customer Registered Successfully!!!'
-DEBUG | 2024-10-01 19:11:05 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_ID']
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:199) - Finding web element located by '//td[normalize-space()='Customer ID']/following-sibling::td'
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:215) - Found 1 web element located by '//td[normalize-space()='Customer ID']/following-sibling::td'
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:findWebElement:222) - Total time: 0.22
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:954) - Getting text of web element located by '//td[normalize-space()='Customer ID']/following-sibling::td'
-INFO  | 2024-10-01 19:11:05 | [main] Autotest.common.keywords.WebUI (WebUI.java:getText:956) - Text of web element located by '//td[normalize-space()='Customer ID']/following-sibling::td' is '1185'
-INFO  | 2024-10-01 19:11:06 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:84) - =============== End NC035_Check_submit_and_get_CustomerId
-INFO  | 2024-10-01 19:11:06 | [main] Autotest.common.keywords.WebUI (WebUI.java:closeBrowser:96) - Closing the browser
-INFO  | 2024-10-01 19:11:33 | [main] Autotest.common.keywords.WebUI (WebUI.java:closeBrowser:98) - Closed browser
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 89de4822-fe29-4caf-9304-4b5b9357ab34-result.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 7bf48b0c-50d6-49b2-af8e-4f6291dc2f14-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: eabdffb3-7564-4034-b8e1-444e230979fb-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 33aa9609-f7f1-47ee-86e9-2f197b57b004-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: c0dfe7f8-4136-4e97-ba47-41ae7c1caeae-result.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: d0ed751b-c4b0-49b5-82ae-a5a7e08180a6-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: b35165d1-2cf7-4aa6-b428-e88e2af4de3d-result.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: f2270b2e-9ee7-478d-afa0-9f0eb8a70ec9-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 34a8078f-680c-40bb-8d53-afd0ca87f322-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: bd7cf954-d352-4531-a58e-c6db3690bbe6-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 2d8f7d81-5706-467a-9570-e738dfec6345-result.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: c48abeee-31c3-4b33-bfe3-4a8e377f6797-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 4fedd0eb-a9ba-4896-8c3b-b158b5e13c97-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 665b6429-231a-41b1-a24c-9fae4229d539-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: c53df029-ef4e-44b5-860d-9e864a57420d-container.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:78) - Deleted file: 10ca14a7-6de6-4538-8ebd-929aa018f925-result.json
+INFO  | 2024-10-05 09:44:34 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:85) - Allure results deleted.
+INFO  | 2024-10-05 09:44:34 | [main] common.keywords.WebUI (WebUI.java:openBrowser:33) - Opening browser: Chrome
+INFO  | 2024-10-05 09:44:36 | [main] common.keywords.WebUI (WebUI.java:openBrowser:52) - Opened browser 'Chrome' successfully
+INFO  | 2024-10-05 09:44:36 | [main] common.keywords.WebUI (WebUI.java:openBrowser:56) - Navigating to https://demo.guru99.com/V4
+INFO  | 2024-10-05 09:44:39 | [main] common.keywords.WebUI (WebUI.java:maximizeWindow:68) - Maximizing window
+INFO  | 2024-10-05 09:44:39 | [main] common.keywords.WebUI (WebUI.java:maximizeWindow:70) - Maximized window
+INFO  | 2024-10-05 09:44:39 | [main] common.utils.ExcelUtils (ExcelUtils.java:setExcelFile:30) - Setting excel file with path '/Users/lenguyen/Documents/Autotest/SeleniumDemo/src/main/resources/datafiles/TestData.xlsx', and sheet name 'TestCaseSuiteTest_04'
+INFO  | 2024-10-05 09:44:40 | [main] common.utils.ExcelUtils (ExcelUtils.java:setExcelFile:43) - Set excel file with path '/Users/lenguyen/Documents/Autotest/SeleniumDemo/src/main/resources/datafiles/TestData.xlsx', and sheet name 'TestCaseSuiteTest_04' successfully
+INFO  | 2024-10-05 09:44:41 | [main] common.utils.JsonUtils (JsonUtils.java:loadJsonData:26) - Loading JSON data from file '/Users/lenguyen/Documents/Autotest/SeleniumDemo/src/main/java/Autotest//object_repo/CustomerDataTests.json'
+INFO  | 2024-10-05 09:44:41 | [main] common.utils.JsonUtils (JsonUtils.java:loadJsonData:45) - Loaded test case 'NC001' with data: {password=nemeguz, UserId=mngr595227, CustomerName=, CustomerErrorMessage=Customer name must not be blank}
+INFO  | 2024-10-05 09:44:41 | [main] common.utils.JsonUtils (JsonUtils.java:loadJsonData:45) - Loaded test case 'NC002' with data: {CustomerName=1234, CustomerErrorMessage=Numbers are not allowed}
+INFO  | 2024-10-05 09:44:41 | [main] common.utils.JsonUtils (JsonUtils.java:loadJsonData:45) - Loaded test case 'NC003' with data: {CustomerName=name!@#, CustomerErrorMessage=Special characters are not allowed}
+INFO  | 2024-10-05 09:44:41 | [main] common.utils.JsonUtils (JsonUtils.java:loadJsonData:45) - Loaded test case 'NC004' with data: {CustomerName= NguyetLTM, CustomerErrorMessage=First character can not have space}
+INFO  | 2024-10-05 09:44:41 | [main] common.utils.JsonUtils (JsonUtils.java:loadJsonData:47) - Successfully loaded JSON data from file '/Users/lenguyen/Documents/Autotest/SeleniumDemo/src/main/java/Autotest//object_repo/CustomerDataTests.json'
+INFO  | 2024-10-05 09:44:41 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:66) - =============== Start NC001_Name_cannot_be_empty
+DEBUG | 2024-10-05 09:44:41 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_USER_ID']
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='uid']'
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='uid']'
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.051
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:sendKeys:260) - Sending keys 'mngr595227'
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:sendKeys:263) - Sent keys 'mngr595227' successfully
+DEBUG | 2024-10-05 09:44:41 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_PASSWORD']
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='password']'
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='password']'
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.015
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:sendKeys:260) - Sending keys 'nemeguz'
+INFO  | 2024-10-05 09:44:41 | [main] common.keywords.WebUI (WebUI.java:sendKeys:263) - Sent keys 'nemeguz' successfully
+DEBUG | 2024-10-05 09:44:42 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_LOGIN']
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='btnLogin']'
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='btnLogin']'
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.015
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='btnLogin']'
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='btnLogin']'
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.011
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:812) - Scrolling to web element located by '//input[@name='btnLogin']' at the center of page
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:818) - Scrolled to web element located by '//input[@name='btnLogin']' at the center of page successfully
+INFO  | 2024-10-05 09:44:42 | [main] common.keywords.WebUI (WebUI.java:click:695) - Clicking web element located by '//input[@name='btnLogin']'
+INFO  | 2024-10-05 09:44:43 | [main] common.keywords.WebUI (WebUI.java:click:697) - Web element located by '//input[@name='btnLogin']' is clicked
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:295) - Delayed 2 seconds
+DEBUG | 2024-10-05 09:44:45 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LNK_NEW_CUSTOMER']
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.015
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.009
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:812) - Scrolling to web element located by '//a[normalize-space()='New Customer']' at the center of page
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:818) - Scrolled to web element located by '//a[normalize-space()='New Customer']' at the center of page successfully
+INFO  | 2024-10-05 09:44:45 | [main] common.keywords.WebUI (WebUI.java:click:695) - Clicking web element located by '//a[normalize-space()='New Customer']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:click:697) - Web element located by '//a[normalize-space()='New Customer']' is clicked
+DEBUG | 2024-10-05 09:44:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.016
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:sendKeys:260) - Sending keys ''
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:sendKeys:263) - Sent keys '' successfully
+DEBUG | 2024-10-05 09:44:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.054
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:868) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:871) - Text of web element located by '//label[@id='message']' is 'Customer name must not be blank'
+INFO  | 2024-10-05 09:44:46 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:93) - =============== End NC001_Name_cannot_be_empty
+INFO  | 2024-10-05 09:44:46 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:66) - =============== Start NC002_Name_cannot_be_numeric
+DEBUG | 2024-10-05 09:44:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.011
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:sendKeys:260) - Sending keys '1234'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:sendKeys:263) - Sent keys '1234' successfully
+DEBUG | 2024-10-05 09:44:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.01
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:868) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:871) - Text of web element located by '//label[@id='message']' is 'Numbers are not allowed'
+INFO  | 2024-10-05 09:44:46 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:93) - =============== End NC002_Name_cannot_be_numeric
+INFO  | 2024-10-05 09:44:46 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:66) - =============== Start NC003_Name_cannot_have_special_characters
+DEBUG | 2024-10-05 09:44:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.024
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:sendKeys:260) - Sending keys 'name!@#'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:sendKeys:263) - Sent keys 'name!@#' successfully
+DEBUG | 2024-10-05 09:44:47 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.013
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:868) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:871) - Text of web element located by '//label[@id='message']' is 'Special characters are not allowed'
+INFO  | 2024-10-05 09:44:47 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:93) - =============== End NC003_Name_cannot_have_special_characters
+INFO  | 2024-10-05 09:44:47 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:66) - =============== Start NC004_Name_cannot_have_first_character_as_blank_space
+DEBUG | 2024-10-05 09:44:47 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['TXT_CUSTOMER_NAME']
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//input[@name='name']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.01
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:sendKeys:260) - Sending keys ' NguyetLTM'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:sendKeys:263) - Sent keys ' NguyetLTM' successfully
+DEBUG | 2024-10-05 09:44:47 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['LBL_CUSTOMER_NAME_ERROR_MESSAGE']
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:194) - Finding web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:210) - Found 1 web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:findWebElement:217) - Total time: 0.01
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:868) - Verifying text of web element located by '//label[@id='message']'
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:verifyElementText:871) - Text of web element located by '//label[@id='message']' is 'First character can not have space'
+INFO  | 2024-10-05 09:44:47 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:93) - =============== End NC004_Name_cannot_have_first_character_as_blank_space
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:closeBrowser:91) - Closing the browser
+INFO  | 2024-10-05 09:44:47 | [main] common.keywords.WebUI (WebUI.java:closeBrowser:93) - Closed browser
