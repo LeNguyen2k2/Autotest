@@ -286,31 +286,33 @@ public class TestCaseSuiteTest_04 extends BaseTest {
 //        assertFalse(objNewCustomer.should_show_error_alert_message());
 //    }
 //
-//    @Test(description = "NC035: Submit form with all fields entered and retrieve Customer ID")
-//    public void NC035_Check_submit_and_get_CustomerId() {
-//        List<HashMap<String, String>> data = findTestData("NC035");
-//        Customer customer = Customer.Builder.aCustomer()
-//                .withCustomerName(data.get(0).get("CustomerName"))
-//                .withGender(data.get(0).get("Gender"))
-//                .withDateOfBirth(data.get(0).get("DOB"))
-//                .withAddress(data.get(0).get("Address"))
-//                .withState(data.get(0).get("State"))
-//                .withCity(data.get(0).get("City"))
-//                .withPin(data.get(0).get("Pin"))
-//                .withTelephone(data.get(0).get("Telephone"))
-//                .withEmail(generateRandomValidEmail(data.get(0).get("PrefixEmail"), data.get(0).get("Suffix")))
-//                .withPassword(data.get(0).get("Password")).build();
-//
-//        webUI.delayInSecond(3);
-//        objNewCustomer.create_new_customer(customer);
-//
-//        CustomerRegMsg objCustomerRegMsg = objNewCustomer.clickSubmitNewCustomer();
-//        webUI.delayInSecond(5);
-//        assertTrue(objCustomerRegMsg.should_show_text_of_heading("Customer Registered Successfully!!!"));
-//
-//        String customerId = objCustomerRegMsg.getCustomerId();
-//        assertNotNull(customerId, "Customer ID should not be null");
-//        assertFalse(customerId.isEmpty(), "Customer ID should not be empty");
-//        excelUtils.setCellValue(2, 1, customerId, DATA_FILE_PATH);
-//    }
+    @Test(description = "NC035: Submit form with all fields entered and retrieve Customer ID")
+    public void NC035_Check_submit_and_get_CustomerId() {
+        HashMap<String, String> data = jsonUtils.getTestData("NC035");
+
+        Customer customer = Customer.Builder.aCustomer()
+                .withCustomerName(data.get("CustomerName"))
+                .withGender(data.get("Gender"))
+                .withDateOfBirth(data.get("DOB"))
+                .withAddress(data.get("Address"))
+                .withState(data.get("State"))
+                .withCity(data.get("City"))
+                .withPin(data.get("Pin"))
+                .withTelephone(data.get("Telephone"))
+                .withEmail(generateRandomValidEmail(data.get("PrefixEmail"), data.get("Suffix")))
+                .withPassword(data.get("Password"))
+                .build();
+
+        webUI.delayInSecond(3);
+        objNewCustomer.create_new_customer(customer);
+
+        CustomerRegMsg objCustomerRegMsg = objNewCustomer.clickSubmitNewCustomer();
+        webUI.delayInSecond(5);
+        assertTrue(objCustomerRegMsg.should_show_text_of_heading("Customer Registered Successfully!!!"));
+
+        String customerId = objCustomerRegMsg.getCustomerId();
+        HashMap<String, String> testCaseData = new HashMap<>();
+        testCaseData.put("CustomerID", customerId);
+        jsonUtils.saveTestData("NC035", testCaseData);
+    }
 }

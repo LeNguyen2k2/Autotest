@@ -1,20 +1,34 @@
 {
-  "NC001": {
-    "UserId": "mngr595227",
-    "password": "nemeguz",
-    "CustomerName": "",
-    "CustomerErrorMessage": "Customer name must not be blank"
+  "NC001" : {
+    "UserId" : "mngr595227",
+    "password" : "nemeguz",
+    "CustomerName" : "",
+    "CustomerErrorMessage" : "Customer name must not be blank"
   },
-  "NC002": {
-    "CustomerName": "1234",
-    "CustomerErrorMessage": "Numbers are not allowed"
+  "NC002" : {
+    "CustomerName" : "1234",
+    "CustomerErrorMessage" : "Numbers are not allowed"
   },
-  "NC003": {
-    "CustomerName": "name!@#",
-    "CustomerErrorMessage": "Special characters are not allowed"
+  "NC003" : {
+    "CustomerName" : "name!@#",
+    "CustomerErrorMessage" : "Special characters are not allowed"
   },
-  "NC004": {
-    "CustomerName": " NguyetLTM",
-    "CustomerErrorMessage": "First character can not have space"
+  "NC004" : {
+    "CustomerName" : " NguyetLTM",
+    "CustomerErrorMessage" : "First character can not have space"
+  },
+  "NC035" : {
+    "CustomerName" : "Thien Nguyen",
+    "Gender" : "Female",
+    "DOB" : "01/02/2022",
+    "Address" : "1 Vo Van Ngan",
+    "State" : "Thu Duc",
+    "City" : "Ho Chi Minh",
+    "Pin" : "0123456",
+    "Telephone" : "0912345678",
+    "PrefixEmail" : "abc",
+    "Suffix" : "@gmail.com",
+    "Password" : "123",
+    "CustomerID" : "37953"
   }
 }
