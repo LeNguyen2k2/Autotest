@@ -1,0 +1,4 @@
+{
+   "BTN_CATEGORYMENU": "//a[contains(text(),'Danh mục')]",
+   "BTN_ELECTRONICS": "//a[contains(text(),'Điện tử, điện máy')]"
+}

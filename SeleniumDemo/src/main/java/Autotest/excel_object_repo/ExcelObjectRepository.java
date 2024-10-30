@@ -1,8 +1,10 @@
 package Autotest.excel_object_repo;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,54 +12,82 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ExcelObjectRepository {
+    private Map<String, String> elementMap;
+    private WebDriver driver;
 
-    private Map<String, By> objectRepo;
-
-    public ExcelObjectRepository(String filePath) {
-        objectRepo = loadObjectRepository(filePath);
+    public ExcelObjectRepository(String excelFilePath) {
+        elementMap = new HashMap<>();
+        loadExcelData(excelFilePath);
     }
 
-    // Method to load the object repository from Excel
-    private Map<String, By> loadObjectRepository(String filePath) {
-        Map<String, By> locatorsMap = new HashMap<>();
-        try (FileInputStream fis = new FileInputStream(filePath);
+    // Load data from Excel file
+    private void loadExcelData(String excelFilePath) {
+        try (FileInputStream fis = new FileInputStream(excelFilePath);
              Workbook workbook = new XSSFWorkbook(fis)) {
+            Sheet sheet = workbook.getSheetAt(3);
 
-            Sheet sheet = workbook.getSheetAt(0); // Assuming the object repository is in the first sheet
+            // Iterate through rows and read locator info
             for (Row row : sheet) {
-                // Read the element name, locator type, and locator value
-                Cell elementNameCell = row.getCell(0);
-                Cell locatorTypeCell = row.getCell(1);
-                Cell locatorValueCell = row.getCell(2);
+                if (row.getRowNum() == 0) continue;
 
-                if (elementNameCell != null && locatorTypeCell != null && locatorValueCell != null) {
-                    String elementName = elementNameCell.getStringCellValue();
-                    String locatorType = locatorTypeCell.getStringCellValue();
-                    String locatorValue = locatorValueCell.getStringCellValue();
+                Cell keyCell = row.getCell(0); // Element Name
+                Cell typeCell = row.getCell(1); // Locator Type
+                Cell valueCell = row.getCell(2); // Locator Value
 
-                    // Convert locator type and value to a By object
-                    By locator = getBy(locatorType, locatorValue);
-                    locatorsMap.put(elementName, locator);
+                if (keyCell != null && typeCell != null && valueCell != null) {
+                    String key = keyCell.getStringCellValue();
+                    String locatorType = typeCell.getStringCellValue();
+                    String locatorValue = valueCell.getStringCellValue();
+
+                    elementMap.put(key, locatorType + ":" + locatorValue);
+                    System.out.println("Loaded element: " + key + " with " + locatorType + " = " + locatorValue);
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
-            throw new RuntimeException("Failed to load object repository from Excel file: " + filePath, e);
         }
-        return locatorsMap;
     }
 
-    // Method to convert locator type and value to a By object
+    public String findElementObject(String key) {
+        if (key == null || key.isEmpty()) {
+            throw new IllegalArgumentException("Key cannot be null or empty.");
+        }
+
+        String locatorInfo = elementMap.get(key);
+        if (locatorInfo == null) {
+            System.err.println("Locator info not found for key: " + key);
+            return null;
+        }
+        return locatorInfo;
+    }
+
+    public WebElement getWebElement(String key) {
+        String locatorInfo = findElementObject(key);
+        if (locatorInfo != null) {
+            String[] parts = locatorInfo.split(";");
+            if (parts.length == 2) {
+                String locatorType = parts[0].trim();
+                String locatorValue = parts[1].trim();
+                By by = getBy(locatorType, locatorValue); // Updated to pass both type and value
+                return driver.findElement(by);
+            } else {
+                System.err.println("Invalid locator format for key: " + key);
+                return null;
+            }
+        }
+        return null;
+    }
+
     private By getBy(String locatorType, String locatorValue) {
         switch (locatorType.toLowerCase()) {
-            case "id":
-                return By.id(locatorValue);
-            case "name":
-                return By.name(locatorValue);
             case "xpath":
                 return By.xpath(locatorValue);
             case "css":
                 return By.cssSelector(locatorValue);
+            case "id":
+                return By.id(locatorValue);
+            case "name":
+                return By.name(locatorValue);
             case "classname":
                 return By.className(locatorValue);
             case "tagname":
@@ -71,13 +101,7 @@ public class ExcelObjectRepository {
         }
     }
 
-    // Method to retrieve the locator By object for a given element name
-    public By getLocator(String elementName) {
-        By locator = objectRepo.get(elementName);
-        if (locator != null) {
-            return locator;
-        } else {
-            throw new IllegalArgumentException("No locator found for element: " + elementName);
-        }
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
     }
 }

@@ -1,0 +1,256 @@
+DEBUG | 2024-10-30 23:12:07 | [main] testng.log4testng.Logger (Logger.java:debug:82) - suiteXmlPath: "D:\Autotest\Scenario6\src\main\resources\testsuite\testsuites.xml"
+INFO  | 2024-10-30 23:12:08 | [main] testng.log4testng.Logger (Logger.java:info:112) - [TestNG] Running:
+  D:\Autotest\Scenario6\src\main\resources\testsuite\testsuites.xml
+
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 04af1e0d-75ba-4e60-8b53-5bc8652bcfa3-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 15e70f9b-d5af-4033-b1d2-49dbc4015242-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 1c176733-46cf-45e5-8947-06f74d926175-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 2195c9b7-60b9-4939-9570-e98ee0ac3fbc-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 2e757724-8426-4612-a0cc-471fdb52e369-result.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 415d7555-ea8e-4f2d-9ba8-9221a7c01229-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 50218d8b-609a-4949-9692-91606c29ef94-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 55726f95-c995-4257-b5ac-3734c3d13f2c-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 56113634-75ac-4e74-b78c-dd2b9a68ecb2-result.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 68c7feba-c50d-49de-8fae-404d604e4214-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 742df7e1-2688-4b7d-b508-833f11479001-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 773ba604-ea94-4053-9e99-4ab7c501daf3-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 812be1e7-86a1-4cd3-9c21-6389a31e4a4a-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 8e14c9bb-90d6-4b48-a7f9-cc4db5df30ff-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: 923d74ae-81b7-4165-aab6-34c91ffb8f28-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: a1e810af-7532-46c4-add3-20624116f041-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: a63671ac-5a93-4a5a-bd7b-ae9111e24974-result.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: c32b277a-1b2c-4b44-9113-6078a6987dc0-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: c9e92173-b341-4515-87eb-76b75d55a63e-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: ce74f12d-da28-4631-9237-256d29d65076-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: ceadf8cd-491d-4436-afd4-d287bac0cbb4-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: dcf01417-31b4-49e2-aa5e-6e04b21008da-attachment
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: f2eb467e-1b54-42d2-b34c-29d0ac690c30-container.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:57) - Deleted file: f9651218-2aa7-476a-bf7e-a334e87b8bae-result.json
+INFO  | 2024-10-30 23:12:08 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:64) - Allure results deleted.
+INFO  | 2024-10-30 23:12:09 | [main] common.keywords.WebUI (WebUI.java:openBrowser:33) - Opening browser: EDGE
+INFO  | 2024-10-30 23:12:12 | [main] common.keywords.WebUI (WebUI.java:openBrowser:53) - Opened browser 'EDGE' successfully
+INFO  | 2024-10-30 23:12:12 | [main] common.keywords.WebUI (WebUI.java:openBrowser:57) - Navigating to https://www.dienmayxanh.com/
+INFO  | 2024-10-30 23:12:15 | [main] common.keywords.WebUI (WebUI.java:maximizeWindow:70) - Maximizing window
+INFO  | 2024-10-30 23:12:15 | [main] common.keywords.WebUI (WebUI.java:maximizeWindow:72) - Maximized window
+INFO  | 2024-10-30 23:12:15 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:46) - =============== Start NC001_Nagivation_to_Tivi
+DEBUG | 2024-10-30 23:12:15 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_CATEGORY']
+INFO  | 2024-10-30 23:12:15 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(text(),'Danh mục')]'
+INFO  | 2024-10-30 23:12:15 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(text(),'Danh mục')]'
+INFO  | 2024-10-30 23:12:15 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.057
+DEBUG | 2024-10-30 23:12:16 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_ELECTRONICS']
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(text(),'Điện tử, điện máy')]'
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(text(),'Điện tử, điện máy')]'
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
+DEBUG | 2024-10-30 23:12:16 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_TIVI']
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[@class='maintainHover'][normalize-space()='Tivi']//img[@alt='img menu']'
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[@class='maintainHover'][normalize-space()='Tivi']//img[@alt='img menu']'
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.018
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='maintainHover'][normalize-space()='Tivi']//img[@alt='img menu']]' at the center of page
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='maintainHover'][normalize-space()='Tivi']//img[@alt='img menu']]' at the center of page successfully
+INFO  | 2024-10-30 23:12:16 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='maintainHover'][normalize-space()='Tivi']//img[@alt='img menu']]'
+INFO  | 2024-10-30 23:12:17 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='maintainHover'][normalize-space()='Tivi']//img[@alt='img menu']]' is clicked
+INFO  | 2024-10-30 23:12:17 | [main] common.keywords.WebUI (WebUI.java:getCurrentUrl:95) - Current URL: https://www.dienmayxanh.com/tivi
+INFO  | 2024-10-30 23:12:17 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:72) - =============== End NC001_Nagivation_to_Tivi
+INFO  | 2024-10-30 23:12:17 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:46) - =============== Start NC002_Filter_TV_43_to_55
+DEBUG | 2024-10-30 23:12:17 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_FILTER']
+INFO  | 2024-10-30 23:12:17 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//i[@class='un-filter']'
+INFO  | 2024-10-30 23:12:18 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//i[@class='un-filter']'
+INFO  | 2024-10-30 23:12:18 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 1.049
+INFO  | 2024-10-30 23:12:18 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]' at the center of page
+INFO  | 2024-10-30 23:12:18 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]' at the center of page successfully
+INFO  | 2024-10-30 23:12:18 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]'
+INFO  | 2024-10-30 23:12:18 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]' is clicked
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+DEBUG | 2024-10-30 23:12:21 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['OPT_43inch']
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(text(), '43 inch')]'
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(text(), '43 inch')]'
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.02
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '43 inch')]]' at the center of page
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '43 inch')]]' at the center of page successfully
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '43 inch')]]'
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '43 inch')]]' is clicked
+INFO  | 2024-10-30 23:12:21 | [main] Autotest.pages.Tivi (Tivi.java:chooseScreenSize:107) - Selected screen size: 43 inch
+DEBUG | 2024-10-30 23:12:21 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['OPT_50inch']
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(text(), '50 inch')]'
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(text(), '50 inch')]'
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.022
+INFO  | 2024-10-30 23:12:21 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '50 inch')]]' at the center of page
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '50 inch')]]' at the center of page successfully
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '50 inch')]]'
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '50 inch')]]' is clicked
+INFO  | 2024-10-30 23:12:22 | [main] Autotest.pages.Tivi (Tivi.java:chooseScreenSize:107) - Selected screen size: 50 inch
+DEBUG | 2024-10-30 23:12:22 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['OPT_55inch']
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(text(), '55 inch')]'
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(text(), '55 inch')]'
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.028
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '55 inch')]]' at the center of page
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '55 inch')]]' at the center of page successfully
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '55 inch')]]'
+INFO  | 2024-10-30 23:12:22 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '55 inch')]]' is clicked
+INFO  | 2024-10-30 23:12:22 | [main] Autotest.pages.Tivi (Tivi.java:chooseScreenSize:107) - Selected screen size: 55 inch
+INFO  | 2024-10-30 23:12:22 | [main] Autotest.pages.Tivi (Tivi.java:filter_TV_By_Screen_Size:120) - Filtered TVs by screen sizes: [43, 50, 55]
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+DEBUG | 2024-10-30 23:12:25 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_TOTAL_RESULTS']
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:getText:983) - Getting text of web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]'
+INFO  | 2024-10-30 23:12:25 | [main] common.keywords.WebUI (WebUI.java:getText:985) - Text of web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]' is '103'
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+DEBUG | 2024-10-30 23:12:28 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_TOTAL_RESULTS']
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]' at the center of page
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]' at the center of page successfully
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]'
+INFO  | 2024-10-30 23:12:28 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]' is clicked
+INFO  | 2024-10-30 23:12:31 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+INFO  | 2024-10-30 23:12:31 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:12:31 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+INFO  | 2024-10-30 23:12:31 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:72) - =============== End NC002_Filter_TV_43_to_55
+INFO  | 2024-10-30 23:12:31 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:46) - =============== Start NC003_Add_to_Cart
+INFO  | 2024-10-30 23:12:31 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.01
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:scrollToElement:699) - Scrolling to element located by '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:scrollToElement:702) - Successfully scrolled to element '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+DEBUG | 2024-10-30 23:12:32 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['FIR_TV']
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//li[@data-index='1']'
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//li[@data-index='1']'
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.021
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //li[@data-index='1']]' at the center of page
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //li[@data-index='1']]' at the center of page successfully
+INFO  | 2024-10-30 23:12:32 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //li[@data-index='1']]'
+INFO  | 2024-10-30 23:12:34 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //li[@data-index='1']]' is clicked
+INFO  | 2024-10-30 23:12:36 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 2 seconds
+INFO  | 2024-10-30 23:12:36 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:12:36 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+DEBUG | 2024-10-30 23:12:36 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_CART']
+INFO  | 2024-10-30 23:12:36 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[@class='btn-buynow white']'
+INFO  | 2024-10-30 23:12:36 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[@class='btn-buynow white']'
+INFO  | 2024-10-30 23:12:36 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.02
+INFO  | 2024-10-30 23:12:38 | [main] common.keywords.WebUI (WebUI.java:delayInSeconds:1007) - Delayed 2 seconds
+WARN  | 2024-10-30 23:12:39 | [main] Autotest.pages.FirstTV (FirstTV.java:add_to_Cart:71) - Standard click failed, attempting JavaScript click. Root cause: element click intercepted: Element <a href="javascript:;" onclick="BuyNow($(this), 3)" class="btn-buynow white">...</a> is not clickable at point (954, 597). Other element would receive the click: <div class="block-button buy">...</div>
+  (Session info: MicrosoftEdge=130.0.2849.56)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [449b8ec09c691ef02c40cdd15f2ca98c, clickElement {id=f.AA6E5C879F9513A4412C1EA170A3B0CA.d.89A9141256DCE68C65AEB24469093CC0.e.435}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.56, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63284}, msedge: {msedgedriverVersion: 130.0.2849.56 (85245383cd01..., userDataDir: C:\Users\nguyn\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63284/devtoo..., se:cdpVersion: 130.0.2849.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='btn-buynow white']]
+Session ID: 449b8ec09c691ef02c40cdd15f2ca98c
+INFO  | 2024-10-30 23:12:39 | [main] common.keywords.WebUI (WebUI.java:executeJavaScript:348) - Executed JavaScript: arguments[0].click();
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 2 seconds
+DEBUG | 2024-10-30 23:12:41 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['CHK_NONE']
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//div[@class='location-none']//i'
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//div[@class='location-none']//i'
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.015
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='location-none']//i]' at the center of page
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='location-none']//i]' at the center of page successfully
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='location-none']//i]'
+INFO  | 2024-10-30 23:12:41 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='location-none']//i]' is clicked
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 2 seconds
+DEBUG | 2024-10-30 23:12:43 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['POPUP_CLOSE_BUTTON']
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[@class='cls-location']//i[@class='close-symbol']'
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[@class='cls-location']//i[@class='close-symbol']'
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.034
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='cls-location']//i[@class='close-symbol']]' at the center of page
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='cls-location']//i[@class='close-symbol']]' at the center of page successfully
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='cls-location']//i[@class='close-symbol']]'
+INFO  | 2024-10-30 23:12:43 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[@class='cls-location']//i[@class='close-symbol']]' is clicked
+INFO  | 2024-10-30 23:12:45 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 2 seconds
+INFO  | 2024-10-30 23:12:45 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:12:46 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+DEBUG | 2024-10-30 23:12:46 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['CART_ITEM_COUNT']
+INFO  | 2024-10-30 23:12:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//span[@class='cart-number has-cart']'
+INFO  | 2024-10-30 23:12:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//span[@class='cart-number has-cart']'
+INFO  | 2024-10-30 23:12:46 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.034
+INFO  | 2024-10-30 23:12:48 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 2 seconds
+INFO  | 2024-10-30 23:12:48 | [main] common.keywords.WebUI (WebUI.java:goBack:142) - Navigated back to the previous page.
+INFO  | 2024-10-30 23:12:48 | [main] common.keywords.WebUI (WebUI.java:goBack:143) - Element is visible after going back.
+INFO  | 2024-10-30 23:12:48 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:12:48 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+INFO  | 2024-10-30 23:12:48 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:72) - =============== End NC003_Add_to_Cart
+INFO  | 2024-10-30 23:12:48 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:46) - =============== Start NC004_Filter_TV_65_to_85
+INFO  | 2024-10-30 23:12:50 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 2 seconds
+DEBUG | 2024-10-30 23:12:50 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_CLEAR_RESULTS']
+INFO  | 2024-10-30 23:12:50 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//div[@class='filter-outside list-filter-active']//a[@class='clr-filter'][contains(text(),'Xóa tất cả')]'
+INFO  | 2024-10-30 23:12:50 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//div[@class='filter-outside list-filter-active']//a[@class='clr-filter'][contains(text(),'Xóa tất cả')]'
+INFO  | 2024-10-30 23:12:50 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
+INFO  | 2024-10-30 23:12:50 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='filter-outside list-filter-active']//a[@class='clr-filter'][contains(text(),'Xóa tất cả')]]' at the center of page
+INFO  | 2024-10-30 23:12:50 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='filter-outside list-filter-active']//a[@class='clr-filter'][contains(text(),'Xóa tất cả')]]' at the center of page successfully
+INFO  | 2024-10-30 23:12:50 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='filter-outside list-filter-active']//a[@class='clr-filter'][contains(text(),'Xóa tất cả')]]'
+INFO  | 2024-10-30 23:12:51 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //div[@class='filter-outside list-filter-active']//a[@class='clr-filter'][contains(text(),'Xóa tất cả')]]' is clicked
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 2 seconds
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.027
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:scrollToElement:699) - Scrolling to element located by '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:scrollToElement:702) - Successfully scrolled to element '//div[@class='slider-bannertop owl-carousel owl-theme owl-loaded owl-drag']//div[@class='owl-stage-outer']'
+DEBUG | 2024-10-30 23:12:53 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_FILTER']
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//i[@class='un-filter']'
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//i[@class='un-filter']'
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.034
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]' at the center of page
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]' at the center of page successfully
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]'
+INFO  | 2024-10-30 23:12:53 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //i[@class='un-filter']]' is clicked
+INFO  | 2024-10-30 23:12:56 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+INFO  | 2024-10-30 23:12:56 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:12:56 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+DEBUG | 2024-10-30 23:12:56 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['OPT_65inch']
+INFO  | 2024-10-30 23:12:56 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(text(), '65 inch')]'
+INFO  | 2024-10-30 23:12:56 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(text(), '65 inch')]'
+INFO  | 2024-10-30 23:12:56 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.016
+INFO  | 2024-10-30 23:12:56 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '65 inch')]]' at the center of page
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '65 inch')]]' at the center of page successfully
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '65 inch')]]'
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '65 inch')]]' is clicked
+INFO  | 2024-10-30 23:12:57 | [main] Autotest.pages.Tivi (Tivi.java:chooseScreenSize:107) - Selected screen size: 65 inch
+DEBUG | 2024-10-30 23:12:57 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['OPT_70inch']
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(text(), '70 inch')]'
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(text(), '70 inch')]'
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.024
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '70 inch')]]' at the center of page
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '70 inch')]]' at the center of page successfully
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '70 inch')]]'
+INFO  | 2024-10-30 23:12:57 | [main] common.keywords.WebUI (WebUI.java:click:729) - Web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(text(), '70 inch')]]' is clicked
+INFO  | 2024-10-30 23:12:57 | [main] Autotest.pages.Tivi (Tivi.java:chooseScreenSize:107) - Selected screen size: 70 inch
+INFO  | 2024-10-30 23:12:57 | [main] Autotest.pages.Tivi (Tivi.java:filter_TV_By_Screen_Size:120) - Filtered TVs by screen sizes: [65, 70]
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+DEBUG | 2024-10-30 23:13:00 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_TOTAL_RESULTS']
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.032
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:getText:983) - Getting text of web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]'
+INFO  | 2024-10-30 23:13:00 | [main] common.keywords.WebUI (WebUI.java:getText:985) - Text of web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]' is ''
+INFO  | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+DEBUG | 2024-10-30 23:13:03 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_TOTAL_RESULTS']
+INFO  | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:findWebElement:220) - Finding web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:findWebElement:225) - Found 1 web element located by '//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]'
+INFO  | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:findWebElement:232) - Total time: 0.0
+INFO  | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:851) - Scrolling to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]' at the center of page
+INFO  | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:scrollToElementAtCenterOfPage:854) - Scrolled to web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]' at the center of page successfully
+INFO  | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:click:727) - Clicking web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]'
+ERROR | 2024-10-30 23:13:03 | [main] common.keywords.WebUI (WebUI.java:click:731) - Failed to click web element located by '[[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]'. Root cause: element not interactable
+  (Session info: MicrosoftEdge=130.0.2849.56)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [449b8ec09c691ef02c40cdd15f2ca98c, clickElement {id=f.AA6E5C879F9513A4412C1EA170A3B0CA.d.D0DCFF83AF8F04470D665BF5C41FBCF0.e.592}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.56, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63284}, msedge: {msedgedriverVersion: 130.0.2849.56 (85245383cd01..., userDataDir: C:\Users\nguyn\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63284/devtoo..., se:cdpVersion: 130.0.2849.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (449b8ec09c691ef02c40cdd15f2ca98c)] -> xpath: //a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]]
+Session ID: 449b8ec09c691ef02c40cdd15f2ca98c
+INFO  | 2024-10-30 23:13:06 | [main] common.keywords.WebUI (WebUI.java:delayInSecond:310) - Delayed 3 seconds
+INFO  | 2024-10-30 23:13:06 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:921) - Taking a screen shot
+INFO  | 2024-10-30 23:13:06 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:924) - Screen shot taken
+INFO  | 2024-10-30 23:13:06 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:72) - =============== End NC004_Filter_TV_65_to_85
+INFO  | 2024-10-30 23:13:06 | [main] common.keywords.WebUI (WebUI.java:closeBrowser:105) - Closing the browser
+INFO  | 2024-10-30 23:13:08 | [main] common.keywords.WebUI (WebUI.java:closeBrowser:107) - Closed browser

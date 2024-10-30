@@ -1,0 +1,13 @@
+{
+  "BTN_TIVI": "//a[@class='maintainHover'][normalize-space()='Tivi']//img[@alt='img menu']",
+  "BTN_FILTER": "//i[@class='un-filter']",
+  "OPT_43inch": "//a[contains(text(), '43 inch')]",
+  "OPT_50inch": "//a[contains(text(), '50 inch')]",
+  "OPT_55inch": "//a[contains(text(), '55 inch')]",
+  "OPT_65inch": "//a[contains(text(), '65 inch')]",
+  "OPT_70inch": "//a[contains(text(), '70 inch')]",
+  "OPT_75to85inch": "//a[contains(text(), 'Từ 75 - 85 inch')]",
+  "BTN_CLEAR_RESULTS": "//div[@class='filter-outside list-filter-active']//a[@class='clr-filter'][contains(text(),'Xóa tất cả')]",
+  "BTN_TOTAL_RESULTS": "//a[contains(@class, 'btn-filter-readmore')]/b[contains(@class, 'total-reloading')]",
+  "FIR_TV": "//li[@data-index='1']"
+}

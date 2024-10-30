@@ -1,5 +1,6 @@
 package Autotest.pages;
 
+import Autotest.excel_object_repo.ExcelObjectRepository;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import Autotest.common.keywords.WebUI;
@@ -8,20 +9,28 @@ import Autotest.components.LeftMenu;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 public class NewCustomer extends BasePage {
+
+  private ExcelObjectRepository objectRepo;
+  protected static final String DATA_FILE_PATH =
+          System.getProperty("user.dir") + File.separator + "src" + File.separator + "main"
+                  + File.separator + "resources" + File.separator + "datafiles" + File.separator
+                  + "TestData.xlsx";
 
   public NewCustomer(WebUI webUI) {
     super(webUI);
     setRepoName(NewCustomer.class.getSimpleName());
+    objectRepo = new ExcelObjectRepository(DATA_FILE_PATH);
   }
 
   @Step("Input Customer name: {0}")
   public void input_Customer_Name(String customerName) {
     if (customerName.isEmpty()) {
-      webUI.sendKeys(findElementObject("TXT_CUSTOMER_NAME"), Keys.chord(Keys.TAB));
+      webUI.sendKeys(objectRepo.findElementObject("TXT_CUSTOMER_NAME"), Keys.chord(Keys.TAB));
     } else {
-      webUI.sendKeys(findElementObject("TXT_CUSTOMER_NAME"), customerName);
+      webUI.sendKeys(objectRepo.findElementObject("TXT_CUSTOMER_NAME"), customerName);
     }
 //    webUI.delayInSecond(2);
   }
@@ -29,9 +38,9 @@ public class NewCustomer extends BasePage {
   @Step("Input Address: {0}")
   public void input_Address(String address) {
     if (address.isEmpty()) {
-      webUI.sendKeys(findElementObject("TXT_ADDRESS"), Keys.chord(Keys.TAB));
+      webUI.sendKeys(objectRepo.findElementObject("TXT_ADDRESS"), Keys.chord(Keys.TAB));
     } else {
-      webUI.sendKeys(findElementObject("TXT_ADDRESS"), address);
+      webUI.sendKeys(objectRepo.findElementObject("TXT_ADDRESS"), address);
     }
 //    webUI.delayInSecond(2);
   }
@@ -231,7 +240,7 @@ public class NewCustomer extends BasePage {
 
   @Step("Get the value of customer name")
   public String customerName() {
-    return webUI.getText(findElementObject("TXT_CUSTOMER_NAME"));
+    return webUI.getText(objectRepo.getWebElement("TXT_CUSTOMER_NAME"));
   }
 
   @Step("Get the value of address")

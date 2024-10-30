@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82056d92-e17a-447e-a913-fc42e6365b64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/common/helpers/FileHelpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/common/keywords/WebUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/components/CategoryMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/object_repo/CategoryMenu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/object_repo/FirstTV.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/object_repo/Home.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/object_repo/Tivi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/pages/FirstTV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/pages/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/pages/Tivi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/test/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/test/BuyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/allure.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testsuite/testsuites.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/test/TestCaseSuiteTest_06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/common/keywords/WebUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/common/keywords/WebUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/components/LeftMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/components/LeftMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/excel_object_repo/ExcelObjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/excel_object_repo/ExcelObjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/pages/NewCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/pages/NewCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/test/TestCaseSuiteTest_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/java/Autotest/test/TestCaseSuiteTest_04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/resources/datafiles/CustomerDataTests.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/resources/datafiles/CustomerDataTests.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/resources/datafiles/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/resources/datafiles/TestData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/resources/datafiles/~$TestData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/src/main/resources/testsuite/testsuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/src/main/resources/testsuite/testsuites.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumDemo/testlog/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumDemo/testlog/test.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2o6WZtMCBmlj6zP5cPMM77r6rE8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MavenDemo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Autotest\Scenario6\src\main" />
+      <recent name="D:\Autotest\Scenario6\src\main\java\Autotest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/Autotest/Scenario6/src/main/resources/testsuite/testsuites.xml">
+    <configuration name="BuyTest.NC001_Nagivation_to_Tivi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Scenario6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Autotest.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Autotest.test" />
+      <option name="MAIN_CLASS_NAME" value="Autotest.test.BuyTest" />
+      <option name="METHOD_NAME" value="NC001_Nagivation_to_Tivi" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Autotest/Scenario6/src/main/resources/testsuite/testsuites.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Scenario6" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testsuite/testsuites.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/Autotest/Scenario6/src/main/resources/testsuite/testsuites.xml" />
+        <item itemvalue="TestNG.BuyTest.NC001_Nagivation_to_Tivi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82056d92-e17a-447e-a913-fc42e6365b64" name="Changes" comment="" />
+      <created>1730190567880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730190567880</updated>
+      <workItem from="1730190568989" duration="35655000" />
+      <workItem from="1730272867676" duration="28300000" />
+      <workItem from="1730302903556" duration="2051000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

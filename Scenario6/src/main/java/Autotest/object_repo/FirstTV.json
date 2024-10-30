@@ -1,0 +1,8 @@
+{
+  "BTN_CART": "//a[@class='btn-buynow white']",
+  "LOCATIONBOX_OVERLAY": "//div[@class='locationbox-v2 v2024']",
+  "PPOPUP": "//div[@class='popup-error']",
+  "CHK_NONE": "//div[@class='location-none']//i",
+  "POPUP_CLOSE_BUTTON": "//a[@class='cls-location']//i[@class='close-symbol']",
+  "CART_ITEM_COUNT": "//span[@class='cart-number has-cart']"
+}

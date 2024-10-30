@@ -1,11 +1,7 @@
 package Autotest.components;
 
 import Autotest.common.keywords.WebUI;
-import Autotest.pages.BasePage;
-import Autotest.pages.EditCustomer;
-import Autotest.pages.Manager;
-import Autotest.pages.NewCustomer;
-import Autotest.pages.Login;
+import Autotest.pages.*;
 
 public class LeftMenu extends BasePage {
 

@@ -1,21 +1,25 @@
 package Autotest.test;
 
-import Autotest.common.utils.JsonUtils;
+
 import Autotest.model.Customer;
 import Autotest.pages.CustomerRegMsg;
 import Autotest.pages.Manager;
+//import Autotest.pages.CustomerRegistration;
 import Autotest.pages.NewCustomer;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
-import java.util.List;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
 
-public class TestCaseSuiteTest_04 extends BaseTest {
+public class TestCaseSuiteTest_06 extends BaseTest {
 
     private NewCustomer objNewCustomer;
 
+    public TestCaseSuiteTest_06() {
+        setSheetName(TestCaseSuiteTest_06.class.getSimpleName());
+    }
 
     @Test(description = "NC001: Name cannot be empty")
     public void NC001_Name_cannot_be_empty() {

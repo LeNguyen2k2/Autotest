@@ -6,9 +6,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,6 +35,7 @@ public class WebUI {
                 case "CHROME":
                     ChromeOptions chromeOptions = new ChromeOptions();
                     chromeOptions.addArguments("--remote-allow-origins=*");
+                    chromeOptions.addArguments("--disable-infobars");
                     driver = new ChromeDriver(chromeOptions);
                     break;
                 case "FIREFOX": // Updated for Firefox
@@ -59,8 +60,9 @@ public class WebUI {
         } catch (Exception e) {
             logger.error("Failed to open browser '{}'. Root cause: {}", browser, e.getMessage());
         }
-//        driver.manage().window().maximize();
+        // driver.manage().window().maximize();
     }
+
 
 
     public void maximizeWindow() {
@@ -85,6 +87,18 @@ public class WebUI {
         }
         return null;
     }
+
+    public String getCurrentUrl() {
+        String currentUrl = "";
+        try {
+            currentUrl = driver.getCurrentUrl();
+            logger.info("Current URL: " + currentUrl);
+        } catch (Exception e) {
+            logger.error("Failed to retrieve the current URL. Root cause: " + e.getMessage());
+        }
+        return currentUrl;
+    }
+
 
     public void closeBrowser() {
         try {
@@ -121,6 +135,18 @@ public class WebUI {
             logger.error("Failed to navigate to {}. Root cause: {}", url, e.getMessage());
         }
     }
+
+    public void goBack() {
+        try {
+            driver.navigate().back();
+            logger.info("Navigated back to the previous page.");
+            logger.info("Element is visible after going back.");
+        } catch (Exception e) {
+            logger.error("Failed to navigate back. Root cause: {}", e.getMessage());
+        }
+        takeScreenShot();
+    }
+
 
 //    public WebElement findWebElement(String locator) {
 //        WebElement element = null;
@@ -314,16 +340,21 @@ public class WebUI {
         }
     }
 
-    public void executeJavaScript(String script) {
+
+    public void executeJavaScript(String script, WebElement element) {
         try {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript(script);
+            JavascriptExecutor js = (JavascriptExecutor) driver; // Lấy driver từ WebUI
+            js.executeScript(script, element);
             logger.info("Executed JavaScript: {}", script);
         } catch (Exception e) {
             logger.error("Failed to execute JavaScript. Root cause: {}", e.getMessage());
         }
     }
 
+    public void clickUsingJavaScript(WebElement element) {
+        // Gọi phương thức executeJavaScript để thực hiện click
+        executeJavaScript("arguments[0].click();", element);
+    }
 
     public void selectOptionByIndex(String locator, int index) {
         WebElement we = findWebElement(locator);

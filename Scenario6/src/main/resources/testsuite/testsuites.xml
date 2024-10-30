@@ -9,9 +9,9 @@
 <!--  </test>-->
 
   <test name="Chrome - New Customer Test">
-    <parameter name="browser" value="Chrome" />
+    <parameter name="browser" value="EDGE" />
     <classes>
-      <class name="Autotest.test.TestCaseSuiteTest_06" />
+      <class name="Autotest.test.BuyTest" />
     </classes>
   </test>
 

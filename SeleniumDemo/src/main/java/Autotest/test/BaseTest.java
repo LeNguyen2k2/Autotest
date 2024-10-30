@@ -4,6 +4,7 @@ import Autotest.common.utils.ExcelUtils;
 import Autotest.common.utils.JsonUtils;  // Import JsonUtils
 import Autotest.common.helpers.FileHelpers;
 import Autotest.common.keywords.WebUI;
+import Autotest.excel_object_repo.ExcelObjectRepository;
 import org.testng.annotations.*;
 import Autotest.pages.Login;
 import Autotest.model.Customer;
@@ -30,15 +31,15 @@ public class BaseTest {
 
     private static final String JSON_FILE_PATH =
             System.getProperty("user.dir") + File.separator + "src" + File.separator + "main"
-                    + File.separator + "java" + File.separator + "Autotest" + File.separator + File.separator + "object_repo"
-                    + File.separator + "CustomerDataTests.json";  // Path for the JSON file
-
+                    + File.separator + "resources" + File.separator + "datafiles"
+                    + File.separator + "CustomerDataTests.json";
     private static final String DATA_FILE_NAME = "TestData";
 
     protected Login objLogin;
     private String sheetName;
     protected ExcelUtils excelUtils = new ExcelUtils();
-    protected JsonUtils jsonUtils;  // Declare JsonUtils
+    protected JsonUtils jsonUtils;
+    protected ExcelObjectRepository excelRepo;
 
     public static Customer customer;
     private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
@@ -47,7 +48,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void cleanUp() {
-        deleteAllureResults(); // Clean up Allure results before running tests
+        deleteAllureResults();
     }
 
     @Parameters(value = "browser")
@@ -58,7 +59,7 @@ public class BaseTest {
         webUI.maximizeWindow();
         objLogin = new Login(webUI);
         excelUtils.setExcelFile(DATA_FILE_PATH, this.getClass().getSimpleName());
-        jsonUtils = new JsonUtils(JSON_FILE_PATH);  // Initialize JsonUtils
+        jsonUtils = new JsonUtils(JSON_FILE_PATH);
     }
 
     @BeforeMethod

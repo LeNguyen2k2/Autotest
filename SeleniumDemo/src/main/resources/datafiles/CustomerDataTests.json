@@ -14,7 +14,7 @@
     "CustomerErrorMessage" : "Special characters are not allowed"
   },
   "NC004" : {
-    "CustomerName" : " NguyetLTM",
+    "CustomerName" : " Nguyen",
     "CustomerErrorMessage" : "First character can not have space"
   },
   "NC035" : {
@@ -29,6 +29,6 @@
     "PrefixEmail" : "abc",
     "Suffix" : "@gmail.com",
     "Password" : "123",
-    "CustomerID" : "37953"
+    "CustomerID" : "32610"
   }
 }
