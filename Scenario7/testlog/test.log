@@ -1,0 +1,99 @@
+DEBUG | 2024-11-05 20:10:19 | [main] testng.log4testng.Logger (Logger.java:debug:82) - suiteXmlPath: "D:\Autotest\Scenario7\src\main\resources\testsuite\testsuites.xml"
+INFO  | 2024-11-05 20:10:22 | [main] testng.log4testng.Logger (Logger.java:info:112) - [TestNG] Running:
+  D:\Autotest\Scenario7\src\main\resources\testsuite\testsuites.xml
+
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: 27b29474-a442-489d-b634-652650d333b2-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: 3ad8e6ee-3129-41d6-8a82-13f2b579f596-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: 50cfd1fd-20fd-440c-8c06-38d04e4445d7-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: 578e1e99-6c2f-4b5b-a13e-0a36dfea289b-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: 6469bc2d-00a3-45b1-920a-5fa23669316a-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: 6475ba5a-1840-4758-9c5e-d19cd670f225-attachment
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: 7cd5e23a-9b26-449c-a7cf-ada9b56f433b-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: a02a3755-5fff-4050-800f-1a4d4b6cd860-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: a26cc160-67e3-4d1f-bc3c-b01f021a0bb0-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: a9f5b3be-ee93-473f-8039-c173e2e6b040-result.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: afac3867-f8dc-4ccc-9ef7-2436c058cb25-result.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: b3c38db7-a389-4045-bed8-3db32fc2cb41-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: bbd950a6-b05f-4079-b988-370b07969922-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: bd94e8da-8dcf-40b1-87ad-ab3a8a4689c7-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: cb524282-abc5-45c7-b797-4ec2b2f499a8-result.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: d1276cfd-484b-4063-aaf3-76bc4623addf-result.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: d97c016b-eb24-4603-8cd9-9d8830d2f58a-result.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: dd9be354-ccf8-4100-99c3-560703bbc976-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: f000e716-3f1c-4213-95b7-bd21983ee749-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: f45cdcf2-430c-4e48-9135-1f12cda24584-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: f91ab54e-c15d-4c65-94b6-7112e634be61-attachment
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: fbafa87c-1396-4b08-a7c0-8a7137a703cf-container.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:60) - Deleted file: fd6a9d7a-eb58-4ff3-bace-697e0705bd53-result.json
+INFO  | 2024-11-05 20:10:22 | [main] Autotest.test.BaseTest (BaseTest.java:deleteAllureResults:67) - Allure results deleted.
+INFO  | 2024-11-05 20:10:22 | [main] common.keywords.WebUI (WebUI.java:openBrowser:33) - Opening browser: Chrome
+INFO  | 2024-11-05 20:10:28 | [main] common.keywords.WebUI (WebUI.java:openBrowser:53) - Opened browser 'Chrome' successfully
+INFO  | 2024-11-05 20:10:28 | [main] common.keywords.WebUI (WebUI.java:openBrowser:57) - Navigating to https://www.dienmayxanh.com/
+INFO  | 2024-11-05 20:10:32 | [main] common.keywords.WebUI (WebUI.java:maximizeWindow:69) - Maximizing window
+INFO  | 2024-11-05 20:10:32 | [main] common.keywords.WebUI (WebUI.java:maximizeWindow:71) - Maximized window
+INFO  | 2024-11-05 20:10:34 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:49) - =============== Start NC001_Search_on_DienMayXanh
+DEBUG | 2024-11-05 20:10:35 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BOX_SEARCH']
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:findWebElement:237) - Finding web element located by '//input[@id='skw']'
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:findWebElement:242) - Found 1 web element located by '//input[@id='skw']'
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:findWebElement:249) - Total time: 0.093
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:click:812) - Clicking web element located by '[[ChromeDriver: chrome on windows (c255258e31cf97074df82cf81efd464a)] -> xpath: //input[@id='skw']]'
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:click:814) - Web element located by '[[ChromeDriver: chrome on windows (c255258e31cf97074df82cf81efd464a)] -> xpath: //input[@id='skw']]' is clicked
+DEBUG | 2024-11-05 20:10:35 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BOX_SEARCH']
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:findWebElement:237) - Finding web element located by '//input[@id='skw']'
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:findWebElement:242) - Found 1 web element located by '//input[@id='skw']'
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:findWebElement:249) - Total time: 0.028
+INFO  | 2024-11-05 20:10:35 | [main] common.keywords.WebUI (WebUI.java:sendKeys:308) - Sending keys 'iphone 15'
+INFO  | 2024-11-05 20:10:38 | [main] common.keywords.WebUI (WebUI.java:sendKeys:311) - Sent keys 'iphone 15' successfully
+INFO  | 2024-11-05 20:10:40 | [main] common.keywords.WebUI (WebUI.java:delayInSeconds:1163) - Delayed 2 seconds
+INFO  | 2024-11-05 20:10:40 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:1077) - Taking a screen shot
+INFO  | 2024-11-05 20:10:40 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:1080) - Screen shot taken
+INFO  | 2024-11-05 20:10:46 | [main] common.keywords.WebUI (WebUI.java:findWebElements:278) - Finding element with locator '//li[contains(@class, 'item') and contains(@class, 'ajaxed') and contains(@class, '__cate_42')]//h3'
+INFO  | 2024-11-05 20:10:46 | [main] common.keywords.WebUI (WebUI.java:findWebElements:281) - Found '11' element(s) with locator '//li[contains(@class, 'item') and contains(@class, 'ajaxed') and contains(@class, '__cate_42')]//h3'
+INFO  | 2024-11-05 20:10:46 | [main] common.keywords.WebUI (WebUI.java:findWebElements:278) - Finding element with locator '//li[contains(@class, 'item') and contains(@class, 'ajaxed') and contains(@class, '__cate_42')]//strong[contains(@class, 'price')]'
+INFO  | 2024-11-05 20:10:46 | [main] common.keywords.WebUI (WebUI.java:findWebElements:281) - Found '11' element(s) with locator '//li[contains(@class, 'item') and contains(@class, 'ajaxed') and contains(@class, '__cate_42')]//strong[contains(@class, 'price')]'
+INFO  | 2024-11-05 20:10:47 | [main] common.keywords.WebUI (WebUI.java:findWebElements:278) - Finding element with locator '//a[starts-with(@href, '/dien-thoai/')]'
+INFO  | 2024-11-05 20:10:47 | [main] common.keywords.WebUI (WebUI.java:findWebElements:281) - Found '11' element(s) with locator '//a[starts-with(@href, '/dien-thoai/')]'
+INFO  | 2024-11-05 20:10:47 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:75) - =============== End NC001_Search_on_DienMayXanh
+INFO  | 2024-11-05 20:10:47 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:49) - =============== Start NC002_Search_on_FptShop
+INFO  | 2024-11-05 20:10:47 | [main] common.keywords.WebUI (WebUI.java:openNewTab:81) - Opened a new tab successfully
+INFO  | 2024-11-05 20:10:47 | [main] common.keywords.WebUI (WebUI.java:openNewTab:88) - Switched to the new tab successfully
+INFO  | 2024-11-05 20:10:47 | [main] common.keywords.WebUI (WebUI.java:navigateTo:147) - Navigating to https://fptshop.com.vn/
+INFO  | 2024-11-05 20:10:50 | [main] common.keywords.WebUI (WebUI.java:navigateTo:149) - Navigated to https://fptshop.com.vn/ successfully
+DEBUG | 2024-11-05 20:10:50 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BOX_SEARCH']
+INFO  | 2024-11-05 20:10:50 | [main] common.keywords.WebUI (WebUI.java:findWebElement:237) - Finding web element located by '//input[@placeholder='Nhập tên điện thoại, máy tính, phụ kiện... cần tìm']'
+INFO  | 2024-11-05 20:10:50 | [main] common.keywords.WebUI (WebUI.java:findWebElement:242) - Found 1 web element located by '//input[@placeholder='Nhập tên điện thoại, máy tính, phụ kiện... cần tìm']'
+INFO  | 2024-11-05 20:10:50 | [main] common.keywords.WebUI (WebUI.java:findWebElement:249) - Total time: 0.14
+INFO  | 2024-11-05 20:10:50 | [main] common.keywords.WebUI (WebUI.java:click:812) - Clicking web element located by '[[ChromeDriver: chrome on windows (c255258e31cf97074df82cf81efd464a)] -> xpath: //input[@placeholder='Nhập tên điện thoại, máy tính, phụ kiện... cần tìm']]'
+INFO  | 2024-11-05 20:10:54 | [main] common.keywords.WebUI (WebUI.java:click:814) - Web element located by '[[ChromeDriver: chrome on windows (c255258e31cf97074df82cf81efd464a)] -> xpath: //input[@placeholder='Nhập tên điện thoại, máy tính, phụ kiện... cần tìm']]' is clicked
+DEBUG | 2024-11-05 20:10:54 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BOX_SEARCH']
+INFO  | 2024-11-05 20:10:54 | [main] common.keywords.WebUI (WebUI.java:findWebElement:237) - Finding web element located by '//input[@placeholder='Nhập tên điện thoại, máy tính, phụ kiện... cần tìm']'
+INFO  | 2024-11-05 20:10:54 | [main] common.keywords.WebUI (WebUI.java:findWebElement:242) - Found 1 web element located by '//input[@placeholder='Nhập tên điện thoại, máy tính, phụ kiện... cần tìm']'
+INFO  | 2024-11-05 20:10:54 | [main] common.keywords.WebUI (WebUI.java:findWebElement:249) - Total time: 0.085
+INFO  | 2024-11-05 20:10:54 | [main] common.keywords.WebUI (WebUI.java:sendKeys:308) - Sending keys 'iphone 15'
+INFO  | 2024-11-05 20:10:55 | [main] common.keywords.WebUI (WebUI.java:sendKeys:311) - Sent keys 'iphone 15' successfully
+DEBUG | 2024-11-05 20:10:55 | [main] internal.path.CompiledPath (CompiledPath.java:evaluate:93) - Evaluating path: $['BTN_PHONE']
+INFO  | 2024-11-05 20:10:55 | [main] common.keywords.WebUI (WebUI.java:findWebElement:237) - Finding web element located by '//img[@alt='Điện thoại']'
+INFO  | 2024-11-05 20:10:57 | [main] common.keywords.WebUI (WebUI.java:findWebElement:242) - Found 1 web element located by '//img[@alt='Điện thoại']'
+INFO  | 2024-11-05 20:10:57 | [main] common.keywords.WebUI (WebUI.java:findWebElement:249) - Total time: 1.841
+INFO  | 2024-11-05 20:10:57 | [main] common.keywords.WebUI (WebUI.java:click:812) - Clicking web element located by '[[ChromeDriver: chrome on windows (c255258e31cf97074df82cf81efd464a)] -> xpath: //img[@alt='Điện thoại']]'
+INFO  | 2024-11-05 20:10:57 | [main] common.keywords.WebUI (WebUI.java:click:814) - Web element located by '[[ChromeDriver: chrome on windows (c255258e31cf97074df82cf81efd464a)] -> xpath: //img[@alt='Điện thoại']]' is clicked
+INFO  | 2024-11-05 20:10:59 | [main] common.keywords.WebUI (WebUI.java:delayInSeconds:1163) - Delayed 2 seconds
+INFO  | 2024-11-05 20:10:59 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:1077) - Taking a screen shot
+INFO  | 2024-11-05 20:11:00 | [main] common.keywords.WebUI (WebUI.java:takeScreenShot:1080) - Screen shot taken
+INFO  | 2024-11-05 20:11:10 | [main] common.keywords.WebUI (WebUI.java:findWebElements:278) - Finding element with locator '//h3[contains(@class, 'ProductCard_cardTitle__HlwIo')]'
+INFO  | 2024-11-05 20:11:10 | [main] common.keywords.WebUI (WebUI.java:findWebElements:281) - Found '16' element(s) with locator '//h3[contains(@class, 'ProductCard_cardTitle__HlwIo')]'
+INFO  | 2024-11-05 20:11:10 | [main] common.keywords.WebUI (WebUI.java:findWebElements:278) - Finding element with locator '//p[contains(@class, 'Price_currentPrice__PBYcv')]'
+INFO  | 2024-11-05 20:11:10 | [main] common.keywords.WebUI (WebUI.java:findWebElements:281) - Found '14' element(s) with locator '//p[contains(@class, 'Price_currentPrice__PBYcv')]'
+INFO  | 2024-11-05 20:11:10 | [main] common.keywords.WebUI (WebUI.java:findWebElements:278) - Finding element with locator '//a[starts-with(@href, '/dien-thoai/')]'
+INFO  | 2024-11-05 20:11:10 | [main] common.keywords.WebUI (WebUI.java:findWebElements:281) - Found '35' element(s) with locator '//a[starts-with(@href, '/dien-thoai/')]'
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:75) - =============== End NC002_Search_on_FptShop
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:49) - =============== Start NC003_Sort_Products_By_Price_On_DienMayXanh
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:75) - =============== End NC003_Sort_Products_By_Price_On_DienMayXanh
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:49) - =============== Start NC004_Sort_Products_By_Price_On_FptShop
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:75) - =============== End NC004_Sort_Products_By_Price_On_FptShop
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:49) - =============== Start NC005_Print_Product_Info_DienMayXanh
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:75) - =============== End NC005_Print_Product_Info_DienMayXanh
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:beforeMethod:49) - =============== Start NC006_Print_Product_Info_FptShop
+INFO  | 2024-11-05 20:11:11 | [main] Autotest.test.BaseTest (BaseTest.java:afterMethod:75) - =============== End NC006_Print_Product_Info_FptShop
+INFO  | 2024-11-05 20:11:11 | [main] common.keywords.WebUI (WebUI.java:closeBrowser:121) - Closing the browser
+INFO  | 2024-11-05 20:11:11 | [main] common.keywords.WebUI (WebUI.java:closeBrowser:123) - Closed browser
